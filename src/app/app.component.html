@@ -1,3 +1,55 @@
+<nav class="navbar navbar-expand-lg navbar-light">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
 
 
-<product-form></product-form>
+          <ul class="navbar-nav" id="a">
+
+            <li class="nav-item active">
+              <a routerLink="empleado" class="nav navbar-default" >
+              <span class="glyphicon glyphicon-home"></span>
+              Panel principal
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav navbar-default" href="#">
+              <span class="glyphicon glyphicon-file"></span>Registro de CFDI 3.3
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav navbar-default" href="#">
+              <span class="glyphicon glyphicon-file"></span>
+              Generar CFDI 3.3
+              </a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="#">
+                <span class="glyphicon glyphicon-plus"></span>
+                Mas
+                </a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="#">
+                <span class="glyphicon glyphicon-comment"></span>
+                Ayuda
+                </a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="#">
+                <span class="glyphicon glyphicon-lock glyphicon"></span>
+                Cerrar sesión
+                </a>
+            </li>
+
+          </ul>
+        </div>
+      </nav>
+
+<router-outlet></router-outlet>
