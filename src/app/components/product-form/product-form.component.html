@@ -1,0 +1,144 @@
+<div class="container-fluid"> 
+
+  <div class="panel panel-primary">
+   <div class="panel-heading" id="panels">Buscar productos</div>
+    <div class="panel-body">
+      No. identificacion: <input type="text" name="identificacion" placeholder="No. identificacion">
+      Descripcion: <input type="text" name="descripcion" placeholder="Descripcion">
+
+      <button class="btn right" style="margin-left: 4px;">Limpiar</button>
+      <button type="button" class="btn btn-success">Buscar Producto</button>
+    </div>
+  </div>
+
+ <div class="panel panel-primary">
+  <div class="panel-heading" id="panels">Productos</div>
+  <div class="panel-body">
+    <button type="button" class="btn btn-success" data-toggle="modal" data-target=".newProduct">Nuevo producto</button> <p>
+      <div class="modal fade newProduct" tabindex="-1" role="dialog" aria-labelledby="newProductLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+              <div class="modal-header">
+
+                  <h5 class="modal-title" id="newProductLabel">Nuevo producto</h5>
+              </div>
+            
+            <div class="modal-body">
+                <form #productoForm="ngForm" (ngSubmit)="addProducto
+                  (productoForm)"> 
+                    <input type="hidden" name="idNueProducto" #_idNueProducto="ngModel" [(ngModel)]="productoService.selectedProducto.idNueProducto">
+                    <div class="form-horizontal">
+                        <div class="col-sm-6">
+                            <div class="form-group">
+                                <label for="MainContent_text_reg_nombre" class="col-sm-4 control-label">*Descripcion de producto o</label>
+                                <div class="col-sm-8">
+                                    <input name="desProducto" #name="ngModel" [(ngModel)]="productoService.selectedProducto.desProducto" 
+                                    class="form-control" type="text" placeholder="Buscar producto ó servicio">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="MainContent_text_reg_telefono" class="col-sm-4 control-label">Servicio:</label>
+                                <div class="col-sm-8">
+                                    <textarea name="servicio" #name="ngModel" [(ngModel)]="productoService.selectedProducto.servicio" 
+                                    class="form-control" type="text" placeholder="Descripcion sobre la clave del producto"></textarea>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="MainContent_text_reg_email" class="col-sm-4 control-label">*Descripción:</label>
+                                <div class="col-sm-8">
+                                    <textarea name="descripcion" #name="ngModel" [(ngModel)]="productoService.selectedProducto.descripcion" 
+                                    class="form-control" type="text" placeholder="Descripción"></textarea>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="MainContent_text_reg_web" class="col-sm-4 control-label">*No. identificacion:</label>
+                                <div class="col-sm-8">
+                                    <input name="noIdentificacionP" #name="ngModel" [(ngModel)]="productoService.selectedProducto.noIdentificacionP" 
+                                    class="form-control" type="text" placeholder="No. identificacion">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="form-group">
+                                <label for="MainContent_text_reg_direccion" class="col-sm-4 control-label">Descripcion unidad:</label>
+                                <div class="col-sm-8">
+                                    <input name="desUnidad" #name="ngModel" [(ngModel)]="productoService.selectedProducto.desUnidad" 
+                                    class="form-control" type="text" placeholder="Buscar unidad">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="MainContent_text_reg_localidad" class="col-sm-4 control-label"></label>
+                                <div class="col-sm-8">
+                                    <textarea name="dClavUnidad" #name="ngModel" [(ngModel)]="productoService.selectedProducto.dClavUnidad" 
+                                    class="form-control" type="text" placeholder="Descripcion sobre la clave de la unidad"></textarea>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="MainContent_text_reg_provincia" class="col-sm-4 control-label">*Valor unitario:</label>
+                                <div class="col-sm-8">
+                                    <input name="valUnitario" #name="ngModel" [(ngModel)]="productoService.selectedProducto.valUnitario" 
+                                    class="form-control" type="text" placeholder="0.00">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="MainContent_text_reg_cp" class="col-sm-4 control-label">Unidad</label>
+                                <div class="col-sm-8">
+                                    <input name="unidad" #name="ngModel" [(ngModel)]="productoService.selectedProducto.unidad" class="form-control" type="text" placeholder="Unidad">
+                                </div>
+                            </div>
+                        </div>
+                  <div class="modal-footer">
+                    <div class="card-action">
+                        <button type="button" class="btn right" (click)="resetForm(productoForm)">Limpiar</button>
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+                        <button type="button" class="btn btn-success" (click)="addProducto(productoForm)">Agregar</button>
+                    </div>
+                  </div>
+                </div>
+            </form>
+            </div> 
+        </div>
+      </div>
+      </div>
+
+
+     <div class="table table-resposive">
+       <table id="tabla1" border="1" class="rwd-table">
+           <tr>
+             <th>Clave, servicio o prod</th>
+             <th >No. identificacion</th>
+             <th >Clave unidad</th>
+             <th >Unidad</th>
+             <th >Descripcion</th>
+             <th >Valor unitario</th>
+             <th scope="col">T, E, E</th>
+           </tr>
+
+           <tr>
+             <td data-th="Clave, servicio o prod">11101716</td>
+             <td data-th="No. indetificacion">1.00</td>
+             <td data-th="Clave unidad">MTR</td>
+             <td data-th="Unidad">METRO</td>
+             <td data-th="Descripcion">SOLDADURA OMEGA 1.00</td>
+             <td data-th="Valor unitario">$6.00000</td>
+             <td data-th="T, E, E"><i class="far fa-clock" style="font-size: 15px;"></i> <i class="fas fa-pencil-alt" style="font-size: 15px;"></i> <i class="fas fa-trash-alt" style="font-size: 15px;"></i></td>
+             
+           </tr>
+
+           <tr>
+             <td data-th="Clave, servicio o prod">2260868</td>
+             <td data-th="No. indetificacion">2.00</td>
+             <td data-th="Clave unidad">MTR0</td>
+             <td data-th="Unidad">Envoltura</td>
+             <td data-th="Descripcion">SOLDADURA OMEGA 2.00</td>
+             <td data-th="Valor unitario">$10.00000</td>
+             <td data-th="T, E, E"><i class="far fa-clock" style="font-size: 15px;"></i> <i class="fas fa-pencil-alt" style="font-size: 15px;"></i> <i class="fas fa-trash-alt" style="font-size: 15px;"></i> </td>
+             
+           </tr>
+         </tbody>
+       </table>
+     </div>
+</div>
+</div>
+      
+</div> 
