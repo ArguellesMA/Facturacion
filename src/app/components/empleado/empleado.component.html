@@ -110,7 +110,7 @@
 
                      <div class="col-lg-4 form-group">       
                          <div class="col-lg-5">
-                             <font size="2" class="r">*RFC empleado</font>
+                             <font size="2" class="r" >*RFC empleado</font>
                          </div>
                          <div class="col-lg-4">
                              <input type="text" class="form-control" id="rfcEmpleado" placeholder="AAAA010203AAA" maxlength="13">
@@ -589,11 +589,28 @@
                                  <option>670 LIBERTAD</option>
                                  <option>901 CLS</option>
                                  <option>902 INDEVAL</option>
-
-
                              </select> 
                          </div>
                      </div>
+
+                    <div class="col-lg-4 form-group">
+                         <div class="col-lg-5">
+                             <font size="1">Fecha inicio relación laboral:</font>   
+                         </div>
+                         <div class="col-lg-4">
+                             <input type="text" class="form-control" id="datetime" placeholder="calendario" readonly>
+                             <span class="input-group-addon">
+                        <span class="glyphicon glyphicon-calendar"></span>
+                        </span>
+
+                             <script type="text/javascript">
+                                $(function)(){
+                                 $("#datetimepicker").datetimepicker();
+                                 });
+                             </script>
+
+                         </div>                   
+                     </div> 
 
 
                   </div>
@@ -754,33 +771,37 @@
                         <button type="button" class="btn btn-success">Agregar empleado</button> <p>
 
 
-                        <div class="table">
-                            <table id="tabla2" border="1" class="table table-resposive">
+                        <div class="table table-resposive">
+                            <table id="tabla2" border="1" class="table">
+                            <thead>
                                 
                                     <tr>
-                                        <th>Activo</th>
-                                        <th>RFC</th>
-                                        <th>Nombre</th>
-                                        <th>No. de empleado</th>
-                                        <th>Edit/Delete</th>
+                                        <th scope="col">Activo</th>
+                                        <th scope="col">RFC</th>
+                                        <th scope="col">Nombre</th>
+                                        <th scope="col">No. de empleado</th>
+                                        <th scope="col">Edit/Delete</th>
                                     </tr>
-                          
+                            </thead>  
+                                  
+                            <tbody>
                                     <tr>
-                                        <td data-th="Activo">1</td>
-                                        <td data-th="RFC">CANA860507RI8</td>
-                                        <td data-th="Nombre">NA GISELA CASTILLO NAVA</td>
-                                        <td data-th="No. De empleado">5</td>
-                                        <td data-th="Edit/Delete"><i class="fas fa-pencil-alt" style="font-size: 15px;"></i> <i class="fas fa-trash-alt" style="font-size: 15px;"></i></td>
+                                        <td data-label="Activo">1</td>
+                                        <td data-label="RFC">CANA860507RI8</td>
+                                        <td data-label="Nombre">NA GISELA CASTILLO NAVA</td>
+                                        <td data-label="No. De empleado">5</td>
+                                        <td data-label="Edit/Delete"><i class="fas fa-pencil-alt" style="font-size: 15px;"></i> <i class="fas fa-trash-alt" style="font-size: 15px;"></i></td>
                                     </tr>
         
                                     <tr>
-                                        <td data-th="Activo">1</td>
-                                        <td data-th="RFC">CANA860507RI8</td>
-                                        <td data-th="Nombre">NA GISELA CASTILLO NAVA</td>
-                                        <td data-th="No. De empleado">5</td>
-                                        <td data-th="Edit/Delete"><i class="fas fa-pencil-alt" style="font-size: 15px;"></i> <i class="fas fa-trash-alt" style="font-size: 15px;"></i></td>
+                                        <td scope="row" data-label="Activo">1</td>
+                                        <td data-label="RFC">CANA860507RI8</td>
+                                        <td data-label="Nombre">NA GISELA CASTILLO NAVA</td>
+                                        <td data-label="No. De empleado">5</td>
+                                        <td data-label="Edit/Delete"><i class="fas fa-pencil-alt" style="font-size: 15px;"></i> <i class="fas fa-trash-alt" style="font-size: 15px;"></i></td>
                                         
                                     </tr>
+                            </tbody>    
                             </table>
                         </div>
 
@@ -794,11 +815,12 @@
                             </div>
                             <div class="col-sm-4 right">
                               <div class="form-group">
-                                    <button style="float: right;" class="btn btn-default btn-circle"><i class="glyphicon glyphicon-backward" ></i></button>
-                                    <button style="float: right;" class="btn btn-default btn-circle"><i class="glyphicon glyphicon-triangle-left"></i></button>
-                                    <button style="float: right;" class="btn btn-default btn-circle"><i class="glyphicon glyphicon-triangle-right"></i></button>
-                                    <button style="float: right;" class="btn btn-default btn-circle"><i class="glyphicon glyphicon-forward"></i></button> <p></p><br>
-
+                                    <button id="boton" class="btn btn-default btn-circle"><i class="glyphicon glyphicon-backward" ></i></button>
+                                    <button id="boton" class="btn btn-default btn-circle"><i class="glyphicon glyphicon-triangle-left"></i></button>
+                                    <button id="boton" class="btn btn-default btn-circle"><i class="glyphicon glyphicon-triangle-right"></i></button>
+                                    <button id="boton" class="btn btn-default btn-circle"><i class="glyphicon glyphicon-forward"></i></button> <p></p>
+                                    <br>
+                                    <br>
                                     <button id="boton" type="button" class="btn btn-success">Exportar empleados</button> <p>
                               </div>
                             </div>
