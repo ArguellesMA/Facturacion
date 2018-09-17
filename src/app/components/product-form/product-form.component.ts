@@ -49,6 +49,11 @@ export class ProductFormComponent implements OnInit {
     });
   }
 
+  editProducto(producto: Producto){
+    this.productoService.selectedProducto = producto;
+    console.log(producto);
+  }
+
   deleteProducto(idNueProducto: number, form: NgForm){
     if(confirm('Estas seguro que desea eliminarlo?')){
       this.productoService.deleteProducto(idNueProducto)

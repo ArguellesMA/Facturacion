@@ -1,4 +1,5 @@
-<div class="container">
+<div class="container-fluid">
+    
     <style>
         .b {border: thin blue solid;}
     </style>
@@ -6,8 +7,14 @@
     <div class="panel panel-primary">
         <div class="panel-heading" id="panels">Emisor</div>
         <div class="panel-body"> 
+
+        <div>
+        <form #emisorForm="ngForm" (ngSubmit)="addEmisor
+          (emisorForm)">
+          <input type="hidden" name="idEmisor" #_idEmisor="ngModel" [(ngModel)]="emisorService.selectedEmisor.idEmisor">
            <div>
-                <input type="checkbox" value=""><label>Agregar emisor</label>
+                <input name="emisor" #name="ngModel" [(ngModel)]="emisorService.selectedEmisor.emisor"
+                 type="checkbox" value=""><label>Agregar emisor</label>
            </div>
         <div class="d-flex justify-content-center">
             <div class="b"><p>
@@ -15,19 +22,26 @@
              <form class="form-inline" role="form">
                <div class="form-group col-lg-4">
                   <h6>CURP:</h6>
-                  <input type="text" class="form-control" id="rfc3" placeholder="AAAA010203MPLBCD11"> 
+                  <input name="curp" #name="ngModel" [(ngModel)]="emisorService.selectedEmisor.curp" 
+                   type="text" class="form-control" placeholder="AAAA010203MPLBCD11"> 
                </div>
+
                <div class="form-group col-lg-4">
-                  <h6>Registro patrona:</h6>
-                  <input type="text" class="form-control" id="rPatronal" placeholder="Registro patronal">
+                  <h6>Registro patronal:</h6>
+                  <input name="rPatronal" #name="ngModel" [(ngModel)]="emisorService.selectedEmisor.rPatronal"
+                   type="text" class="form-control" placeholder="Registro patronal">
                </div>
+
                <div class="form-group col-lg-4">
-                  <h6>RFC patron de origen:</h6>
-                  <input type="text" class="form-control" id="rfcPatronOrigen" placeholder="AAAA010203AAA">
+                  <h6>RFC patrón de origen:</h6>
+                  <input name="rfcOrigen" #name="ngModel" [(ngModel)]="emisorService.selectedEmisor.rfcOrigen" 
+                   type="text" class="form-control" placeholder="AAAA010203AAA">
                </div>
+
                <div class="col-lg-4 form-group">
-                  <input type="checkbox" class="form-control">
-                  <h6>Agregar Entidad Sistema Nacional de Coordinacion Fiscal(SNFC)</h6>
+                  <input name="sncf" #name="ngModel" [(ngModel)]="emisorService.selectedEmisor.sncf"
+                   type="checkbox" class="form-control">
+                  <h6>Agregar Entidad Sistema Nacional de Coordinación Fiscal(SNFC)</h6>
                </div>
              </form>
 
@@ -35,16 +49,16 @@
                 </div>
     
             </div>
-          </div>
-       </div>
+        </form>
+        </div>
+        </div>
+    </div>
       
-
+    
 
 <div class="panel panel-primary">
   <div class="panel-heading" id="panels">Empleado</div>
-
      <div id="c" class="panel-body d-flex justify-content-center">
-        <!--<div class="d-flex justify-content-center "> -->
         <div class="c"> <p></p>
             <form class="form-inline col-lg-12 " role="form-horizontal">
                 <div class="col-md-12 col-lg-12">
@@ -56,7 +70,8 @@
                          <div class="col-lg-5">        
                          </div>
                          <div class="col-lg-7 form-group">
-                             <input type="checkbox" class="form-control" id="activo">
+                             <input name="activo" #name="ngModel" [(ngModel)]="empleadoService.selectedEmpleado.activo"
+                              type="checkbox" class="form-control" >
                              <font size="2"> Activo</font> 
                          </div>                    
                      </div>
@@ -84,7 +99,8 @@
                          <div class="col-lg-5">
                          </div>
                          <div class="col-lg-7 form-group">
-                             <input type="checkbox" class="form-control" id="domEmpleado">
+                             <input name="domEmpleado" #name="ngModel" [(ngModel)]="empleadoService.selectedEmpleado.domEmpleado"
+                              type="checkbox" class="form-control" >
                              <font size="2">Llenar domicilio del empleado</font> 
                          </div>                    
                      </div>
@@ -110,10 +126,11 @@
 
                      <div class="col-lg-4 form-group">       
                          <div class="col-lg-5">
-                             <font size="2" class="r" >*RFC empleado</font>
+                             <font size="2" class="r">*RFC empleado</font>
                          </div>
-                         <div class="col-lg-4">
-                             <input type="text" class="form-control" id="rfcEmpleado" placeholder="AAAA010203AAA" maxlength="13">
+                         <div class="col-lg-7">
+                             <input name="rfcEmpleado" #name="ngModel" [(ngModel)]="empleadoService.selectedEmpleado.rfcEmpleado"
+                             type="text" class="form-control" placeholder="AAAA010203AAA" maxlength="13">
                          </div>                    
                      </div>
 
@@ -121,8 +138,9 @@
                          <div class="col-lg-5">
                              <font size="2" class="r">*Nombre empleado:</font>    
                          </div>
-                         <div class="col-lg-4">
-                             <input type="text" class="form-control" id="nEmpleado" placeholder="Nombre empleado">
+                         <div class="col-lg-7">
+                             <input name="nomEmpleado" #name="ngModel" [(ngModel)]="empleadoService.selectedEmpleado.nomEmpleado"
+                              type="text" class="form-control" placeholder="Nombre empleado">
                          </div>    
                      </div>
 
@@ -130,8 +148,9 @@
                          <div class="col-lg-5">
                              <font size="1">E-Mail:</font>    
                          </div>
-                         <div class="col-lg-4">
-                             <input type="text" class="form-control" id="email" placeholder="ejemplo@sucorreo.com">
+                         <div class="col-lg-7">
+                             <input name="email" #name="ngModel" [(ngModel)]="empleadoService.selectedEmpleado.email"
+                              type="text" class="form-control" placeholder="ejemplo@sucorreo.com">
                          </div>   
                      </div>
 
@@ -144,8 +163,9 @@
                          <div class="col-lg-5">
                              <font size="2" class="r">*No. empleado:</font>
                          </div>
-                         <div class="col-lg-4">
-                             <input type="text" class="form-control" id="noEmpleado" placeholder="Número del empleado">
+                         <div class="col-lg-7">
+                             <input name="noEmpleado" #name="ngModel" [(ngModel)]="empleadoService.selectedEmpleado.noEmpleado"
+                              type="text" class="form-control" placeholder="Número del empleado">
                          </div>    
                      </div>
 
@@ -153,8 +173,9 @@
                          <div class="col-lg-5">
                              <font size="2" class="r">*CURP</font>:   
                          </div>
-                         <div class="col-lg-4">
-                             <input type="text" class="form-control" id="curp" placeholder="AAAA010203MPLBCD11">
+                         <div class="col-lg-7">
+                             <input name="curpEmp" #name="ngModel" [(ngModel)]="empleadoService.selectedEmpleado.curp"
+                              type="text" class="form-control" placeholder="AAAA010203MPLBCD11">
                          </div>     
                      </div>
 
@@ -162,11 +183,12 @@
                          <div class="col-lg-5">
                              <font size="2" class="r">*Tipo de nómina:</font>   
                          </div>
-                         <div class="col-lg-4">
-                             <select id="sele" class="custom-select form-control">
+                         <div class="col-lg-5">
+                             <select name="tNomina" #name="ngModel" [(ngModel)]="empleadoService.selectedEmpleado.tNomina"
+                              style="width:155%" class="custom-select form-control">
                                  <option value="" disabled selected>Sin Selección</option>
-                                 <option id="ordinaria">O-Nomina ordinaria</option>
-                                 <option id="extraordinaria">E-Nomina extraordinaria</option>
+                                 <option value="ordinaria">O-Nomina ordinaria</option>
+                                 <option value="extraordinaria">E-Nomina extraordinaria</option>
                                  </select>
                          </div>  
                      </div>
@@ -181,19 +203,20 @@
                              <font size="2" class="r">*Periodicidad del pago:</font>
                          </div>
                          <div class="col-lg-4">
-                             <select id="sele" class="custom-select form-control">
-                                 <option id="option"  value="" disabled selected>Sin Selección</option>
-                                 <option id="diario">01 Diario</option>
-                                 <option id="semanal">02 Semanal</option>
-                                 <option id="catorcenal">03 Catorcenal</option>
-                                 <option id="quincenal">04 Quincenal</option>
-                                 <option id="mensual">05 Mensual</option>
-                                 <option id="bimestral">06 Bimestral</option>
-                                 <option id="unidad">07 Unidad obra</option>
-                                 <option id="comision">08 Comision</option>
-                                 <option id="precio">09 Precio alzado</option>
-                                 <option id="docenal">10 Docenal</option>
-                                 <option id="otro periodicidad">99 Otra periodicidad</option>
+                             <select name="perioPago" #name="ngModel" [(ngModel)]="empleadoService.selectedEmpleado.perioPago"
+                              style="width:155%" class="custom-select form-control">
+                                 <option id="option" value="" disabled selected>Sin Selección</option>
+                                 <option value="diario">01 Diario</option> 
+                                 <option value="semanal">02 Semanal</option>
+                                 <option value="catorcenal">03 Catorcenal</option>
+                                 <option value="quincenal">04 Quincenal</option>
+                                 <option value="mensual">05 Mensual</option>
+                                 <option value="bimestral">06 Bimestral</option>
+                                 <option value="unidad">07 Unidad obra</option>
+                                 <option value="comision">08 Comision</option>
+                                 <option value="precio">09 Precio alzado</option>
+                                 <option value="docenal">10 Docenal</option>
+                                 <option value="otro periodicidad">99 Otra periodicidad</option>
 
                              </select>
                          </div>
@@ -204,12 +227,12 @@
                              <font size="2" class="r">*Entidad federativa:</font>   
                          </div>
                          <div class="col-lg-4">
-                             <select id="sele" class="custom-select form-control">
+                             <select name="entFederativa" #name="ngModel" [(ngModel)]="empleadoService.selectedEmpleado.entFederativa" style="width:155%" class="custom-select form-control">
                                  <option value="" disabled selected>Sin Selección</option>
-                                 <option>Aguas Calientes</option>
-                                 <option>Baja California</option>
-                                 <option>Baja California Sur</option>
-                                 <option>MEX Campeche</option>
+                                 <option value="aguasCalientes">Aguas Calientes</option>
+                                 <option value="bajaCalifornia">Baja California</option>
+                                 <option value="bajaCaliSur">Baja California Sur</option>
+                                 <option value="">MEX Campeche</option>
                                  <option>Chiapas</option>
                                  <option>Chihuahua</option>
                                  <option>Coahila</option>
@@ -311,7 +334,7 @@
                              <font size="2" class="r">*Tipo de contrato:</font>   
                          </div>
                          <div class="col-lg-4">
-                             <select  id="sele" class="custom-select form-control">
+                             <select name="tContrato" style="width:155%" class="custom-select form-control">
                                  <option value="" disabled selected>Sin Selección</option>
                                  <option id="indeterminado">01 Contrato de trabajo por tiempo indeterminado</option>
                                  <option id="determinada">02 Contrato de trabajo por obra determinada</option>
@@ -338,7 +361,7 @@
                              <font size="2" class="r">*Tipo de régimen:</font>
                          </div>
                          <div class="col-lg-4">
-                             <select  id="sele" class="custom-select form-control">
+                             <select name="tRegimen" style="width:155%" tRegimen class="custom-select form-control">
                                  <option value="" disabled selected>Sin Selección</option>
                                  <option value="">02 Sueldos</option>
                                  <option value="">03 Jubilados</option>
@@ -362,7 +385,7 @@
                              <font size="1">NSS:</font>   
                          </div>
                          <div class="col-lg-4">
-                             <input type="text" class="form-control" id="nss" placeholder="Número de seguro social">
+                             <input name="nss" type="text" class="form-control" placeholder="Número de seguro social">
                          </div>
                      </div>
 
@@ -371,7 +394,7 @@
                              <font size="1">Salario base, cuotas y aportaciones:</font>   
                          </div>
                          <div class="col-lg-4">
-                            <input type="text" class="form-control" id="sbcAporta" placeholder="0.00">
+                            <input name="sbcAporta" type="text" class="form-control" placeholder="0.00">
                          </div>                   
                      </div> 
 
@@ -385,7 +408,7 @@
                              <font size="1">Riesgo del puesto:</font>
                          </div>
                          <div class="col-lg-4">
-                             <select  id="sele" class="custom-select form-control">
+                             <select name="rPuesto" style="width:155%" class="custom-select form-control">
                                  <option value="" disabled selected>Sin Selección</option>
                                  <option value="">1 Clase I</option>
                                  <option value="">2 Clase II</option>
@@ -402,7 +425,7 @@
                              <font size="1">*Salario diario integrado:</font>  
                          </div>
                          <div class="col-lg-4">
-                             <input type="text" class="form-control" id="sdIntegrado" placeholder="0.00">
+                             <input name="sdIntegrado" type="text" class="form-control" placeholder="0.00">
                          </div>
                      </div>
 
@@ -411,7 +434,7 @@
                              <font size="1">Tipo de jornada:</font>   
                          </div>
                          <div class="col-lg-4">
-                             <select id="sele" class="custom-select form-control">
+                             <select name="tJornada" style="width:155%" class="custom-select form-control">
                                  <option value="" disabled selected>Sin Selección</option>
                                  <option value="">01.- Diurna</option>
                                  <option value="">02.- Nocturna</option>
@@ -435,7 +458,7 @@
                              <font size="1">Departamento:</font>
                          </div>
                          <div class="col-lg-4">
-                             <input type="text" class="form-control" id="departamento" placeholder="Departamento empleado">
+                             <input name="departamento" type="text" class="form-control" placeholder="Departamento empleado">
                          </div>
                      </div>
 
@@ -444,7 +467,7 @@
                              <font size="1">Puesto:</font>   
                          </div>
                          <div class="col-lg-4">
-                             <input type="text" class="form-control" id="puesto" placeholder="Puesto empleado">
+                             <input name="puesto" type="text" class="form-control" placeholder="Puesto empleado">
                          </div>
                      </div>
 
@@ -453,7 +476,7 @@
                              <font size="1">Sindicalizado:</font>   
                          </div>
                          <div class="col-lg-4">
-                             <select  id="sele" class="custom-select form-control">
+                             <select name="sindicalizado" style="width:155%" class="custom-select form-control">
                                  <option value="" disabled selected>Sin Seleccionar</option>
                                  <option value="">SI</option>
                                  <option value="">NO</option>
@@ -472,7 +495,7 @@
                          </div>
 
                          <div class="col-lg-4">
-                             <input type="text" class="form-control" id="cBancaria" placeholder="123456789012345678">
+                             <input name="cBancaria" type="text" class="form-control" placeholder="123456789012345678">
                          </div>
                      </div>
 
@@ -481,7 +504,7 @@
                              <font size="1">Banco:</font>   
                          </div>
                          <div class="col-lg-4">
-                             <select  id="sele" class="custom-select form-control">
+                             <select name="banco" style="width:155%" class="custom-select form-control">
                                  <option value="" disabled selected>Sin Selección</option>
                                  <option>002 BANAMEX</option>
                                  <option>006 BANCOMEXT</option>
@@ -589,11 +612,13 @@
                                  <option>670 LIBERTAD</option>
                                  <option>901 CLS</option>
                                  <option>902 INDEVAL</option>
+
+
                              </select> 
                          </div>
                      </div>
 
-                    <div class="col-lg-4 form-group">
+                     <div class="col-lg-4 form-group">
                          <div class="col-lg-5">
                              <font size="1">Fecha inicio relación laboral:</font>   
                          </div>
@@ -612,7 +637,6 @@
                          </div>                   
                      </div> 
 
-
                   </div>
 
 
@@ -624,7 +648,7 @@
 
      <form class="form-inline" role="form">
         <div class="form-group col-lg-3">
-          <input type="checkbox" class="form-control" id="aSubcontratacion"><h6>Agregar subcontratacion</h6><br><br>
+          <input name="aSubcontra" type="checkbox" class="form-control"><h6>Agregar subcontratación</h6><br><br>
         </div>
         <div class="form-group col-lg-3">
          
@@ -641,16 +665,16 @@
        <form class="form-inline" role="form">
         <div class="form-group col-lg-3">
           
-          <input type="checkbox" class="form-control" id="email"><h6> Agregar percepciones</h6>
+          <input name="aPercepciones" type="checkbox" class="form-control"><h6> Agregar percepciones</h6>
         </div>
         <div class="form-group col-lg-3">
-          <input type="checkbox" class="form-control" id="pwd"><h6> Agregar deducciones:</h6>
+          <input name="aDeducciones" type="checkbox" class="form-control"><h6> Agregar deducciones:</h6>
         </div>
         <div class="form-group col-lg-3">
-            <input type="checkbox" class="form-control" id="pwd" placeholder="AAAA010203MPLBCD11"><h6> Agregar otros pagos</h6> 
+            <input name="aPagos" type="checkbox" class="form-control"><h6> Agregar otros pagos</h6> 
         </div><br>
         <div class="form-group col-lg-3">
-            <input type="checkbox" class="form-control"><h6> Agregar incapacidades</h6>
+            <input name="aIncapacidades" type="checkbox" class="form-control"><h6> Agregar incapacidades</h6>
         </div> 
       </form>
 
@@ -658,70 +682,68 @@
 </div>
     
     
-         
           <div class="panel panel-primary">
-          
-                <div class="panel-heading" id="panels">Totales</div>Totales
+                <div class="panel-heading" id="panels">Totales</div>
 
                 <div class="panel-body"> 
                 <div class="form-horizontal">
-                
 
-                  <div class="row">  
-                      <div class="col-lg-4 form-group">
+                  <div class="col-sm-4">
+
+                      <div class="form-group">
                           <label for="MainContent_text_reg_web" class="col-lg-3 control-label">Total de percepciones:</label>
                           <div class="col-sm-8">
                               <input name="tPercepciones" id="tPercepciones" class="form-control" type="text" placeholder="0.00">
                           </div>
                       </div>
 
-                      <div class="col-lg-4 form-group">
-                          <label for="MainContent_text_reg_web" class="col-lg-3 control-label">Total de deducciones</label>
+                      <div class="form-group">
+                            <label for="MainContent_text_reg_web" class="col-sm-3 control-label">Subtotal:</label>
+                            <div class="col-sm-1">
+                                <label for="MainContent_text_reg_web" class="col-sm-4 control-label">0.00</label><p></p>
+                            </div>
+                        </div>
+
+                  </div>
+                  
+                  <div class="col-sm-4">
+                      <div class="form-group">
+                          <h6 for="MainContent_text_reg_cp" class="col-lg-3 control-label">Total de deducciones</h6>
                           <div class="col-sm-8">
-                              <input name="tDeduccinoes" id="tDeduccinoes" class="form-control" type="text" placeholder="0.00">
+                              <input name="tDeducciones" id="tDeducciones" class="form-control" type="text" placeholder="0.00">
                           </div>
                       </div>
-
-                      <div class=" col-lg-4 form-group">
-                          <label for="MainContent_text_reg_web" class="col-lg-3 control-label">Total de otros pagos</label>
-                          <div class="col-sm-8">
-                              <input name="tOtrosPagos" id="tOtrosPagos" class="form-control" type="text" placeholder="0.00">
-                          </div>
+                      
+                      <div class="form-group">
+                            <label for="MainContent_text_reg_web" class="col-sm-3 control-label">Descuento:</label>
+                            <div class="col-sm-4">
+                                <label for="MainContent_text_reg_web" class="col-sm-4 control-label">0.00</label><p></p>
+                            </div>
                       </div>
                   </div>
+                  
+                  <div class="col-sm-4">
+                    <div class="form-group">
+                        <h6 for="MainContent_text_reg_cp" class="col-sm-3 control-label">Total de otros de pagos</h6>
+                        <div class="col-sm-8">
+                            <input name="toPagos" id="toPagos" class="form-control" type="text" placeholder="0.00">
+                        </div>    
+                    </div>
 
-
-                  <div class="row">
-                      <div class=" col-lg-4 form-group">
-                            <label for="MainContent_text_reg_web" class="col-sm-3 control-label">Subtotal:</label>
-                            <div class="col-sm-4">
-                                <label for="MainContent_text_reg_web" class="col-sm-4 control-label">0.00</label><p></p>
-                            </div>
-                      </div>
-
-                      <div class="col-lg-4 form-group">
-                            <label for="MainContent_text_reg_web" class="col-sm-3 control-label">Descuentos:</label>
-                            <div class="col-sm-4">
-                                <label for="MainContent_text_reg_web" class="col-sm-4 control-label">0.00</label><p></p>
-                            </div>
-                      </div>
-
-                    <div class="col-lg-4 form-group">
+                    <div class="form-group">
                             <label for="MainContent_text_reg_web" class="col-sm-3 control-label">Total:</label>
                             <div class="col-lg-4">
                                 <label for="MainContent_text_reg_web" class="col-sm-4 control-label">0.00</label><p></p>
                             </div>
                     </div>
                   </div>
-
-
-                  </div>
+                </div>
                </div>
               </div>
     
     
              <div class="panel panel-primary">
-                    <div class="panel-heading"id="panels" ></div>
+                    <div class="panel-heading" id="panels"></div>
                      <div id="panel" class="panel-body">
                  
                        <button id="btn1" type="button" class="btn btn-secondary" style="margin-left: 4px;">Regresar</button>
@@ -729,7 +751,7 @@
                        <button id="btn3" type="button" class="btn btn-success">Agregar</button>
                      </div>
                </div>
-
+            
 
                <div class="panel panel-primary">
                     <div class="panel-heading" id="panels">Filtrado de empleados 1.2</div>
@@ -769,42 +791,35 @@
                  <div class="panel-heading" id="panels">Catálogo de empleados 1.2</div>
                     <div class="panel-body"> 
                         <button type="button" class="btn btn-success">Agregar empleado</button> <p>
-
-
-                        <div class="table table-resposive">
-                            <table id="tabla2" border="1" class="table">
-                            <thead>
-                                
-                                    <tr>
-                                        <th scope="col">Activo</th>
-                                        <th scope="col">RFC</th>
-                                        <th scope="col">Nombre</th>
-                                        <th scope="col">No. de empleado</th>
-                                        <th scope="col">Edit/Delete</th>
-                                    </tr>
-                            </thead>  
-                                  
-                            <tbody>
-                                    <tr>
-                                        <td data-label="Activo">1</td>
-                                        <td data-label="RFC">CANA860507RI8</td>
-                                        <td data-label="Nombre">NA GISELA CASTILLO NAVA</td>
-                                        <td data-label="No. De empleado">5</td>
-                                        <td data-label="Edit/Delete"><i class="fas fa-pencil-alt" style="font-size: 15px;"></i> <i class="fas fa-trash-alt" style="font-size: 15px;"></i></td>
-                                    </tr>
-        
-                                    <tr>
-                                        <td scope="row" data-label="Activo">1</td>
-                                        <td data-label="RFC">CANA860507RI8</td>
-                                        <td data-label="Nombre">NA GISELA CASTILLO NAVA</td>
-                                        <td data-label="No. De empleado">5</td>
-                                        <td data-label="Edit/Delete"><i class="fas fa-pencil-alt" style="font-size: 15px;"></i> <i class="fas fa-trash-alt" style="font-size: 15px;"></i></td>
-                                        
-                                    </tr>
-                            </tbody>    
-                            </table>
-                        </div>
-
+                                <div class="table">
+                                        <table id="tabla2" border="1" class="table table-resposive">
+                                            
+                                                <tr>
+                                                    <th>Activo</th>
+                                                    <th>RFC</th>
+                                                    <th>Nombre</th>
+                                                    <th>No. de empleado</th>
+                                                    <th>Edit/Delete</th>
+                                                </tr>
+                                      
+                                                <tr>
+                                                    <td data-th="Activo">1</td>
+                                                    <td data-th="RFC">CANA860507RI8</td>
+                                                    <td data-th="Nombre">NA GISELA CASTILLO NAVA</td>
+                                                    <td data-th="No. De empleado">5</td>
+                                                    <td data-th="Edit/Delete"><i class="fas fa-pencil-alt" style="font-size: 15px;"></i> <i class="fas fa-trash-alt" style="font-size: 15px;"></i></td>
+                                                </tr>
+                    
+                                                <tr>
+                                                    <td data-th="Activo">1</td>
+                                                    <td data-th="RFC">CANA860507RI8</td>
+                                                    <td data-th="Nombre">NA GISELA CASTILLO NAVA</td>
+                                                    <td data-th="No. De empleado">5</td>
+                                                    <td data-th="Edit/Delete"><i class="fas fa-pencil-alt" style="font-size: 15px;"></i> <i class="fas fa-trash-alt" style="font-size: 15px;"></i></td>
+                                                    
+                                                </tr>
+                                        </table>
+                                    </div>
 
 
                         <div class="form-horizontal">
@@ -815,13 +830,12 @@
                             </div>
                             <div class="col-sm-4 right">
                               <div class="form-group">
-                                    <button id="boton" class="btn btn-default btn-circle"><i class="glyphicon glyphicon-backward" ></i></button>
-                                    <button id="boton" class="btn btn-default btn-circle"><i class="glyphicon glyphicon-triangle-left"></i></button>
-                                    <button id="boton" class="btn btn-default btn-circle"><i class="glyphicon glyphicon-triangle-right"></i></button>
-                                    <button id="boton" class="btn btn-default btn-circle"><i class="glyphicon glyphicon-forward"></i></button> <p></p>
-                                    <br>
-                                    <br>
-                                    <button id="boton" type="button" class="btn btn-success">Exportar empleados</button> <p>
+                                    <button class="btn btn-default btn-circle"><i class="glyphicon glyphicon-backward"></i></button>
+                                    <button class="btn btn-default btn-circle"><i class="glyphicon glyphicon-triangle-left"></i></button>
+                                    <button class="btn btn-default btn-circle"><i class="glyphicon glyphicon-triangle-right"></i></button>
+                                    <button class="btn btn-default btn-circle"><i class="glyphicon glyphicon-forward"></i></button> <p></p>
+
+                                    <button type="button" class="btn btn-success">Exportar empleados</button> <p>
                               </div>
                             </div>
                         </div>
