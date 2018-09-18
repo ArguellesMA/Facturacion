@@ -11,7 +11,8 @@ import { EmpleadoComponent } from './components/empleado/empleado.component';
 import { LoginComponent } from './components/login/login.component';
 import { PrincipalComponent } from './components/principal/principal.component';
 import { GCFDI33Component } from './components/g-cfdi33/g-cfdi33.component';
-import { NominaComponent } from ' ./components/Documentos/generarnomina/nomina.component';
+import { NominaComponent }  from './components/Documentos/nomina/nomina.component';
+
 
 @NgModule({
   declarations: [
@@ -22,6 +23,7 @@ import { NominaComponent } from ' ./components/Documentos/generarnomina/nomina.c
     PrincipalComponent,
     GCFDI33Component,
     NominaComponent
+    
   ],
   imports: [
     FormsModule,
