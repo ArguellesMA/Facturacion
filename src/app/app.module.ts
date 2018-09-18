@@ -12,6 +12,10 @@ import { LoginComponent } from './components/login/login.component';
 import { PrincipalComponent } from './components/principal/principal.component';
 import { GCFDI33Component } from './components/g-cfdi33/g-cfdi33.component';
 import { NominaComponent }  from './components/Documentos/nomina/nomina.component';
+import { RCFDI33Component } from './components/Registros/RCFDI33/Rcfdi33.component';
+import { ComercioComponent } from './components/Documentos/comercio/comercio.component';
+import { PagosComponent } from './components/Documentos/pagos/pagos.component';
+import { RetencionesComponent} from './components/Documentos/retenciones/retenciones.component';
 
 
 @NgModule({
@@ -22,7 +26,11 @@ import { NominaComponent }  from './components/Documentos/nomina/nomina.componen
     LoginComponent,
     PrincipalComponent,
     GCFDI33Component,
-    NominaComponent
+    NominaComponent,
+    RCFDI33Component,
+    ComercioComponent,
+    PagosComponent,
+    RetencionesComponent
     
   ],
   imports: [
