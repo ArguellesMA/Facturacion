@@ -3,5 +3,9 @@
 }
 
 .b{
-	border: thin blue solid;
+   padding: 3px 10px;
+  border: #006666 solid;
+  border-radius: 20px;
 }
+
+#bor1{}

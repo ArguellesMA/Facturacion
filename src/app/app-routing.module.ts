@@ -8,7 +8,8 @@ import { NominaComponent }    from './components/Documentos/nomina/nomina.compon
 import { RCFDI33Component } from './components/Registros/RCFDI33/Rcfdi33.component';
 import { ComercioComponent } from './components/Documentos/comercio/comercio.component';
 import { PagosComponent } from './components/Documentos/pagos/pagos.component';
-import { RetencionesComponent}from './components/Documentos/retenciones/retenciones.component';
+import { DRetencionesComponent}from './components/Documentos/DRetenciones/DRetenciones.component';
+import { RRetencionesComponent} from './components/Registros/Rretenciones/Rretenciones.component';
 
 
 const routes: Routes = [
@@ -20,7 +21,8 @@ const routes: Routes = [
     { path: 'Rcfdi33', component: RCFDI33Component },
     { path: 'comercio', component: ComercioComponent},
     { path: 'pagos', component: PagosComponent },
-    { path: 'retenciones', component: RetencionesComponent}
+    { path: 'DRetenciones', component: DRetencionesComponent},
+    { path: 'Rretenciones', component: RRetencionesComponent}
 ];
 
 @NgModule({

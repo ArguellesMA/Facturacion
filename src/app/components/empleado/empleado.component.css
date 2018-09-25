@@ -96,11 +96,6 @@ font-size: 11px;
   }
 }   
 
-#c{
-margin: 0%;    
-font-size: 100%;
-text-align: right;
-}
 
 #btn1{
 float: right;
@@ -113,6 +108,14 @@ float: right;;
 
 #btn3{ 
 float: right;
+ }
+
+ #btn4{
+  float: right;
+ }
+
+ #btn5{
+  float: right;
  }
 
  select{
@@ -137,8 +140,9 @@ float: right;
  }
 
  .c { 
-  border: thin blue solid;
-  height: 100%;
+  padding: 3px 10px;
+  border: #006666 solid;
+  border-radius: 20px;
   
 }
 

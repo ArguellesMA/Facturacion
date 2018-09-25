@@ -15,7 +15,8 @@ import { NominaComponent }  from './components/Documentos/nomina/nomina.componen
 import { RCFDI33Component } from './components/Registros/RCFDI33/Rcfdi33.component';
 import { ComercioComponent } from './components/Documentos/comercio/comercio.component';
 import { PagosComponent } from './components/Documentos/pagos/pagos.component';
-import { RetencionesComponent} from './components/Documentos/retenciones/retenciones.component';
+import { DRetencionesComponent } from './components/Documentos/DRetenciones/DRetenciones.component';
+import { RRetencionesComponent } from './components/Registros/Rretenciones/Rretenciones.component';
 
 
 @NgModule({
@@ -30,7 +31,8 @@ import { RetencionesComponent} from './components/Documentos/retenciones/retenci
     RCFDI33Component,
     ComercioComponent,
     PagosComponent,
-    RetencionesComponent
+    DRetencionesComponent,
+    RRetencionesComponent
     
   ],
   imports: [

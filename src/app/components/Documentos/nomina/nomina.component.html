@@ -1,4 +1,5 @@
 <!--primer panel-->
+<div class="container-fluid">
 <div class="panel panel-primary">
     <div class="panel-heading" id="panels">Compobante emisor</div>
     <div class="panel-body d-flex justify-content-center">
@@ -45,15 +46,15 @@
 
 
                     <div class="row">
-                    <div class="form-group col-lg-4">
-                        <div class="col-lg-5">
-                            <font size="2" class="serie">
-                                Serie
-                            </font>
-                            <div class="col-lg-4">
-                                <input type="text" class="form-control" id="serie" placeholder="Serie" name="serie">
+                    <div class="col-lg-4 form-group">
+                            <div class="col-lg-5">
+                                <font size="2" class="ser">
+                                    Serie
+                                </font>
                             </div>
-                        </div>
+                            <div class="col-lg-4">
+                            <input type="text" class="form-control" id="serie" placeholder="serie" name="ser">
+                            </div>
                         </div>
 
                         <div class="col-lg-4 form-group">
@@ -168,13 +169,13 @@
 
                         <div class="col-lg-4 form-group">
                             <div class="col-lg-5">
-                                <font size="2" class="regimen">
+                                <font size="2" class="Rfiscal">
                                     Regimen fiscal
                                 </font>
                             </div>
-                            <div class="col-lg-4 form-group">
-                                <select id="sele" class="custom-select form-control">
-                                    <option>bla</option>
+                            <div class="col-lg-4">
+                                <select  class="custon-select form-control" name="regimen">
+                                    <option>612 personas fisicas co</option>
                                     <option>ble</option>
                                     <option>bli</option>
                                 </select>
@@ -208,13 +209,13 @@
 <div class="panel panel-primary">
 <div class="panel-heading" id="panels">Emisor</div>
      <div class="panel-body">
-        <div class="b">
+        
         <form>
-             <input type="hidden" name="idEmisor">
              <div>
             <input name="emisor" type="checkbox" value=""><label> Agragar emisor</label> 
             </div>
             <div class="d-flex justify-content-center">
+            <div class="b">    
 
             <div class="row">
             <form class="form-inline" role="form">
@@ -248,59 +249,59 @@
                 </div>
                 </div>
 
-
-                <div class="col-lg-4 form-groupn">
-                    <h6>Agregar Entidad Sisitema Nacional de Coordinacion Fiscal (SnCF)</h6>
-                <input type="checkbox" name="sncf" class="form-Sistema Nacional de Coordinacion Fiscal(SNCF)">  
+                </form>
+                <div>
+                <input type="checkbox" name="sncf" value=""><label>Agregar Entidad Sisitema Nacional de Coordinacion Fiscal (SnCF)</label>  
                 </div>
-            </form> 
+             
+            </div>
             </div>                         
             </div>
         </form>
-        </div>
  </div>
  </div>
 
  <!--tercer panel-->
- <div class="panel panel-primary">
+<div class="panel panel-primary">
 <div class="panel panel-heading" id="panels">Empleado</div>
     <div class="panel-body">
-        <div class="b">
+        <div class="b" id="bor1">
         <form>
         <div class="row">
             <div class="form-group col-lg-4">
             <div class="col-lg-5">
                 <h6> Busqueda de empleado</h6>
             </div>
-                <div class="col-lg-4">
+                <div class="col-sm-7">
                 <input type="text" name="busqueda" class="form-control" id="busqueda" placeholder="criterio de busqueda">
             </div>
-        </div>    
+        </div> 
+        </div>   
 
             <div class="row">
                 <div class="form-group col-lg-4">
-                <div class="col-lg-5">
+                <div class="col-lg-2">
                     <font>*RFC</font>>
                 </div> 
-                <div class="col-lg-4">   
+                <div class="col-sm-7">   
                     <input type="text" name="rfc" class="form-control" id="rfc" placeholder="AAWW890512MVZAVE6">
                 </div>
                 </div>
 
                 <div class="form-group col-lg-4">
-                <div class="col-lg-5">
+                <div class="col-lg-2">
                     <font>Nombre</font>
                 </div>    
-                <div class="col-lg-4">        
+                <div class="col-sm-7">        
                     <input type="text" name="nom" class="form-control" id="nombre" placeholder="Razon social receptor">
                 </div>
                 </div>
 
                 <div class="form-group col-lg-4">
-                <div class="col-lg-5">
+                <div class="col-lg-4">
                     <font>Uso del CFDI</font>
                 </div>   
-                <div class="col-lg-4"> 
+                <div class="col-sm-7"> 
                     <input type="uso" name="cfdi" class="form-control" id="Cfdi" placeholder="P01-por definir">
                 </div>
                 
@@ -310,11 +311,13 @@
             <div>
                 <input type="checkbox" name="includ" value=""><label>Incluir domicilio en PDF</label>
             </div>
-        </div>    
+            
         </form>
         </div>
 
-        <div class="b">
+        <br>
+
+        <div class="b" id="bor2">
         <form>
             <div>
                 <input type="checkbox" name="domicilio" value=""><label>Llenar domcilio del empleado</label>
@@ -325,7 +328,7 @@
                 <div class="col-lg-5">
                     <font>*No. Empleado</font>
                 </div>
-                <div class="col-lg-4">    
+                <div class="col-sm-7">    
                     <input type="text" name="no" class="form-control" id="empledo" placeholder="Numero de empleado">
                 </div>
                 </div>
@@ -334,7 +337,7 @@
                 <div class="col-lg-5">  
                     <font>*CURP</font>
                 </div>
-                <div class="col-lg-4">    
+                <div class="col-sm-7">    
                     <input type="text" name="curp" class="form-control" id="curp" placeholder="AANJ148935HVZMANS7">
                 </div>
                 </div>
@@ -343,7 +346,7 @@
                 <div class="col-lg-5">
                     <font>*Tipo de nomina</font>
                     </div>
-                    <div class="col-lg-5">
+                    <div class="col-sm-7">
                     <select class="custom-select form-control" name="tnomina">
                         <option>sin seleccion</option>
                         <option>AAAAA</option>
@@ -364,8 +367,8 @@
                         *Periodicidad del pago
                     </font>
                 </div>
-                <div class="col-lg-5">
-                    <select class="custom-select form-control" name="Ppago">
+                <div class="col-sm-7">
+                    <select class="custon-select form-control" name="perio">
                         <option>Sin Seleccion</option>
                         <option>BBBBBBB</option>
                         <option>BBBBBBB</option>
@@ -383,8 +386,8 @@
                         *Entidad federativa
                     </font>
                 </div>
-                <div class="col-lg-5">
-                    <select class="custon-select from-control" name="Efederativa">
+                <div class="col-sm-7">
+                    <select class="custon-select form-control" name="region">
                         <option>Sin Seleccion</option>
                         <option>CCCCCCC</option>
                         <option>CCCCCCC</option>
@@ -402,7 +405,7 @@
                         *Tipo de contrato
                     </font>
                 </div>
-                <div class="col-lg-5">
+                <div class="col-sm-7">
                     <select class="custon-select form-control" name="Tcontrato">
                         <option>Sin Seleccion</option>
                         <option>DDDDDDDD</option>
@@ -421,8 +424,8 @@
                         *Tipo de regimen
                     </font>
                 </div>
-                <div class="form-group col-lg-5">
-                    <select class="custon-select form-group">
+                <div class="form-group col-sm-7">
+                    <select class="custon-select form-control" name="regimen">
                         <option>Sin Seleccion</option>
                         <option>EEEEEEEE</option>
                         <option>EEEEEEEE</option>
@@ -438,7 +441,7 @@
                         NSS
                     </font>
                 </div>
-                <div class="col-lg-4">
+                <div class="col-sm-7">
                     <input type="text" name="nss" class="form-control" id="nss" placeholder="Numero seguro social">
                 </div>    
                 </div>
@@ -449,7 +452,7 @@
                         Salario base, cuotas y aportaciones
                     </font>
                 </div>
-                <div class="col-lg-4">
+                <div class="col-sm-7">
                     <input type="text" name="salario" class="form-control" id="salariob" placeholder="0.00">
                 </div>    
                 </div>
@@ -462,7 +465,7 @@
                      Region del puesto
                     </font>
                 </div>
-                <div class="col-lg-5">
+                <div class="col-sm-7">
                     <select class="custon-select form-control" name="region">
                         <option>Sin Seleccion</option>
                         <option>GGGGGGGG</option>
@@ -478,7 +481,7 @@
                 <div class="col-lg-5">
                     <font>Salario diario integrado</font> 
                 </div>
-                <div class="col-lg-4">
+                <div class="col-sm-7">
                     <input type="text" name="Sdiario" class="form-control" id="salariod" placeholder="0.00">
                 </div>    
                 </div>
@@ -489,7 +492,7 @@
                         Tipo de jornada
                     </font>
                 </div>
-                <div class="col-lg-5">
+                <div class="col-sm-7">
                     <select class="custon-select form-control" name="jornada">
                         <option>Sin Seleccion</option>
                         <option>HHHHHHHH</option>
@@ -510,7 +513,7 @@
                         Departamento
                     </font>
                 </div>
-                <div class="col-lg-5">
+                <div class="col-sm-7">
                     <input type="text" name="departamento" class="form-control" id="departamento" placeholder="Departamento empleado">
                 </div>    
                 </div>
@@ -520,7 +523,7 @@
                 <div class="col-lg-5">
                     <font>Puesto</font>
                 </div>
-                <div class="col-lg-5">
+                <div class="col-sm-7">
                     <input type="text" name="puesto" class="form-control" id="puesto" placeholder="Puesto empleado">
                 </div>    
                 </div>
@@ -531,8 +534,8 @@
                         Sindicalizado
                     </font>
                 </div>
-                <div class="col-lg-5">
-                    <select class="custom-select form-control" name="sindicalizado">
+                <div class="col-sm-7">
+                    <select class="custon-select form-control" name="sindi">
                         <option>Sin Seleccion</option>
                         <option>IIIIIII</option>
                         <option>IIIIIII</option>
@@ -550,7 +553,7 @@
                         Cuenta bancaria
                     </font>
                 </div>
-                <div class="col-lg-4">
+                <div class="col-sm-7">
                     <input type="text" name="cuenta" class="form-control" id="cuenta" placeholder="123a1s321321c31s">
                 </div>    
                 </div>
@@ -561,7 +564,7 @@
                         Banco
                     </font>
                 </div>
-                <div class="col-lg-5">
+                <div class="col-sm-7">
                     <select class="custon-select form-control" name="banco">
                         <option>Sin Seleccion</option>
                         <option>JJJJJJJJ</option>
@@ -578,15 +581,17 @@
                         Fecha inicio relacion laboral
                     </font>
                 </div>
-                <div class="col-lg-4">
+                <div class="col-sm-7">
                     <input type="calendar" name="fecha" class="form-control" id="calendar" placeholder="dd/mm/aa"> 
                 </div>   
                 </div>
             </div>
         </form>
+        </div>
 
+        <br>
 
-        <div class="b">
+        <div class="b" id="bor3">
         <form>
             <div class="row">
                 <div class="form-group col-lg-4">
@@ -595,7 +600,7 @@
                         *Fecha inicial de pago
                     </font>
                 </div>    
-                <div class="col-lg-4">
+                <div class="col-sm-7">
                     <input type="calendar" name="pago" class="form-control" id="calendar" placeholder="dd/mm/aa">
                 </div>
                 </div>
@@ -606,7 +611,7 @@
                         *Fecha final de pago
                     </font>
                 </div>   
-                <div class="col-lg-4">
+                <div class="col-sm-7">
                     <input type="calendar" name="fpago" class="form-control" id="calendar" placeholder="dd/mm/aa">
                 </div>     
                 </div>
@@ -617,7 +622,7 @@
                         Fecha de pago
                     </font>
                 </div>
-                <div class="col-lg-4">
+                <div class="col-sm-7">
                     <input type="calendar" name="fpago" class="form-control" id="calendar" placeholder="dd/mm/aa">
                 </div>    
                 </div> 
@@ -629,18 +634,18 @@
                         Dias pagados
                     </font>
                 </div>
-                <div class="col-lg-4">
+                <div class="col-sm-7">
                     <input type="text" name="diasp" class="form-control" id="diasP" placeholder="Dias Pagados">
                 </div>    
                 </div>
 
-                <div>
+                <div class="col-lg-4">
                     <input type="checkbox" name="semanas" value=""><label>Semanas</label>
                     <input type="checkbox" name="A,M,D" value=""><label>Anos, Meses y Dias</label>
                 </div>
 
                 <div class="form-group col-lg-4">
-                <div class="col-lg-5">
+                <div class="col-lg-4">
                     <font>
                         Antiguedad
                     </font>
@@ -654,7 +659,7 @@
         </div>
 
 
-        <form class="form-inline" role="form">
+        <form>
             <div class="col-lg-3">
                 <input type="checkbox" name="argegsub"><label>Agregar subcontratacion</label>
             </div>
@@ -677,7 +682,7 @@
         </form>
         </div>
         </div>
-</div>
+
 
 <!-- cuarto panel-->
 <div class="panel panel-primary">
@@ -686,31 +691,31 @@
         <div class="panel-body">
 
             <form>
-                <div class="col-lg-4">
+                <div class="col-lg-4 form-group">
                 <div class="col-lg-5">
                     <font>Total de percepciones</font>
                 </div>
-                <div class="col-lg-5">
+                <div class="col-sm-7">
                     <input type="text" name="total" class="form-control" id="Tpercepciones" placeholder="0.00">
                 </div>    
                 </div>
 
-                <div class="form-group col-lg-4">
+                <div class="col-lg-4 form-group">
                 <div class="col-lg-5">
                     <font>Total de deducciones</font>
                 </div>
-                <div class="col-lg-4">
+                <div class="col-sm-7">
                     <input type="text" name="total" class="form-control" id="Tdeducciones" placeholder="0.00">
                 </div>    
                 </div>
 
-                <div class="form-group col-lg-4">
+                <div class="col-lg-4 form-group">
                 <div class="col-lg-5">
                     <font>
                         Total de otros pagos
                     </font>
                 </div>
-                <div class="col-lg-5">
+                <div class="col-sm-7">
                     <input type="text" name="totales" class="form-control" id="TotrosP" placeholder="0.00">
                 </div>    
                 </div>
@@ -720,6 +725,8 @@
     </div>
 </div>
 
+
+<!--Botones-->
 <button id="btn3" type="button" class="btn btn-success" style="float: right;">Agregar nomina</button>
 <button id="btn2" type="button" class="btn btn-secondary" style="float: right;">Limpiar</button>
 <br>
@@ -741,7 +748,6 @@
 <!-- sexto panel -->
 <div class="panel panel-primary">
     <div class="panel-heading" id="panels">Concepto</div>
-    <div class="panel-body d-flex justify-content-center">
         <div class="panel-body">
 
             <form>
@@ -752,7 +758,7 @@
                             *Clave
                         </font>
                     </div>
-                    <div class="col-lg-4">
+                    <div class="col-sm-7">
                         <input type="text" name="clave" class="form-control" id="clave" placeholder="S62626">
                     </div>    
                     </div>
@@ -763,7 +769,7 @@
                             *Cantidad
                         </font>
                     </div>
-                    <div class="col-lg-4">
+                    <div class="col-sm-7">
                         <input type="text" name="cantidad" class="form-control" id="cantidad" placeholder="1">
                     </div>    
                     </div>
@@ -774,7 +780,7 @@
                             *Descripcion
                         </font>
                     </div>
-                    <div class="col-lg-4">
+                    <div class="col-sm-7">
                         <input type="text" name="desc" class="form-control" id="descripcion" placeholder="pago de nomina">
                     </div>    
                     </div>
@@ -787,19 +793,19 @@
                             *Clave Unidad
                         </font>
                     </div>
-                    <div class="col-lg-4">
+                    <div class="col-sm-7">
                         <input type="text" name="clav" class="form-control" id="claveu" placeholder="ACT">
                     </div>    
                     </div>
                     
-                    <div class="form-group">
+                    <div class="form-group col-lg-4">
                     <div class="col-lg-5">
                         <font>
                             *Valor unitario
                         </font>
                     </div>
-                    <div class="col-lg-4">
-                        <input type="text" name="valor" class="form-group" id="Vunitario" placeholder="0.00">
+                    <div class="col-sm-7">
+                        <input type="text" name="valor" class="form-control" id="Vunitario" placeholder="0.00">
                     </div>    
                     </div>
 
@@ -809,7 +815,7 @@
                             Importe
                         </font>
                     </div>
-                    <div class="col-lg-4">
+                    <div class="col-sm-7">
                         <input type="text" name="impor" class="form-control" id="Importe" placeholder="0.00">
                     </div>    
                     </div>
@@ -822,7 +828,7 @@
                             Descuento
                         </font>
                     </div>
-                    <div class="col-lg-4">
+                    <div class="col-sm-7">
                         <input type="text" name="des" class="form-control" id="descuento" placeholder="0.00">
                     </div>    
                     </div>
@@ -830,7 +836,6 @@
             </form>
             
         </div>
-    </div>
     
 </div>
 
@@ -872,48 +877,50 @@
                     Importe con letra
                 </font>
             </div>
-            <div class="col-lg-4">
+            <div class="col-sm-7">
                 <input type="text" name="impo" class="form-control" id="importe" placeholder="Importe del total con letra">
             </div>
             </div>
 
-            <div style="float: right;">
+            <div>
                <input type="checkbox" name="pdfe"><label>PDF español</label>
+            </div>
+            <div>   
                <input type="checkbox" name="pdfi"><label>PDF ingles</label>
             </div>
             </div> 
 
 
             
-            <div class="form-group col-lg-4">
-            <div class="col-lg-5">
+            <div class="col-lg-4">
+            <div class="col-lg-2">
                 <font>
                     *Subtotal
                 </font>
             </div>
-            <div class="col-lg-4">
+            <div class="col-sm-7">
                 <input type="text" name="sub" class="form-control" id="subtotal" placeholder="0.00">
             </div>    
             </div>
 
-            <div class="form-group col-lg-4">
+            <div class="col-lg-4">
             <div class="col-lg-5">
                 <font>
                     Descuento total
                 </font>
             </div>
-            <div class="col-lg-4">
+            <div class="col-sm-7">
                 <input type="text" name="des" class="form-control" id="descuento" placeholder="0.00">
             </div>    
             </div>
 
             <div class="form-group col-lg-4">
-            <div class="col-lg-5">
+            <div class="col-lg-2">
                 <font>
                     *Total
                 </font>
             </div>
-            <div class="col-lg-4">
+            <div class="col-sm-7">
                 <input type="text" name="tol" class="form-control" id="total" placeholder="0.00">
             </div>    
             </div>
@@ -927,4 +934,5 @@
         
     </div>
     
+</div>
 </div>

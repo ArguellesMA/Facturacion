@@ -1,62 +1,30 @@
-<!--primer panel-->
 <div class="panel panel-primary">
 <div class="panel-heading" id="panels">Filtrado de componentes fidcales digitales</div>
      <div class="panel-body">
         
         <form>
 
-            <div class="row">
-             <div>
-            <input name="emisor" type="radio" value=""><label> Agragar emisor</label> 
-            <input type="radio" name="cfdi" value=""><label>Folio de CFDI</label>
-            </div>
-            
-                <div class="col-lg-4">    
-                    <input type="text" name="busc" class="form-comtrol" placeholder="Buscar">
-                    <button class="btn btn-success" type="button" value="">Buscar</button>
-                </div>
-                
-
-                <div class="form-group col-lg-4">
-                <div class="col-lg-6">
-                    <font>Buscar por RFC/Cliente/Razon social
-                    </font>
-                </div>
-                <div class="col-sm-6">
-                    <input type="text" name="busca" class="form-control" id="Brcr" placeholder="AAWW890512MVZAVE6">
-                </div>
-                </div>
-                </div>
-
-
-                <div>
-                <div>
-                    <font> RFC
-                    </font>
-                </div>    
-                <div>
-                    <input type="text" name="patron" class="form-control" id="patron" placeholder="AAWW890512MVZAVE6"> 
-                </div>
-                </div>
-
-
-                <div class="row">
-                <div>
-                <div>
+                <div class="form-group col-lg-4">  
+                <div class="col-lg-5">
                     <font>
-                        Cliente 
+                        Folio
                     </font>
-                </div>     
-                <div>
-                    <input type="text" name="cli" class="form-control" id="cliente" placeholder="0042 0042-MUICIPIO DE ATLAHUILCO">
-                </div>               
+                </div>
+                <div class="col-sm-7">  
+                    <input type="text" name="busc" class="form-comtrol" placeholder="Folio de retencion">
+                    
+                </div>
                 </div>
 
                 <div>
                     <button class="btn btn-success" type="button" value="">Buscar</button>
                 </div>
-                </div>                       
+                                       
         </form>
+
+        <br>
+        <br>
+        
 
         <form>
             <div class="row">
@@ -171,14 +139,13 @@
             </div>
             </div>
 
-            &nbsp;
-            &nbsp;
-            &nbsp;
-            &nbsp;
-            &nbsp;
-            &nbsp;
-            &nbsp;
-
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
 
             <div class="b">
                 
@@ -198,67 +165,53 @@
                     </select>
                 </div>
             </div>
-
-            <div>
-                <div class="col-lg-5">
-                    <font>
-                        Serie
-                    </font>
-                </div>
-                <div class="col-sm-7">
-                    <input type="text" name="ser" class="form-control" id="serie" placeholder="Serie de la sucursal">
-                </div>
-            </div>
-
             </div>
                 
-            &nbsp;
-            &nbsp;
-            &nbsp;
-            &nbsp;
-            &nbsp;
-            &nbsp;
-            &nbsp;
+                &nbsp;
+                &nbsp;
+                &nbsp;
+                &nbsp;
+                &nbsp;
+                &nbsp;
+
 
             <div class="b">
 
                 <div>
                     <div class="col-lg-5">
                         <font>
-                            Estado del comprobate
+                            Buscar por RFC
                         </font>
                     </div>
                     <div class="col-lg-4">
-                        <select class="custon-select form-control" name="Ecomprobante">
-                            <option>Todos</option>
-                            <option>PRUEBA</option>
-                            <option>PRUEBA</option>
-                            <option>PRUEBA</option>
-                            <option>PRUEBA</option>
-                            <option>PRUEBA</option>
-                            <option>PRUEBA</option>
-                            <option>PRUEBA</option>
-                        </select>
+                        <input type="text" name="busc" class="form-control" id="Brfc" placeholder="ADML159823MDI6">
                     </div>
                 </div>
 
                 <div>
                     <div class="col-lg-5">
                         <font>
-                            Uso de clave de confirmacion
+                            RFC
                         </font>
                     </div>
                     <div class="col-lg-4">
-                        <select class="custon-select form-control">
-                            <option>Todos</option>
-                            <option>PRUEBA</option>
-                            <option>PRUEBA</option>
-                            <option>PRUEBA</option>
-                            <option>PRUEBA</option>
-                            <option>PRUEBA</option>
-                            <option>PRUEBA</option>
-                        </select>
+                       <input type="text" name="rfc" class="form-control" id="rfc" placeholder="ADML159823">
                     </div>
+                </div>
+
+                <div>
+                    <div class="col-lg-5">
+                        <font>
+                            Razon social
+                        </font>
+                    </div>
+                    <div>
+                        <input type="text" name="Rso" class="form-control" id="Rsocial" placeholder="0042 MUNICIPIO DE ATLAHUILCO">
+                    </div>
+                </div>
+
+                <div>
+                    <button class="btn btn-success" type="button" value="">Buscar</button>
                 </div>
             </div>
             </div>
@@ -268,9 +221,10 @@
  </div>
 
 
-<!--Segundo panel-->
-<div class="panel panel-primary">
-<div class="panel-heading" id="panels">Comprobantes fiscales digitales emitidos</div>
+
+ <!-- segundo panel-->
+ <div class="panel panel-primary">
+<div class="panel-heading" id="panels">Comprobantes retenciones emitidos</div>
      <div class="panel-body">
         
         <form>
@@ -305,26 +259,49 @@
             &nbsp;
             &nbsp;
             &nbsp;
-            &nbsp; 
             &nbsp;
             &nbsp;
             &nbsp;
-            
+            &nbsp;
 
             <div class="b">
 
                 <div>
-                    <button type="button" class="btn btn-secondary" value="">Cancelar CFDI</button>
+                    <button type="button" class="btn btn-secondary" value="">Cancelar comprobante de retencion</button>
                     <button type="button" class="btn btn-secondary" value="">Descargar XML cancelacion</button>
                     <button type="button" class="btn btn-success" value="">Descargar XML envio</button>
                 </div>
                 
             </div>
 
+            &nbsp;
+            &nbsp;
+            &nbsp;
+            &nbsp;
+            &nbsp;
+            &nbsp;
+            &nbsp;
+
+            <div class="b">
+                <div class="">
+                    <div class="col-lg-3">
+                        <font>
+                            Folio inicial
+                        </font>
+                    </div>
+                    <div>
+                        <input type="text" name="Fol" class="form-control" id="FolioI" placeholder="criterio de busqueda">
+                    </div>
+                </div>
+
+                <div>
+                <button type="button" class="btn btn-success" value="">Exportar excel</button>
+            </div>                    
+            </div>
+
             </div>
         </form>
 
-        <br>
         <form>
             
         <div>
@@ -334,51 +311,12 @@
         <div>    
             <input type="checkbox" name="registros" value=""><label>Seleccionar todos los registros visibles</label>
         </div>
-
-        <div>    
-            <input type="checkbox" name="Cfolios" value=""><label>Ordenar los comprobantes por folios</label>
-        </div>
-
         </form>
 
         <br>
-
-        <table style="background-color: #006666" id="NSER">
-            <tr>
-                <th>NO SE ENCONTRARON REGISTROS</th>
-            </tr>
-        </table>
-
-
-        <form>
-            <div style="float: right;">
-                <input type="radio" name="selecion"><label>Por seleccion</label>
-                <input type="radio" name="rango"><label>Por rango de fecha</label>
-            </div>
-
-            <br>
-            <br>
-
-            <div>
-                 <button class="btn btn-success" type="button" value="" style="float: right;">Ver reporte PDF</button>
-                <button class="btn btn-success" type="button" value="" style="float: right;">Exportar Excel</button>
-            </div>
-
-            <div class="col-sm-3" style="float: right;">
-                <select class="custon-select form-control"  name="sin">
-                    <option>Sin seleccion</option>
-                    <option>PRUEBA</option>
-                    <option>PRUEBA</option>
-                    <option>PRUEBA</option>
-                    <option>PRUEBA</option>
-                    <option>PRUEBA</option>
-                    <option>PRUEBA</option>
-                </select>               
-            </div>
-
-            <br>
-            <br>
-        </form>
-
+        <br>
+        <h6 style="text-align: center;">NO SE ENCONTRARO REGISTROS</h6>
+        <br>
+        <br>
  </div>
  </div>
