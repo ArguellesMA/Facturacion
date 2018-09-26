@@ -1,0 +1,777 @@
+<div class="container">
+    <div class="panel panel-primary">
+        <div class="panel-heading">Emisor</div>
+          <div class="panel-body">
+              <form class="form-inline" role="form-horizontal">
+                  <!--<div class="col-md-12 col-lg-12">-->
+      
+                    <div class="row">
+      
+                       <div class="col-lg-4 form-group">     
+                           <div class="col-lg-5">    
+                              <font size="1">*RFC:</font>     
+                           </div>
+                           <div class="col-lg-7 col-md-12 form-group">
+                              <input name="rfc3" 
+                               type="text" class="form-control">
+                           </div>                   
+                       </div>
+      
+                       <div class="col-lg-4 form-group">   
+                           <div class="col-lg-5">    
+                              <font size="1">Sucursal:</font>              
+                           </div>
+                           <div class="col-lg-7 col-md-12">   
+                             <input name="sucursal" 
+                              type="text" class="form-control">              
+                           </div>    
+                       </div>
+      
+      
+                       <div class="col-lg-4 form-group">           
+                           <div class="col-lg-5"> 
+                             <font size="1">Razón social:</font>                  
+                           </div>
+                           <div class="col-lg-7 col-md-12">
+                             <input name="rSocial" 
+                             type="text" class="form-control">
+                           </div>   
+                       </div>
+                    </div> 
+      
+      
+                    <div class="row">
+      
+                       <div class="col-lg-4 form-group">       
+                           <div class="col-lg-5">
+                             <font size="1">Serie:</font> 
+                           </div>
+                           <div class="col-lg-7 col-md-12">
+                               <input name="serie" 
+                               type="text" class="form-control"> 
+                           </div>                    
+                       </div>
+      
+                       <div class="col-lg-4 form-group">   
+                           <div class="col-lg-5">
+                             <font size="1">*Tipo de documento:</font> 
+                           </div>
+                           <div class="col-lg-7 col-md-12"> 
+                                <select name="" class="custom-select form-control">
+                                    <option value="" disabled selected>Sin Seleccionar</option>
+                                    <option value="">FAC-Factura</option>
+                                    <option value="">NO</option>
+                                </select>      
+                           </div>    
+                       </div>
+      
+                       <div class="col-lg-4 form-group">           
+                           <div class="col-lg-5">
+                             <font size="1">Tipo de comprobante:</font> 
+                           </div>
+                           <div class="col-lg-7">  
+                             <input name="tComprobante"
+                             type="text" class="form-control">       
+                           </div>   
+                       </div>
+      
+                    </div>
+      
+      
+                    <div class="row">
+      
+                       <div class="col-lg-4 form-group">       
+                           <div class="col-lg-5">
+                               <font size="1">Folio:</font>
+                           </div>
+                           <div class="col-lg-7">
+                               <input name="folio"
+                               type="text" class="form-control" placeholder="AAAA010203AAA"> <p></p>
+                           </div> 
+                       </div>
+      
+                       <div class="col-lg-4 form-group">   
+                           <div class="col-lg-5">
+                               <font size="1">Titulo del comprobante:</font>    
+                           </div>
+                           <div class="col-lg-7">
+                               <input name="titComprobante"
+                                type="text" class="form-control" placeholder="Titulo comprobante">
+                           </div>    
+                       </div>
+      
+                       <div class="col-lg-4 form-group">           
+                           <div class="col-lg-5">
+                               <font size="1">*Fecha:</font>    
+                           </div>
+                           <div class="col-lg-7">
+                               <input name="fecha" 
+                                type="text" class="form-control" placeholder="">
+                           </div>   
+                       </div>
+      
+                    </div>
+                 <!--</div>-->
+
+                 <div class="col-lg-12 col-md-12">
+      
+                    <div class="row">
+      
+                       <div class="col-lg-4 form-group">     
+                           <div class="col-lg-4"> 
+                                    
+                           </div>
+                           <div class="col-lg-8">
+                            <button id="boton" type="button" class="btn btn-success">Buscar folio omitido</button>
+                           </div>                   
+                       </div>
+                    </div>
+                 </div>
+                    
+                 <!--<div class="col-md-12 col-lg-12">-->
+                    <div class="row">
+                        <div class="col-lg-4 form-group">
+                            <div class="col-lg-5">
+                               <font size="1">*Lugar de expedición:</font>
+                            </div>
+                            <div class="col-lg-7">
+                               <input type="text" class="form-control">
+                               
+                            </div>
+                        </div>
+                        
+                        <div class="col-lg-4 form-group">
+                            <div class="col-lg-5">
+                               <font size="1">*Régimen fiscal:</font>
+                            </div>
+                            <div class="col-lg-7">
+                                <select name="" class="custom-select form-control"> 
+                                    <option value="" disabled selected>Sin Seleccionar</option>
+                                    <option value="">612-Personas</option>
+                                    <option value="">NO</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 form-group">
+                            <div class="col-lg-5">
+                               <font size="1">Confirmación:</font>
+                            </div>
+                            <div class="col-lg-7">
+                               <input type="text" class="form-control" placeholder="Código de Confirmación">
+                            </div>
+                        </div>
+                    </div>
+                 <!--</div>-->
+
+                 <!--<div class="col-md-12 col-lg-12">-->
+                    <div class="row">
+                        <div class="col-lg-4 form-group">
+                            <div class="col-lg-5">
+                            </div>
+                            <div class="col-lg-7">    
+                                <font size="1"><input type="checkbox" value="">Incluir domicilio en PDF</font>
+                            </div>
+                        </div>
+                    </div>
+                 <!--</div>-->
+                 <!--<div class="col-md-12 col-lg-12">--> 
+                    <div class="row">
+                        <div class="col-lg-4 form-group">
+                            <div class="col-lg-5">
+                            </div>
+                            <div class="col-lg-7">
+                                <font size="1"><input type="checkbox" value="">Mostrar diseño personalizado</font>
+                            </div>
+                        </div>
+                    </div>
+                 <!--</div>-->
+
+                 <!--<div class="col-md-12 col-lg-12">-->
+                    <div class="row">
+                        <div class="col-lg-4 form-group">
+                            <div class="col-lg-6">
+                                <font size="1"><input type="checkbox" value="">Ver información de emisor</font>
+                            </div>
+                            <div class="col-lg-6">
+                            </div>
+                        </div>
+                    </div>
+                 <!--</div>-->
+
+                 <!--<div class="col-md-12 col-lg-12">-->
+                    <div class="row">
+                        <div class="col-lg-4 form-group">
+                            <div class="col-lg-6">
+                                <font size="1"><input type="checkbox" value="">Agregar CFDIs relacionados</font>
+                            </div>
+                            <div class="col-lg-6">
+                            </div>
+                        </div>
+                    </div>
+                 <!--</div>-->
+                 
+            </form>
+          </div>
+       </div> 
+
+
+       <!--Segundo panel Receptor-->
+        <div class="panel panel-primary">
+            <div class="panel-heading">Receptor</div>
+                <div class="panel-body">
+                    <form class="form-inline" role="form-horizontal">
+                        <div class="col-md-12 col-lg-12">
+                            <div class="row">
+                                <div class="col-lg-4 form-group">
+                                     
+                                    <div class="col-lg-5">    
+                                        <font size="1">Búsqueda de cliente:</font>     
+                                    </div>
+                                    <div class="col-lg-7 form-group">
+                                        <input name="rfc3" 
+                                         type="text" class="form-control" placeholder="RFC o razón social">
+                                    </div>                   
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-12 col-lg-12">
+                            <div class="row">
+
+                                <div class="col-lg-4 form-group">     
+                                    <div class="col-lg-5">    
+                                        <font size="1">Cliente:</font>     
+                                    </div>
+                                    <div class="col-lg-7 form-group">
+                                        <input name="rfc3" 
+                                        type="text" class="form-control" placeholder="Cliente">
+                                    </div>                   
+                                </div>
+
+                                <div class="col-lg-4 form-group">     
+                                    <div class="col-lg-5">    
+                                        <font size="1">*RFC:</font>     
+                                    </div>
+                                    <div class="col-lg-7 form-group">
+                                        <input name="rfc3" 
+                                        type="text" class="form-control" placeholder="AAAA010203AAA">
+                                    </div>                   
+                                </div>
+
+                                <div class="col-lg-4 form-group">     
+                                        <div class="col-lg-5">    
+                                            <font size="1">*Razón social:</font>     
+                                        </div>
+                                        <div class="col-lg-7 form-group">
+                                            <input name="rfc3" 
+                                            type="text" class="form-control" placeholder="Nombre">
+                                        </div>                   
+                                    </div>
+                            </div>
+
+
+                            <div class="row">
+
+                                <div class="col-lg-4 form-group">     
+                                    <div class="col-lg-5">    
+                                        <font size="1">*Uso del CFDI:</font>     
+                                    </div>
+                                    <div class="col-lg-7 form-group">
+                                        <select name="" class="custom-select form-control"> 
+                                            <option value="" disabled selected>Sin Seleccionar</option>
+                                            <option value="">SI</option>
+                                            <option value="">NO</option>
+                                        </select>
+                                    </div>                   
+                                </div>
+    
+                                <div class="col-lg-4 form-group">     
+                                    <div class="col-lg-5">    
+                                        <font size="1">Residencia fiscal:</font>     
+                                    </div>
+                                    <div class="col-lg-7 form-group">
+                                        <input name="rfc3" 
+                                        type="text" class="form-control" placeholder="Residencia fiscal">
+                                    </div>                   
+                                </div>
+    
+                                <div class="col-lg-4 form-group">     
+                                    <div class="col-lg-5">    
+                                        <font size="1">Número de registro:</font>     
+                                    </div>
+                                    <div class="col-lg-7 form-group">
+                                        <input name="rfc3" 
+                                        type="text" class="form-control" placeholder="Número registro de identidad fiscal">
+                                    </div>                   
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-12 col-lg-12">
+                            <div class="row">
+                                <div class="col-lg-4 form-group">
+                                    <div class="col-lg-5">
+                                    </div>
+                                    <div class="col-lg-7">
+                                        <font size="1"><input type="checkbox" value="">Incluir domicilio en PDF</font>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-12 col-lg-12">
+                            <div class="row">
+                                <div class="col-lg-4 form-group">
+                                    <div class="col-lg-6">
+                                        <font size="1"><input type="checkbox" value="">Ver información de cliente</font>
+                                    </div>
+                                    <div class="col-lg-6">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </form>
+                </div>
+        </div>
+
+        <style>
+                .c { border: thin blue solid;
+                      width: 100%;}
+        </style>
+    
+    <!--Tercer panel Forma de pago-->
+    <div class="panel panel-primary">
+        <div class="panel-heading">Forma de pago</div>
+            <div class="panel-body">
+                <form class="form-inline c" role="form-horizontal">
+            
+                    <div class="col-md-12 col-lg-12"> <p></p>
+                        <div class="row">
+            
+                            <div class="col-lg-4 form-group">     
+                                <div class="col-lg-5">    
+                                    <font size="1">*Moneda:</font>     
+                                </div>
+                                <div class="col-lg-7 form-group">
+                                    <input name="rfc3" 
+                                    type="text" class="form-control" placeholder="Cliente">
+                                </div>                   
+                            </div>
+            
+                            <div class="col-lg-4 form-group">     
+                                <div class="col-lg-5">    
+                                    <font size="1">Forma de pago:</font>     
+                                </div>
+                                <div class="col-lg-7 form-group">
+                                    <select name="" class="custom-select form-control"> 
+                                        <option value="" disabled selected>Sin Seleccionar</option>
+                                        <option value="">01-Efectivo</option>
+                                        <option value="">NO</option>
+                                    </select>
+                                </div>                   
+                            </div>
+            
+                            <div class="col-lg-4 form-group">     
+                                <div class="col-lg-5">    
+                                    <font size="1">Condiciones de pago:</font>     
+                                </div>
+                                <div class="col-lg-7 form-group">
+                                    <textarea class="form-control"></textarea>
+                                </div>                   
+                            </div>
+                        </div>
+            
+            
+                        <div class="row">
+            
+                            <div class="col-lg-4 form-group">     
+                                <div class="col-lg-5">    
+                                    <font size="1">Tipo de cambio:</font>     
+                                </div>
+                                <div class="col-lg-7 form-group">
+                                    <input name="rfc3" 
+                                    type="text" class="form-control" placeholder="Residencia fiscal">
+                                </div>                   
+                            </div>
+                
+                            <div class="col-lg-4 form-group">     
+                                <div class="col-lg-5">    
+                                    <font size="1">Metodo de pago:</font>     
+                                </div>
+                                <div class="col-lg-7 form-group">
+                                    <select name="" class="custom-select form-control"> 
+                                        <option value="" disabled selected>Sin Seleccionar</option>
+                                        <option value="">01-Efectivo</option>
+                                        <option value="">NO</option>
+                                    </select>
+                                </div>                   
+                            </div>
+                        </div> <p></p>
+                    </div>
+                </form>      
+            </div>
+    </div>
+
+
+    <div class="panel panel-primary">
+        <div class="panel-heading">Conceptos</div>
+            <div class="panel-body">
+             <form class="form-inline" role="form-horizontal">
+                <div class="row col-lg-12">
+                    <div class="col-lg-3"> 
+                        <label><input type="radio" name="optradio">Impuestos por partida</label> 
+                    </div>
+                    <div class="col-lg-3">
+                        <label><input type="radio" name="optradio2">IEPS Alcohol, Plaguicidad ...</label>
+                    </div>
+                </div>
+                
+                <div class="c"> <br>
+                    <div class="row">
+                            
+                        <div class="row col-lg-12 col-md-12 col-sm-12">
+                            <div class="col-lg-2 col-md-2">
+                                <label><input type="radio" name="optradio">Calculo normal</label>
+                            </div>
+                                                   
+                            <div class="col-lg-3 col-md-3">
+                                <label><input type="radio" name="optradio">Truncar a 2 decimales</label>
+                            </div>
+                                                   
+                            <div class="col-lg-7 col-md-7 c">        
+                                Para visualizar u ocultar los impuestos pertenecientes a cada grupo toque el simbolo ^  
+                            </div>
+                        </div> <br>        
+                            
+                          
+                    </div> <p></p>
+                    <div class="col-lg-12">
+                        <div class="row">
+                            <div class="col-lg-4"> 
+                                <div class="form-group">    
+                                    <div class="col-lg-6">    
+                                        <font size="1">*Impuesto trasladado federal:</font>     
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <label>^</label>
+                                    </div>  
+                                </div>                 
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <div class="form-group">       
+                                        <div class="col-lg-6">      
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <font size="1"><input type="checkbox" value="">IVA,(Tasa 0.160000)</font>
+                                        </div>                    
+                                    </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                                      
+                            <div class="col-lg-4"> 
+                                <div class="form-group">    
+                                    <div class="col-lg-6">    
+                                        <font size="1">Importe(cálculo inverso:</font>     
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <input name="" 
+                                        type="text" class="form-control" placeholder="0.00">
+                                    </div>  
+                                </div>                 
+                            </div>
+
+                            <div class="col-lg-4 form-group">
+                                <button type="button" class="btn btn-success">Calcular</button>
+                            </div>
+           
+                        </div>
+
+                        <div class="row">
+                            <div class="col-lg-4"> 
+                                <div class="form-group">    
+                                    <div class="col-lg-6">    
+                                        <font size="1">Impuestos):</font>     
+                                    </div>
+                                    <div class="col-lg-6">
+                                                
+                                    </div>  
+                                </div>                 
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+
+                
+                    <div class="col-md-12 col-lg-12"> <p></p>
+                      <div class="row">
+                        <div class="col-lg-4">
+                        
+                            <div class="form-group">     
+                                <div class="col-lg-6">    
+                                    <font size="1">Buscar producto:</font>     
+                                </div>
+                                <div class="col-lg-6 form-group">
+                                    <input name="rfc3" 
+                                    type="text" class="form-control" placeholder="No. Identificación o descripcion">
+                                </div>                   
+                            </div>
+
+                            <div class="form-group">     
+                                <div class="col-lg-6">    
+                                    <font size="1">*Clave producto/servicio:</font>     
+                                </div>
+                                <div class="col-lg-6 form-group">
+                                    <input name="rfc3" 
+                                    type="text" class="form-control" placeholder="Clave">
+                                </div>                   
+                            </div>
+
+                            <div class="form-group">     
+                                <div class="col-lg-6">    
+                                        <font size="1"></font>     
+                                </div>
+                                <div class="col-lg-6 form-group">
+                                    <textarea name="rfc3" rows="3" col="7" placeholder="Descripción"
+                                    type="text" class="form-control"></textarea>
+                                </div>                   
+                            </div>
+
+                            <div class="form-group">     
+                                <div class="col-lg-6">    
+                                    <font size="1">*Clave unidad:</font>     
+                                </div>
+                                <div class="col-lg-6 form-group">
+                                    <input name="rfc3" 
+                                    type="text" class="form-control" placeholder="Clave unidad">
+                                </div>                   
+                            </div>
+
+                            <div class="form-group">     
+                                <div class="col-lg-6">    
+                                    <font size="1"></font>     
+                                </div>
+                                <div class="col-lg-6 form-group">
+                                    <textarea name="rfc3" rows="3" col="7" placeholder="Descripción"
+                                    type="text" class="form-control"></textarea>
+                                </div>                   
+                            </div>
+        
+                        </div>
+        
+                        <div class="col-lg-4"> 
+
+                            <div class="form-group">     
+                                <div class="col-lg-5">    
+                                    <font size="1">No. Identificación:</font>     
+                                </div>
+                                <div class="col-lg-7 form-group">
+                                    <input name="rfc3" 
+                                    type="text" class="form-control" placeholder="Identificación">
+                                </div>                   
+                            </div>
+            
+                            <div class="form-group">     
+                                <div class="col-lg-5">    
+                                    <font size="1">*Cantidad:</font>     
+                                </div>
+                                <div class="col-lg-7 form-group">
+                                    <input name="rfc3" 
+                                    type="text" class="form-control" placeholder="0.00">
+                                </div>                   
+                            </div>
+
+                            <div class="form-group">     
+                                <div class="col-lg-5">    
+                                    <font size="1">Unidad:</font>     
+                                </div>
+                                <div class="col-lg-7 form-group">
+                                    <input name="rfc3" 
+                                    type="text" class="form-control" placeholder="0.00">
+                                </div>                   
+                            </div>
+
+                            <div class="form-group">     
+                                <div class="col-lg-5">    
+                                    <font size="1">*Valor Unitario:</font>     
+                                </div>
+                                <div class="col-lg-7 form-group">
+                                    <input name="rfc3" 
+                                    type="text" class="form-control" placeholder="0.00">
+                                </div>                   
+                            </div>
+
+                            <div class="form-group">     
+                                <div class="col-lg-5">    
+                                    <font size="1">*Importe:</font>     
+                                </div>
+                                <div class="col-lg-7 form-group">
+                                    <input name="rfc3" 
+                                    type="text" class="form-control" placeholder="0.00">
+                                </div>                   
+                            </div>
+
+                            <div class="form-group">     
+                                <div class="col-lg-5">    
+                                    <font size="1">Porcentaje descuento:</font>     
+                                </div>
+                                <div class="col-lg-7 form-group">
+                                    <input name="rfc3" 
+                                    type="text" class="form-control" placeholder="0.00">
+                                </div>                   
+                            </div>
+
+                            <div class="form-group">     
+                                <div class="col-lg-5">    
+                                    <font size="1">Descuento:</font>     
+                                </div>
+                                <div class="col-lg-7 form-group">
+                                    <input name="rfc3" 
+                                    type="text" class="form-control" placeholder="0.00">
+                                </div>                   
+                            </div>
+            
+                        </div>
+
+                        <div class="col-lg-4"> 
+                            <div class="form-group">     
+                                <div class="col-lg-5">    
+                                    <font size="1">*Descripción:</font>     
+                                </div>
+                                <div class="col-lg-7 form-group">
+                                    <textarea name="rfc3" rows="9" col="7" placeholder="Descripción del concepto"
+                                    type="text" class="form-control"></textarea> 
+                                </div>                   
+                            </div> <p></p>
+
+                            <div class="form-group">     
+                                <div class="col-lg-5">    
+   
+                                </div>
+                                <div class="col-lg-7 form-group"> 
+                                    <button type="button" class="btn btn-secondary" style="margin: 4px;">Limpiar</button>
+                                    <button type="button" class="btn btn-success">Agregar</button> 
+                                </div>                   
+                            </div>
+                        </div>
+
+                     </div>
+                    </div>
+             </form>
+
+            </div>
+    </div>
+
+    <div class="panel panel-primary">
+        <div class="panel-heading">Etiquetas personalizadas y firmas</div>
+            <div class="panel-body">
+                <div class="col-md-12 col-lg-12"> 
+                    <div class="row">  
+                        <font size="1"><input type="checkbox" value="">Llenar etiquetas personalizadas</font>
+                    </div>
+
+                    <div class="row">
+                        <font size="1"><input type="checkbox" value="">Llenar firmas</font>
+                    </div>
+
+                    <div class="row">
+                        <font size="1"><input type="checkbox" value="">Pagaré</font>
+                    </div>
+                </div>   
+            </div>
+    </div>
+    
+    <!--Sexto panel Total-->
+    <div class="panel panel-primary">
+        <div class="panel-heading">Total</div>
+            <div class="panel-body">
+                <form class="form-inline" role="form-horizontal">
+                    <div class="col-md-12 col-lg-12"> <p></p>
+                        <div class="row">
+                            <div class="col-lg-7">
+      
+                                <div class="form-group">     
+                                    <div class="col-lg-6">    
+                                        <font size="1">Importe con letra:</font>     
+                                    </div>
+                                    <div class="col-lg-6 form-group">
+                                        <input name="rfc3" 
+                                        type="text" class="form-control" placeholder="Importe del total con letra">
+                                    </div>                   
+                                </div>
+              
+                            </div>
+              
+                            <div class="col-lg-5"> 
+      
+                                <div class="form-group">
+                                        
+                                    <label><input type="radio" name="optradio">PDF Español</label> 
+                                    <label><input type="radio" name="optradio">PDF Inglés</label> 
+                                                  
+                                </div>
+                  
+                                <div class="form-group">     
+                                    <div class="col-lg-4">    
+                                        <font size="1">*Subtotal:</font>     
+                                    </div>
+                                    <div class="col-lg-8 form-group">
+                                        <input name=""
+                                        type="text" class="form-control" placeholder="0.00">
+                                    </div>               
+                                </div>
+      
+                                <div class="form-group">     
+                                    <div class="col-lg-4">    
+                                        <font size="1">Descuento total:</font>     
+                                    </div>
+                                    <div class="col-lg-8 form-group">
+                                        <input name="" 
+                                        type="text" class="form-control" placeholder="0.00">
+                                    </div>                     
+                                </div>
+      
+                                <div class="form-group">     
+                                    <div class="col-lg-4">    
+                                        <font size="1">Subtotal generado:</font>     
+                                    </div>
+                                    <div class="col-lg-8 form-group">
+                                        <input name=""
+                                        type="text" class="form-control" placeholder="0.00">
+                                    </div>                    
+                                </div>
+      
+                                <div class="form-group">     
+                                    <div class="col-lg-4">    
+                                        <font size="1">*Total:</font>     
+                                    </div>
+                                    <div class="col-lg-8 form-group">
+                                        <input name=""
+                                        type="text" class="form-control" placeholder="0.00">
+                                    </div>                   
+                                </div>
+      
+                                <div class="form-group">     
+                                    <div class="col-lg-4">        
+                                    </div>
+                                    <div class="col-lg-8 form-group">
+                                        <button type="button" class="btn btn-success" style="margin: 2px;">Vista previa</button>
+                                        <button type="button" class="btn btn-success" style="margin: 2px;">Guardar prefactura</button>
+                                        <button type="button" class="btn btn-success">Emitir CFDI</button>
+                                    </div>                         
+                                </div>
+                  
+                              </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+    </div>
+
+
+</div>

@@ -1,1 +1,250 @@
-<button type="button" class="btn btn-success">HOLA PRUEBA RETENCIONES</button>
+<div class="container-fluid">
+  <!--Primer panel Emisor-->
+  <div class="panel panel-primary">
+    <div class="panel-heading" id="panels">Emisor</div>
+        <div class="panel-body">
+
+            <form class="form-inline" role="form-horizontal">
+                <div class="col-md-12 col-lg-12">
+                    <div class="row">
+
+                      <div class="col-lg-4 form-group">     
+                          <div class="col-lg-5">    
+                              <font size="1">*RFC:</font>     
+                          </div>
+                          <div class="col-lg-7 form-group">
+                              <input name="rfcReten" 
+                              type="text" class="form-control" placeholder="">
+                          </div>                   
+                      </div>
+
+                      <div class="col-lg-4 form-group">     
+                          <div class="col-lg-5">    
+                              <font size="1">Sucursal:</font>     
+                          </div>
+                          <div class="col-lg-7 form-group">
+                              <input name="sucursalRenten" 
+                              type="text" class="form-control" placeholder="">
+                          </div>                   
+                      </div>
+
+                      <div class="col-lg-4 form-group">     
+                          <div class="col-lg-5">    
+                              <font size="1">*Razón social:</font>     
+                          </div>
+                          <div class="col-lg-7 form-group">
+                              <input name="rzReten" 
+                              type="text" class="form-control" placeholder="">
+                          </div>                   
+                      </div>
+
+                    </div>
+
+
+                    <div class="row">
+
+                      <div class="col-lg-4 form-group">     
+                          <div class="col-lg-5">    
+                              <font size="1">Folio:</font>     
+                          </div>
+                          <div class="col-lg-7 form-group">
+                              <input name="folReten" 
+                              type="text" class="form-control" placeholder="">
+                          </div>                   
+                      </div>
+
+                      <div class="col-lg-4 form-group">     
+                          <div class="col-lg-5">    
+                              <font size="1">*Tipo de retención:</font>     
+                          </div>
+                          <div class="col-lg-7 form-group">
+                              <select name="tipReten" class="custon-select form-control"> 
+                                <option value="" disabled selected>Sin Seleccionar</option>
+                                <option value="">SI</option>
+                                <option value="">NO</option>
+                              </select>
+                          </div>                   
+                      </div>
+
+                      <div class="col-lg-4 form-group">     
+                          <div class="col-lg-5">    
+                              <font size="1">Fecha:</font>     
+                          </div>
+                          <div class="col-lg-7 form-group">
+                              <input name="fechReten" 
+                              type="text" class="form-control" placeholder="Número registro de identidad fiscal">
+                          </div>                   
+                      </div>
+
+                    </div>
+
+                    <div class="row">
+
+                      <div class="col-lg-4 form-group">     
+                          <div class="col-lg-5">    
+                              <font size="1">*Clave de retención:</font>     
+                          </div>
+                          <div class="col-sm-7 form-group">
+                            <select name="claveReten" class="custon-select form-control"> 
+                              <option value="" disabled selected>Sin Seleccionar</option>
+                              <option value="">SI</option>
+                              <option value="">NO</option>
+                            </select>
+                          </div>                   
+                      </div>
+
+                      <div class="col-lg-4 form-group">     
+                          <div class="col-lg-5">    
+                                  
+                          </div>
+                          <div class="col-lg-7 form-group">
+                            <font size="1"><input type="checkbox" value="">Ver información de emisor</font>
+                          </div>                   
+                      </div>
+
+                    </div>
+
+                </div>
+
+            </form>
+        </div>
+  </div>
+
+  <!--Segundo panel Receptor-->
+  <div class="panel panel-primary">
+    <div class="panel-heading" id="panels">Receptor</div>
+        <div class="panel-body">
+            <form class="form-inline" role="form-horizontal">
+                <div class="col-md-12 col-lg-12">
+                    <div class="row">
+
+                      <div class="col-lg-4 form-group">     
+                          <div class="col-lg-5">    
+                              <font size="1">*Nacionalidad:</font>     
+                          </div>
+                          <div class="col-lg-7 form-group">
+                            <select name="nacionReten" class="custon-select form-control"> 
+                              <option value="" disabled selected>Sin Seleccionar</option>
+                              <option value="">SI</option>
+                              <option value="">NO</option>
+                            </select>
+                          </div>                   
+                      </div>
+
+                      <div class="col-lg-4 form-group">     
+                          <div class="col-lg-5">    
+                              <font size="1">Búsqueda de cliente:</font>     
+                          </div>
+                          <div class="col-lg-7 form-group">
+                              <input name="sucursalRenten" 
+                              type="text" class="form-control" placeholder="Criterio de búsqueda">
+                          </div>                   
+                      </div>   
+
+                    </div>
+                </div>
+            </form>
+        </div>
+  </div>
+
+  <!--Tercer panel Periodo-->
+  <div class="panel panel-primary">
+    <div class="panel-heading" id="panels">Periodo</div>
+        <div class="panel-body">
+            <form class="form-inline" role="form-horizontal">
+                <div class="col-md-12 col-lg-12">
+                    <div class="row">
+
+                      <div class="col-lg-4 form-group">     
+                          <div class="col-lg-5">    
+                              <font size="1">*Ejercicio fiscal:</font>     
+                          </div>
+                          <div class="col-lg-7 form-group">
+                            <select name="ejerFiscPerio" class="custon-select form-control"> 
+                              <option value="" disabled selected>Sin Seleccionar</option>
+                              <option value="">SI</option>
+                              <option value="">2004</option>
+                            </select>
+                          </div>                   
+                      </div>
+
+                      <div class="col-lg-4 form-group">     
+                          <div class="col-lg-5">    
+                              <font size="1">*Mes inicial:</font>     
+                          </div>
+                          <div class="col-lg-7 form-group">
+                              <select name="mesInicPerio" class="custon-select form-control"> 
+                                <option value="" disabled selected>Sin Seleccionar</option>
+                                <option value="">SI</option>
+                                <option value="">1</option>
+                              </select> 
+                          </div>                   
+                      </div>
+                      
+                      <div class="col-lg-4 form-group">     
+                          <div class="col-lg-5">    
+                              <font size="1">*Mes final:</font>     
+                          </div>
+                          <div class="col-lg-7 form-group">
+                              <select name="mesFinalPerio" class="custon-select form-control"> 
+                                <option value="" disabled selected>Sin Seleccionar</option>
+                                <option value="">SI</option>
+                                <option value="">1</option>
+                              </select> 
+                          </div>                   
+                      </div>
+
+                    </div>
+                </div>
+            </form>
+        </div>
+  </div>
+
+    <!--Cuarto panel Periodo-->
+    <div class="panel panel-primary">
+        <div class="panel-heading" id="panels">Impuestos</div>
+            <div class="panel-body">
+                <form class="form-inline" role="form-horizontal">
+                    <div class="col-md-12 col-lg-12">
+                        <div class="row">
+    
+                          <div class="col-lg-4 form-group">     
+                              <div class="col-lg-5">    
+                                  <font size="1">Base retención:</font>     
+                              </div>
+                              <div class="col-lg-7 form-group">
+                                <input name="rzReten" 
+                                type="text" class="form-control" placeholder="0.000000">
+                              </div>                   
+                          </div>
+    
+                          <div class="col-lg-4 form-group">     
+                              <div class="col-lg-5">    
+                                  <font size="1">Tipo de impuesto:</font>     
+                              </div>
+                              <div class="col-lg-7 form-group">
+                                  <select name="tipImpuesPerio" class="custon-select form-control"> 
+                                    <option value="" disabled selected>Sin Seleccionar</option>
+                                    <option value="">SI</option>
+                                    <option value="">1</option>
+                                  </select> 
+                              </div>                   
+                          </div>
+                          
+                          <div class="col-lg-4 form-group">     
+                              <div class="col-lg-5">    
+                                  <font size="1">Monto retención:</font>     
+                              </div>
+                              <div class="col-lg-7 form-group">
+                                <input name="rzReten" 
+                                type="text" class="form-control" placeholder="0.000000"> 
+                              </div>                   
+                          </div>
+    
+                        </div>
+                    </div>
+                </form>
+            </div>
+      </div>
+  
+</div>

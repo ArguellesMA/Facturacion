@@ -1,1 +1,714 @@
-<button type="button" class="btn btn-success">HOLA PRUEBA PAGOS</button>
+<!--.........................................................primer panel...........................................-->
+<div class="container-fluid">
+
+<div class="panel panel-primary">
+<div class="panel-heading" id="panels">Emisor</div>
+<div class="panel-body">
+	
+	<form>
+	<div class="row">
+		<div class="form-group col-lg-4">
+			<div class="col-lg-5">
+				<font>
+					*RFC
+				</font>
+			</div>
+			<div class="col-sm-7">
+				<input type="text" class="form-control" id="rfc" placeholder="JETC660223DC3">
+			</div>
+		</div>
+
+		<div class="form-group col-lg-4">
+			<div class="col-lg-5">
+				<font>
+					Sucursal			
+				</font>
+			</div>
+			<div class="col-sm-7">
+				<input type="text" class="form-control" id="sucursal" placeholder="Principal">
+			</div>
+		</div>
+
+		<div class="form-group col-lg-4">
+			<div class="col-lg-5">
+				<font>
+					Razon social
+				</font>
+			</div>
+			<div class="col-sm-7">
+				<input type="text" class="form-control" id="Rsocial placeholder" placeholder="CELIA DE JESUS TABARES">
+			</div>
+		</div>
+	</div>	
+
+	<div class="row">
+		<div class="form-group col-lg-4">
+			<div class="col-lg-5">
+				<font>
+					Serie
+				</font>
+			</div>
+			<div class="col-sm-7">
+				<input type="text" class="form-control" id="serie" placeholder="serie">
+			</div>
+		</div>
+
+		<div class="form-group col-lg-4">
+			<div class="col-lg-5">
+				<font>
+					*Tipo de documento
+				</font>
+			</div>
+			<div class="col-sm-7">
+				<input type="text" class="form-control" id="Tdocumento" placeholder="CPA">
+			</div>
+		</div>
+
+		<div class="form-group col-lg-4">
+			<div class="col-lg-5">
+				<font>
+					*Tipo de comprobante 
+				</font>
+			</div>
+			<div class="col-sm-7">
+				<input type="text" class="form-control" id="Tcomprobante" placeholder="P-Pago">
+			</div>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="form-group col-lg-4">
+			<div class="col-lg-5">
+				<font>
+					Folio
+				</font>
+			</div>
+			<div class="col-sm-7">
+				<input type="text" class="form-control" id="folio" placeholder="8691">
+			</div>
+		</div>
+
+		<div class="form-group col-lg-4">
+			<div class="col-lg-5">
+				<font>
+					Titulo del comprobante
+				</font>
+			</div>
+			<div class="col-sm-7">
+				<input type="text" class="form-control" id="Tcomp" placeholder="Titulo comprobante">
+			</div>
+		</div>
+
+		<div class="form-group col-lg-4">
+			<div class="col-lg-5">
+				<font>
+					*Fecha
+				</font>
+			</div>
+			<div class="col-sm-7">
+				<input type="calendar" class="form-control" id="fecha" placeholder="28/09/2018">
+			</div>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="form-group col-lg-4">
+			<div class="col-lg-5">
+				<font>
+					*Lugar de expedicion
+				</font>
+			</div>
+			<div class="col-sm-7">
+				<input type="text" class="form-control" id="Lexpedicion" placeholder="94410">
+			</div>
+		</div>
+
+		<div class="form-group col-lg-4">
+			<div class="col-lg-5">
+				<font>
+					*Regimen fiscal
+				</font>
+			</div>
+			<div class="col-sm-7">
+				<select class="custon-select form-control" id="Rfiscal">
+					<option>612-Personas fisicas con actividadesemp...</option>
+					<option>........</option>
+					<option>........</option>
+					<option>........</option>
+					<option>........</option>
+					<option>........</option>
+					<option>........</option>
+					<option>........</option>
+					<option>........</option>
+				</select>
+			</div>
+		</div>
+
+		<div class="form-group col-lg-4">
+			<div class="col-lg-5">
+				<font>
+					*Moneda
+				</font>
+			</div>
+			<div class="col-sm-7">
+				<input type="text" class="form-control" id="moneda" placeholder="xxx">
+			</div>
+		</div>
+	</div>
+
+	<div class="row">
+	<div class="form-group col-lg-4">
+		<div class="col-lg-5">
+			<font>
+				Confirmacion
+			</font>
+		</div>
+		<div class="col-sm-7">
+			<input type="text" class="form-control" id="confirmacion" placeholder="codigo de confirmacion">
+		</div>
+	</div>
+	</div>
+
+	<div>
+	<div >
+		<input type="checkbox" id="dom" value=""><label>Incluir domicilio en PDF</label>
+	</div>
+	<div>
+		<input type="checkbox" id="diseño"><label>Mostrar diseño personalizado</label>
+	</div>
+	</div>
+
+
+	<div>
+		<div>
+			<input type="checkbox" id="inform" value=""><label>Ver informaion de emisor</label>
+		</div>
+		<div>
+			<input type="checkbox" id="diseper" value=""><label>Agregar CFDIs relacionados</label>
+		</div>
+	</div>
+
+
+	</form>
+	</div>
+	</div>
+</div>
+
+<!--segundo panel-->
+<div class="container-fluid">
+<div class="panel panel-primary">
+<div class="panel-heading"  id="panels">Receptor</div>
+<div class="panel-body">
+	
+	<form>
+		<div class="row">
+			<div class="form-group col-lg-4">
+				<div class="col-lg-5">
+					<font>
+						Etiqueta de cliente
+					</font>
+				</div>
+				<div class="col-sm-7">
+					<input type="text" class="form-control" id="Ecliente" placeholder="Criterio de busqueda">
+				</div>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="form-group col-lg-4">
+				<div class="col-lg-5">
+					<font>
+						Cliente
+					</font>
+				</div>
+				<div class="col-sm-7">
+					<input type="text" class="form-control" id="cliente" placeholder="cliente">
+				</div>
+			</div>
+
+			<div class="form-group col-lg-4">
+				<div class="col-lg-5">
+					<font>
+						*RFC
+					</font>
+				</div>
+				<div class="col-sm-7">
+					<input type="text" class="form-control" id="rfc" placeholder="AAAA4D6F4F54DF">
+				</div>
+			</div>
+
+			<div class="form-group col-lg-4">
+				<div class="col-lg-5">
+					<font>
+						Razon social
+					</font>
+				</div>
+				<div class="col-sm-7">
+					<input type="txt" class="form-control" id="Rsocial" placeholder="nombre">
+				</div>
+			</div>
+		</div>
+
+		<div class="row">
+			
+		<div class="form-group col-lg-4">
+			<div class="col-lg-5">
+				<font>
+					Residencia fiscal
+				</font>
+			</div>
+			<div class="col-sm-7">
+				<select class="custon-select form-control" id="Rfiscal">
+					<option>Sin seleccion</option>
+				</select>
+			</div>
+		</div>
+
+		<div class="form-group col-lg-4">
+			<div class="col-lg-5">
+				<font>
+					Numero de registro
+				</font>
+			</div>
+			<div class="col-sm-7">
+				<input type="text" class="form-control" id="expedicion" placeholder="Numero registro de identidad fiscal">
+			</div>
+		</div>
+
+		<div class="form-group col-lg-4">
+			<div class="col-lg-5">
+				<font>
+					*Uso del CFDI
+				</font>
+			</div>
+			<div class="col-sm-7">
+				<input type="text" class="form-control" id="uso" placeholder="P01444444444444">
+			</div>
+			<div>
+				
+			</div>
+		</div>
+		</div>
+
+		<div>
+			<input type="checkbox" id="domi" value=""><label>Incluir domicilio en PDF</label>
+		</div>
+		<div>
+			<input type="checkbox" id="clien" value=""><label>Ver informacion del cliente</label>
+		</div>
+	</form>
+</div>
+</div>
+</div>
+
+
+<!--.............................................tercer panel....................................................-->
+<div class="container-fluid">
+	<div class="panel panel-primary">
+	<div class="panel-heading" id="panels">Pagos 1.0</div>
+	<div class="panel-body">
+		
+		<form>
+			<div class="row">
+				<div class="form col-lg-4">
+					<div class="col-lg-5">
+						<font>
+							*Fecha de pago
+						</font>
+					</div>
+					<div class="col-sm-7">
+						<input type="calendar" class="form-control" id="Fpago" placeholder="AAAA-MMMM-DDD">
+					</div>
+				</div>
+
+				<div class="form-group col-lg-4">
+					 <div class="col-lg-5">
+					 	<font>
+					 		*Forma de pago
+					 	</font>
+					 </div>
+					 <div class="col-sm-7"> 
+					 	<select class="custon-select form-control" id="Forpago">
+					 		<option>sin seleccion</option>
+					 		<option>Prueba</option>
+					 		<option>Prueba</option>
+					 		<option>Prueba</option>
+					 		<option>Prueba</option>
+					 		<option>Prueba</option>
+					 		<option>Prueba</option>
+					 		<option>Prueba</option>
+					 		<option>Prueba</option>
+					 	</select>
+					 </div>
+				</div>
+
+				<div class="form-group col-lg-4">
+					<div class="col-lg-5">
+						<font>
+							*Moneda de pago
+						</font>
+					</div>
+					<div class="col-sm-7">
+						<select class="custon-select form-control" id="Mpago">
+							<option>MXN-peso mexicano</option>
+							<option>Prueba</option>
+							<option>Prueba</option>
+							<option>Prueba</option>
+							<option>Prueba</option>
+							<option>Prueba</option>
+						</select>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+				
+				<div class="form-group col-lg-4">
+					<div class="col-lg-5">
+						<font>
+							*Monto
+						</font>
+					</div>
+				<div class="col-sm-7">
+					<input type="text" class="form-control" id="monto" placeholder="0.00">
+				</div>
+				</div>
+
+				<div class="form-group col-lg-4">
+					<div class="col-lg-5">
+						<font>
+							Numero de operacion
+						</font>
+					</div>
+					<div class="col-sm-7">
+						<input type="text" class="form-control" id="Noperacion" placeholder="numero de operacion">
+					</div>
+				</div>
+
+				<div class="form-group col-lg-4">
+					<div class="col-lg-5">
+						<font>
+							Tipo de cambio
+						</font>
+					</div>
+					<div class="col-sm-7">
+						<input type="text" class="form-control" id="Tcambio" placeholder="0.00">
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="form-group col-lg-4">
+					<div class="col-lg-5">
+						<font>RFC emisor cuenta ordenante</font>
+					</div>
+					<div class="col-sm-7">
+						<input type="text" class="form-control" id="rfcor" placeholder="AAAA4D6F4F54DF">
+					</div>
+				</div>
+
+				<div class="form-group col-lg-4">
+					<div class="col-lg-5">
+						<font>
+							Nombre banco ordenante
+						</font>
+					</div>
+					<div class="col-sm-7">
+						<input type="text" class="form-control" id="banord" placeholder="Banco ordenante">
+					</div>
+				</div>
+
+				<div class="form-group col-lg-4">
+					<div class="col-lg-5">
+						<font>
+							cuenta ordenante
+						</font>
+					</div>
+					<div class="col-sm-7">
+						<input type="text" class="form-control" id="cuentaor" placeholder="1654984653">
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="form-group col-lg-4">
+					<div class="col-lg-5">
+						<font>
+							RFC emisor cuenta destino
+						</font>
+					</div>
+					<div class="col-sm-7">
+						<input type="text" class="form-control" id="rfcdes" placeholder="AAAA4D6F4F54DF">
+					</div>
+				</div>
+
+				<div class="form-group col-lg-4">
+					<div class="col-lg-5">
+						<font>
+							Cuenta beneficiario
+						</font>
+					</div>
+					<div class="col-sm-7">
+						<input type="text" class="form-control" id="cuenban" placeholder="1846518645">
+					</div>
+				</div>
+
+				<div class="form-group col-lg-4">
+					<div class="col-lg-5">
+						<font>
+							Tipo de cadena de pago
+						</font>
+					</div>
+					<div class="col-sm-7">
+						<select class="custon-select form-control" id="cadena">
+							<option>01-SPI</option>
+							<option>Prueba</option>
+							<option>Prueba</option>
+							<option>Prueba</option>
+							<option>Prueba</option>
+							<option>Prueba</option>
+							<option>Prueba</option>
+						</select>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="form-group col-lg-4">
+					<div class="col-lg-5">
+						<font>
+							Certificado de pago
+						</font>
+					</div>
+					<div class="col-sm-7">
+						<input type="text" class="form-control" id="certificado" placeholder="certificado de pago">
+					</div>
+				</div>
+
+				<div class="form-group col-lg-4">
+					<div class="col-lg-5">
+						<font>
+							Cadena original de pago
+						</font>
+					</div>
+					<div class="col-sm-7"> 
+						<input type="text" class="form-control" id="cadenaori" placeholder="cadena original">
+					</div>
+				</div>
+
+				<div class="form-group col-lg-4">
+					<div class="col-lg-5">
+						<font>
+							Salida digital
+						</font>
+					</div>
+					<div class="col-sm-7">
+						<input type="text" class="form-control" id="salida" placeholder="salida digital">
+					</div>
+				</div>
+			</div>
+		</form>
+
+		<div>
+			<button type="button" class="btn btn-success" value="" style="float: right;">Agregar pago</button>
+		</div>
+		<div>
+		<button type="button" class="btn btn-secondary" value="" style="float: right;">Limpiar</button>
+		</div>
+	</div>
+	</div>
+</div>
+
+<!--.........................................................cuarto panel...........................................-->
+<div class="container-fluid">
+<div class="panel panel-primary">
+	<div class="panel-heading" id="panels">Concepto</div>
+	<div class="panel-body">
+		
+		<form>
+			<div class="row">
+				<div class="form-group col-lg-4">
+					<div class="col-lg-5">
+						<font>
+							Clave
+						</font>
+					</div>
+					<div class="col-sm-7">
+						<input type="text" class="form-control" id="clave" placeholder="3125468">
+					</div>
+				</div>
+
+				<div class="form-group col-lg-4">
+					<div class="col-lg-5">
+						<font>
+							Clave unidad
+						</font>
+					</div>
+					<div class="col-sm-7">
+						<input type="text" class="form-control" id="cluni" placeholder="ACT">
+					</div>
+				</div>
+
+				<div class="form-group col-lg-4">
+					<div class=" col-lg-5">
+						<font>
+							Cantidad
+						</font>
+					</div>
+					<div class="col-sm-7">
+						<input type="text" class="form-control" id="canti" placeholder="1">
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="form-group col-lg-4">
+					<div class="col-lg-5">
+						<font>
+							Valor unitario
+						</font>
+					</div>
+					<div class="col-sm-7">
+						<input type="text" class="form-control" id="valuni" placeholder="0">
+					</div>
+				</div>
+
+				<div class="form-group col-lg-4">
+					<div class="col-lg-5">
+						<font>
+							Importe
+						</font>
+					</div>
+					<div class="col-sm-7">
+						<input type="text" class="form-control" id="importe" placeholder="0">
+					</div>
+				</div>
+
+				<div class="form-group col-lg-4">
+					<div class="col-lg-5">
+						<font>
+							Descripcion
+						</font>
+					</div>
+					<div class="col-sm-7">
+						<input type="text" class="form-control" id="descripcion" placeholder="pago">
+					</div>
+				</div>
+			</div>
+		</form>
+	</div>
+</div>	
+</div>
+
+<!--......................................................quinto panel.............................................-->
+<div class="container-fluid">
+<div class="panel panel-primary">
+	<div class="panel-heading" id="panels">Etiquetas personalizadas y firmas </div>
+	<div class="panel-body">
+		
+		<form>
+			<div>
+				<input type="checkbox" id="etiper"> <label>Llenar etiquetas personalizadas</label>
+			</div>
+			<div>
+				<input type="checkbox" id="firmas"><label>Llenar firmas</label>
+			</div>
+			<div>
+				<input type="checkbox" id="pagare"><label>Pagare</label>
+			</div>
+		</form>
+
+
+	</div>
+</div>	
+</div>
+
+<!--.................................................sexto panel..............................................-->
+<div class="container-fluid">
+<div class="panel panel-primary">
+	<div class="panel-heading" id="panels">Etiquetas personalizadas y firmas </div>
+	<div class="panel-body">
+		
+		<form>
+			<div>
+				<input type="checkbox" id="etiper"> <label>Llenar etiquetas personalizadas</label>
+			</div>
+			<div>
+				<input type="checkbox" id="firmas"><label>Llenar firmas</label>
+			</div>
+			<div>
+				<input type="checkbox" id="pagare"><label>Pagare</label>
+			</div>
+		</form>
+
+
+	</div>
+</div>	
+</div>
+
+<!--................................................septimo panel..............................................-->
+<div class="container-fluid">
+<div class="panel panel-primary">
+	<div class="panel-heading" id="panels">Total</div>
+	<div class="panel-body">
+		
+	<form>
+		
+	<div class="row">
+		<div class="form-group col-lg-4">
+			<div class="col-lg-5">
+				<font>
+					Importe con letra
+				</font>
+			</div>
+			<div class="col-sm-7">
+				<input type="text" id="importe" class="form-control" placeholder="CERO 00/100 xxx">
+			</div>
+		</div>
+
+		<div>
+			<input type="checkbox" id="pdfes" value=""><label>PDF Español</label>
+		</div>
+		<div>
+			<input type="checkbox" id="pdfin" value=""><label>PDF Ingles</label>
+		</div>
+	</div>
+
+
+	<div>
+		<div class="col-lg-5">
+			<font>
+				*Subtotal
+			</font>
+		</div>
+		<div class="col-sm-7">
+			<input type="text" id="subtutal" class="form-control" placeholder="0">
+		</div>
+	</div>
+
+	<div>
+		<div class="col-lg-5">
+			<font>
+				*Total
+			</font>
+		</div>
+		<div class="col-sm-7">
+			<input type="text" id="total" class="form-control" placeholder="0">
+		</div>
+	</div>
+
+	<div>
+		<button class="btn btn-success" type="button" value="" style="float: right;">Emitir CFDI</button>
+	</div>
+	<div>
+		<button class="btn btn-success" type="button" value="" style="float: right;">Guardar prefactura</button>
+	</div>
+
+	<div>
+		<button class="btn btn-success" type="button" value="" style="float: right;">vista previa</button>
+	</div>
+	</form>
+
+	</div>
+</div>	
+</div>

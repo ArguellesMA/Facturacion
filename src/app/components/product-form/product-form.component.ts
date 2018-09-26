@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { NgForm } from '@angular/forms';
 
 import { ProductoService } from '../../services/producto.service';
-import { NgForm } from '@angular/forms';
 import { Producto } from '../../models/producto';
 
 @Component({

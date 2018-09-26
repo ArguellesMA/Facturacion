@@ -10,7 +10,7 @@ import { ProductFormComponent } from './components/product-form/product-form.com
 import { EmpleadoComponent } from './components/empleado/empleado.component';
 import { LoginComponent } from './components/login/login.component';
 import { PrincipalComponent } from './components/principal/principal.component';
-import { GCFDI33Component } from './components/g-cfdi33/g-cfdi33.component';
+import { GCFDI33Component } from './components/Documentos/g-cfdi33/g-cfdi33.component';
 import { NominaComponent }  from './components/Documentos/nomina/nomina.component';
 import { RCFDI33Component } from './components/Registros/RCFDI33/Rcfdi33.component';
 import { ComercioComponent } from './components/Documentos/comercio/comercio.component';
