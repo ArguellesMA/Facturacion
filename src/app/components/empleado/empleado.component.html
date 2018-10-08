@@ -1,4 +1,5 @@
-<div class="container-fluid">
+<div class="container">
+<!-- Primer panel Emisor -->   
     <div class="panel panel-primary">
         <div class="panel-heading" id="panels">Emisor</div>
         <div class="panel-body"> 
@@ -50,7 +51,7 @@
     </div>
       
     
-
+<!--Segundo panel Empleado-->
 <div class="panel panel-primary">
   <div class="panel-heading" id="panels">Empleado</div>
      <div class="panel-body d-flex justify-content-center">
@@ -178,7 +179,7 @@
                          <div class="col-lg-5">
                              <font size="2" class="r">*Tipo de nómina:</font>   
                          </div>
-                         <div class="col-lg-5">
+                         <div class="col-sm-7">
                              <select class="custon-select form-control" name="tnomina"#name="ngModel" [(ngModel)]="empleadoService.selectedEmpleado.tNomina">
                                  <option value="" disabled selected>Sin Selección</option>
                                  <option value="ordinaria">O-Nomina ordinaria</option>
@@ -616,23 +617,12 @@
                          <div class="col-lg-5">
                              <font size="1">Fecha inicio relación laboral:</font>   
                          </div>
-                         <div class="col-lg-4">
-                             <input type="text" class="form-control" id="datetime" placeholder="calendario" readonly>
-                             <span class="input-group-addon">
-                        <span class="glyphicon glyphicon-calendar"></span>
-                        </span>
-
-                             <script type="text/javascript">
-                                $(function)(){
-                                 $("#datetimepicker").datetimepicker();
-                                 });
-                             </script>
-
+                         <div class="col-sm-4">
+                                <input type="text" id="fecha" name="fecha" class="form-control" />
                          </div>                   
                      </div> 
 
                   </div>
-
 
                 </div>
              </form> <br>
@@ -675,7 +665,7 @@
 
 </div>
     
-    
+ <!-- Tercer panel Totales-->   
           <div class="panel panel-primary">
                 <div class="panel-heading" id="panels">Totales</div>
 
@@ -735,7 +725,7 @@
                </div>
               </div>
     
-    
+<!-- Cuarto panel-->    
              <div class="panel panel-primary">
                     <div class="panel-heading" id="panels"></div>
                      <div id="panel" class="panel-body">
@@ -748,7 +738,7 @@
                      </div>
                </div>
             
-
+<!--Quinto panel Filtrado Empleado-->
                <div class="panel panel-primary">
                     <div class="panel-heading" id="panels">Filtrado de empleados 1.2</div>
                     <div class="panel-body"> 
@@ -782,7 +772,7 @@
                </div>
 
 
-
+<!--Sexto panel Catalogo empleado-->
                <div class="panel panel-primary">
                  <div class="panel-heading" id="panels">Catálogo de empleados 1.2</div>
                     <div class="panel-body"> 

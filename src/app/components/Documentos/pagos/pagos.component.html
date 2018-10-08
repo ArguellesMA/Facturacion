@@ -1,5 +1,5 @@
 <!--.........................................................primer panel...........................................-->
-<div class="container-fluid">
+<div class="container">
 
 <div class="panel panel-primary">
 <div class="panel-heading" id="panels">Emisor</div>
@@ -106,7 +106,7 @@
 				</font>
 			</div>
 			<div class="col-sm-7">
-				<input type="calendar" class="form-control" id="fecha" placeholder="28/09/2018">
+					<input type="text" id="fecha5" name="fecha5" class="form-control">
 			</div>
 		</div>
 	</div>
@@ -169,17 +169,23 @@
 	</div>
 	</div>
 
-	<div>
-	<div >
-		<input type="checkbox" id="dom" value=""><label>Incluir domicilio en PDF</label>
-	</div>
-	<div>
-		<input type="checkbox" id="diseño"><label>Mostrar diseño personalizado</label>
-	</div>
-	</div>
 
+	<div class="col-lg-4 form-group">     
+		<div class="col-lg-5">    
+		</div>
+		<div class="col-lg-7 form-group">
+		  <input type="checkbox" id="pdf" value=""><label>Incluir domicilio en PDF</label>
+		</div> 
+	</div>	
 
-	<div>
+	<div class="form-group">
+		<div class="col-lg-9">
+			<input type="checkbox" id="diseño" value=""><label>Mostrar diseño personalizado</label>
+		</div>	
+	</div>
+<br>
+
+	<div class="col-xs-7">
 		<div>
 			<input type="checkbox" id="inform" value=""><label>Ver informaion de emisor</label>
 		</div>
@@ -192,10 +198,9 @@
 	</form>
 	</div>
 	</div>
-</div>
+
 
 <!--segundo panel-->
-<div class="container-fluid">
 <div class="panel panel-primary">
 <div class="panel-heading"  id="panels">Receptor</div>
 <div class="panel-body">
@@ -290,20 +295,21 @@
 		</div>
 		</div>
 
-		<div>
+		<div class="form-group">
+		<div class="col-lg-7">
 			<input type="checkbox" id="domi" value=""><label>Incluir domicilio en PDF</label>
 		</div>
-		<div>
+		<div class="col-lg-7">
 			<input type="checkbox" id="clien" value=""><label>Ver informacion del cliente</label>
 		</div>
+		</div>
+
 	</form>
-</div>
 </div>
 </div>
 
 
 <!--.............................................tercer panel....................................................-->
-<div class="container-fluid">
 	<div class="panel panel-primary">
 	<div class="panel-heading" id="panels">Pagos 1.0</div>
 	<div class="panel-body">
@@ -317,7 +323,7 @@
 						</font>
 					</div>
 					<div class="col-sm-7">
-						<input type="calendar" class="form-control" id="Fpago" placeholder="AAAA-MMMM-DDD">
+							<input type="text" id="fecha6" name="fecha6" class="form-control">
 					</div>
 				</div>
 
@@ -517,10 +523,8 @@
 		</div>
 	</div>
 	</div>
-</div>
 
 <!--.........................................................cuarto panel...........................................-->
-<div class="container-fluid">
 <div class="panel panel-primary">
 	<div class="panel-heading" id="panels">Concepto</div>
 	<div class="panel-body">
@@ -598,10 +602,8 @@
 		</form>
 	</div>
 </div>	
-</div>
 
 <!--......................................................quinto panel.............................................-->
-<div class="container-fluid">
 <div class="panel panel-primary">
 	<div class="panel-heading" id="panels">Etiquetas personalizadas y firmas </div>
 	<div class="panel-body">
@@ -621,10 +623,8 @@
 
 	</div>
 </div>	
-</div>
 
 <!--.................................................sexto panel..............................................-->
-<div class="container-fluid">
 <div class="panel panel-primary">
 	<div class="panel-heading" id="panels">Etiquetas personalizadas y firmas </div>
 	<div class="panel-body">
@@ -644,10 +644,8 @@
 
 	</div>
 </div>	
-</div>
 
 <!--................................................septimo panel..............................................-->
-<div class="container-fluid">
 <div class="panel panel-primary">
 	<div class="panel-heading" id="panels">Total</div>
 	<div class="panel-body">
@@ -665,34 +663,38 @@
 				<input type="text" id="importe" class="form-control" placeholder="CERO 00/100 xxx">
 			</div>
 		</div>
+	</div>
 
+
+	<div class="col-lg-5">
+
+		<div class="form-group">
 		<div>
 			<input type="checkbox" id="pdfes" value=""><label>PDF Español</label>
 		</div>
 		<div>
 			<input type="checkbox" id="pdfin" value=""><label>PDF Ingles</label>
 		</div>
-	</div>
-
-
-	<div>
-		<div class="col-lg-5">
+		</div>
+	
+	<div class="form-group">
+		<div class="col-lg-4">
 			<font>
 				*Subtotal
 			</font>
 		</div>
-		<div class="col-sm-7">
+		<div class="col-lg-8 form-group">
 			<input type="text" id="subtutal" class="form-control" placeholder="0">
 		</div>
 	</div>
 
-	<div>
-		<div class="col-lg-5">
+	<div class="form-group">
+		<div class="col-lg-4">
 			<font>
 				*Total
 			</font>
 		</div>
-		<div class="col-sm-7">
+		<div class="col-lg-8 form-group">
 			<input type="text" id="total" class="form-control" placeholder="0">
 		</div>
 	</div>
@@ -706,6 +708,8 @@
 
 	<div>
 		<button class="btn btn-success" type="button" value="" style="float: right;">vista previa</button>
+	</div>
+
 	</div>
 	</form>
 

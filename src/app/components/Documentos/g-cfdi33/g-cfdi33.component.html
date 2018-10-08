@@ -1,6 +1,6 @@
 <div class="container">
     <div class="panel panel-primary">
-        <div class="panel-heading">Emisor</div>
+        <div class="panel-heading" id="panels">Emisor</div>
           <div class="panel-body">
               <form class="form-inline" role="form-horizontal">
                   <!--<div class="col-md-12 col-lg-12">-->
@@ -56,9 +56,9 @@
                            <div class="col-lg-5">
                              <font size="1">*Tipo de documento:</font> 
                            </div>
-                           <div class="col-lg-7 col-md-12"> 
-                                <select name="" class="custom-select form-control">
-                                    <option value="" disabled selected>Sin Seleccionar</option>
+                           <div class="col-sm-7"> 
+                                <select class="custon-select form-control">
+                                    <option value="">Sin Seleccionar</option>
                                     <option value="">FAC-Factura</option>
                                     <option value="">NO</option>
                                 </select>      
@@ -105,8 +105,7 @@
                                <font size="1">*Fecha:</font>    
                            </div>
                            <div class="col-lg-7">
-                               <input name="fecha" 
-                                type="text" class="form-control" placeholder="">
+                                <input type="text" id="fecha" name="fecha" />
                            </div>   
                        </div>
       
@@ -121,9 +120,14 @@
                            <div class="col-lg-4"> 
                                     
                            </div>
-                           <div class="col-lg-8">
+
+                           <div class="col-lg-5">
+                           <div class="col-lg-7">
                             <button id="boton" type="button" class="btn btn-success">Buscar folio omitido</button>
-                           </div>                   
+                           </div>
+                           </div>
+                           
+                           
                        </div>
                     </div>
                  </div>
@@ -145,7 +149,7 @@
                                <font size="1">*Régimen fiscal:</font>
                             </div>
                             <div class="col-lg-7">
-                                <select name="" class="custom-select form-control"> 
+                                <select name="" class="custon-select form-control"> 
                                     <option value="" disabled selected>Sin Seleccionar</option>
                                     <option value="">612-Personas</option>
                                     <option value="">NO</option>
@@ -218,7 +222,7 @@
 
        <!--Segundo panel Receptor-->
         <div class="panel panel-primary">
-            <div class="panel-heading">Receptor</div>
+            <div class="panel-heading" id="panels">Receptor</div>
                 <div class="panel-body">
                     <form class="form-inline" role="form-horizontal">
                         <div class="col-md-12 col-lg-12">
@@ -278,7 +282,7 @@
                                         <font size="1">*Uso del CFDI:</font>     
                                     </div>
                                     <div class="col-lg-7 form-group">
-                                        <select name="" class="custom-select form-control"> 
+                                        <select name="" class="custon-select form-control"> 
                                             <option value="" disabled selected>Sin Seleccionar</option>
                                             <option value="">SI</option>
                                             <option value="">NO</option>
@@ -336,14 +340,10 @@
                 </div>
         </div>
 
-        <style>
-                .c { border: thin blue solid;
-                      width: 100%;}
-        </style>
-    
+        
     <!--Tercer panel Forma de pago-->
     <div class="panel panel-primary">
-        <div class="panel-heading">Forma de pago</div>
+        <div class="panel-heading" id="panels">Forma de pago</div>
             <div class="panel-body">
                 <form class="form-inline c" role="form-horizontal">
             
@@ -354,7 +354,7 @@
                                 <div class="col-lg-5">    
                                     <font size="1">*Moneda:</font>     
                                 </div>
-                                <div class="col-lg-7 form-group">
+                                <div class="col-sm-7">
                                     <input name="rfc3" 
                                     type="text" class="form-control" placeholder="Cliente">
                                 </div>                   
@@ -364,8 +364,8 @@
                                 <div class="col-lg-5">    
                                     <font size="1">Forma de pago:</font>     
                                 </div>
-                                <div class="col-lg-7 form-group">
-                                    <select name="" class="custom-select form-control"> 
+                                <div class="col-sm-7">
+                                    <select name="" class="custon-select form-control"> 
                                         <option value="" disabled selected>Sin Seleccionar</option>
                                         <option value="">01-Efectivo</option>
                                         <option value="">NO</option>
@@ -401,7 +401,7 @@
                                     <font size="1">Metodo de pago:</font>     
                                 </div>
                                 <div class="col-lg-7 form-group">
-                                    <select name="" class="custom-select form-control"> 
+                                    <select name="" class="custon-select form-control"> 
                                         <option value="" disabled selected>Sin Seleccionar</option>
                                         <option value="">01-Efectivo</option>
                                         <option value="">NO</option>
@@ -414,9 +414,9 @@
             </div>
     </div>
 
-
+<!--Cuarto panel Conceptos-->
     <div class="panel panel-primary">
-        <div class="panel-heading">Conceptos</div>
+        <div class="panel-heading" id="panels">Conceptos</div>
             <div class="panel-body">
              <form class="form-inline" role="form-horizontal">
                 <div class="row col-lg-12">
@@ -513,50 +513,50 @@
                         <div class="col-lg-4">
                         
                             <div class="form-group">     
-                                <div class="col-lg-6">    
+                                <div class="col-lg-5">    
                                     <font size="1">Buscar producto:</font>     
                                 </div>
-                                <div class="col-lg-6 form-group">
+                                <div class="col-sm-7">
                                     <input name="rfc3" 
                                     type="text" class="form-control" placeholder="No. Identificación o descripcion">
                                 </div>                   
                             </div>
 
                             <div class="form-group">     
-                                <div class="col-lg-6">    
+                                <div class="col-lg-5">    
                                     <font size="1">*Clave producto/servicio:</font>     
                                 </div>
-                                <div class="col-lg-6 form-group">
+                                <div class="col-sm-7">
                                     <input name="rfc3" 
                                     type="text" class="form-control" placeholder="Clave">
                                 </div>                   
                             </div>
 
                             <div class="form-group">     
-                                <div class="col-lg-6">    
+                                <div class="col-lg-5">    
                                         <font size="1"></font>     
                                 </div>
-                                <div class="col-lg-6 form-group">
+                                <div class="col-sm-7">
                                     <textarea name="rfc3" rows="3" col="7" placeholder="Descripción"
                                     type="text" class="form-control"></textarea>
                                 </div>                   
                             </div>
 
                             <div class="form-group">     
-                                <div class="col-lg-6">    
+                                <div class="col-lg-5">    
                                     <font size="1">*Clave unidad:</font>     
                                 </div>
-                                <div class="col-lg-6 form-group">
+                                <div class="col-sm-7">
                                     <input name="rfc3" 
                                     type="text" class="form-control" placeholder="Clave unidad">
                                 </div>                   
                             </div>
 
                             <div class="form-group">     
-                                <div class="col-lg-6">    
+                                <div class="col-lg-5">    
                                     <font size="1"></font>     
                                 </div>
-                                <div class="col-lg-6 form-group">
+                                <div class="col-sm-7">
                                     <textarea name="rfc3" rows="3" col="7" placeholder="Descripción"
                                     type="text" class="form-control"></textarea>
                                 </div>                   
@@ -570,7 +570,7 @@
                                 <div class="col-lg-5">    
                                     <font size="1">No. Identificación:</font>     
                                 </div>
-                                <div class="col-lg-7 form-group">
+                                <div class="col-sm-7">
                                     <input name="rfc3" 
                                     type="text" class="form-control" placeholder="Identificación">
                                 </div>                   
@@ -580,7 +580,7 @@
                                 <div class="col-lg-5">    
                                     <font size="1">*Cantidad:</font>     
                                 </div>
-                                <div class="col-lg-7 form-group">
+                                <div class="col-sm-7 ">
                                     <input name="rfc3" 
                                     type="text" class="form-control" placeholder="0.00">
                                 </div>                   
@@ -590,7 +590,7 @@
                                 <div class="col-lg-5">    
                                     <font size="1">Unidad:</font>     
                                 </div>
-                                <div class="col-lg-7 form-group">
+                                <div class="col-sm-7 form-group">
                                     <input name="rfc3" 
                                     type="text" class="form-control" placeholder="0.00">
                                 </div>                   
@@ -600,7 +600,7 @@
                                 <div class="col-lg-5">    
                                     <font size="1">*Valor Unitario:</font>     
                                 </div>
-                                <div class="col-lg-7 form-group">
+                                <div class="col-sm-7">
                                     <input name="rfc3" 
                                     type="text" class="form-control" placeholder="0.00">
                                 </div>                   
@@ -610,7 +610,7 @@
                                 <div class="col-lg-5">    
                                     <font size="1">*Importe:</font>     
                                 </div>
-                                <div class="col-lg-7 form-group">
+                                <div class="col-sm-7 ">
                                     <input name="rfc3" 
                                     type="text" class="form-control" placeholder="0.00">
                                 </div>                   
@@ -620,7 +620,7 @@
                                 <div class="col-lg-5">    
                                     <font size="1">Porcentaje descuento:</font>     
                                 </div>
-                                <div class="col-lg-7 form-group">
+                                <div class="col-sm-7">
                                     <input name="rfc3" 
                                     type="text" class="form-control" placeholder="0.00">
                                 </div>                   
@@ -630,7 +630,7 @@
                                 <div class="col-lg-5">    
                                     <font size="1">Descuento:</font>     
                                 </div>
-                                <div class="col-lg-7 form-group">
+                                <div class="col-sm-7">
                                     <input name="rfc3" 
                                     type="text" class="form-control" placeholder="0.00">
                                 </div>                   
@@ -667,8 +667,9 @@
             </div>
     </div>
 
+ <!--Quinto panel Etiquetas y firmas-->   
     <div class="panel panel-primary">
-        <div class="panel-heading">Etiquetas personalizadas y firmas</div>
+        <div class="panel-heading" id="panels">Etiquetas personalizadas y firmas</div>
             <div class="panel-body">
                 <div class="col-md-12 col-lg-12"> 
                     <div class="row">  
@@ -688,7 +689,7 @@
     
     <!--Sexto panel Total-->
     <div class="panel panel-primary">
-        <div class="panel-heading">Total</div>
+        <div class="panel-heading" id="panels">Total</div>
             <div class="panel-body">
                 <form class="form-inline" role="form-horizontal">
                     <div class="col-md-12 col-lg-12"> <p></p>

@@ -18,6 +18,7 @@ const routes: Routes = [
     { path: 'principal', component: PrincipalComponent },
     { path: 'producto', component: ProductFormComponent },
     { path: 'empleado', component: EmpleadoComponent },
+    { path: 'g-cfdi33' , component: GCFDI33Component}, 
     { path: 'nomina', component: NominaComponent },
     { path: 'Rcfdi33', component: RCFDI33Component },
     { path: 'comercio', component: ComercioComponent},

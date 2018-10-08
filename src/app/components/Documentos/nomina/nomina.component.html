@@ -1,5 +1,5 @@
 <!--primer panel-->
-<div class="container-fluid">z
+<div class="container">
 <div class="panel panel-primary">
     <div class="panel-heading" id="panels">Compobante emisor</div>
     <div class="panel-body d-flex justify-content-center">
@@ -112,7 +112,7 @@
                                 </font>
                             </div>
                             <div class="col-lg-4">
-                                <input type="calendar" class="form-control" id="fecha" placeholder="feccha" name="">
+                                    <input type="text" id="fecha0" name="fecha0" class="form-control">
                             </div>
                         </div>
                     </div>
@@ -173,8 +173,8 @@
                                     Regimen fiscal
                                 </font>
                             </div>
-                            <div class="col-lg-4">
-                                <select  class="custon-select form-control" name="regimen">
+                            <div class="col-xs-7">
+                                <select  class="custon-select form-control" id="regimen">
                                     <option>612 personas fisicas co</option>
                                     <option>ble</option>
                                     <option>bli</option>
@@ -575,16 +575,15 @@
                 </div>    
                 </div>
 
-                <div class="form-group col-lg-4">
-                <div class="col-lg-5">
-                    <font>
-                        Fecha inicio relacion laboral
-                    </font>
-                </div>
-                <div class="col-sm-7">
-                    <input type="calendar" name="fecha" class="form-control" id="calendar" placeholder="dd/mm/aa"> 
-                </div>   
-                </div>
+                <div class="col-lg-4 form-group">
+                        <div class="col-lg-5">
+                            <font size="1">Fecha inicio relación laboral:</font>   
+                        </div>
+                        <div class="col-sm-4">
+                               <input type="text" id="fecha1" name="fecha1" class="form-control">
+                        </div>                   
+                    </div> 
+
             </div>
         </form>
         </div>
@@ -601,7 +600,7 @@
                     </font>
                 </div>    
                 <div class="col-sm-7">
-                    <input type="calendar" name="pago" class="form-control" id="calendar" placeholder="dd/mm/aa">
+                        <input type="text" id="fecha2" name="fecha2" class="form-control">
                 </div>
                 </div>
 
@@ -612,7 +611,7 @@
                     </font>
                 </div>   
                 <div class="col-sm-7">
-                    <input type="calendar" name="fpago" class="form-control" id="calendar" placeholder="dd/mm/aa">
+                        <input type="text" id="fecha3" name="fecha3" class="form-control">
                 </div>     
                 </div>
 
@@ -623,7 +622,7 @@
                     </font>
                 </div>
                 <div class="col-sm-7">
-                    <input type="calendar" name="fpago" class="form-control" id="calendar" placeholder="dd/mm/aa">
+                        <input type="text" id="fecha4" name="fecha4" class="form-control">
                 </div>    
                 </div> 
             </div> 
@@ -641,7 +640,8 @@
 
                 <div class="col-lg-4">
                     <input type="checkbox" name="semanas" value=""><label>Semanas</label>
-                    <input type="checkbox" name="A,M,D" value=""><label>Anos, Meses y Dias</label>
+                    &nbsp;
+                    <input type="checkbox" name="A,M,D" value=""><label>Años, Meses y Dias</label>
                 </div>
 
                 <div class="form-group col-lg-4">
@@ -871,7 +871,7 @@
     <div class="panel-body">    
         <form>
             <div class="row">
-            <div class="form-group col-lg-4">
+            <div class="form-group">
             <div class="col-lg-5">
                 <font>
                     Importe con letra
@@ -892,35 +892,35 @@
 
 
             
+            <div class="form-group">
             <div class="col-lg-4">
-            <div class="col-lg-2">
                 <font>
                     *Subtotal
                 </font>
             </div>
-            <div class="col-sm-7">
+            <div class="col-lg-8 form-group">
                 <input type="text" name="sub" class="form-control" id="subtotal" placeholder="0.00">
             </div>    
             </div>
 
+            <div class="form-group">
             <div class="col-lg-4">
-            <div class="col-lg-5">
                 <font>
                     Descuento total
                 </font>
             </div>
-            <div class="col-sm-7">
+            <div class="col-lg-8 form-group">
                 <input type="text" name="des" class="form-control" id="descuento" placeholder="0.00">
             </div>    
             </div>
 
-            <div class="form-group col-lg-4">
-            <div class="col-lg-2">
+            <div class="form-group">
+            <div class="col-lg-4">
                 <font>
                     *Total
                 </font>
             </div>
-            <div class="col-sm-7">
+            <div class="col-lg-8 form-group">
                 <input type="text" name="tol" class="form-control" id="total" placeholder="0.00">
             </div>    
             </div>
@@ -936,3 +936,5 @@
     
 </div>
 </div>
+</div>
+

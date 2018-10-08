@@ -9,3 +9,13 @@
 }
 
 #bor1{}
+
+#NSER{
+	color: #FBFCFC; 
+  width: 90em;
+	background-color: #006666; 
+}
+
+#NSER th{
+	text-align: center;
+}

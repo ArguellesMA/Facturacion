@@ -75,4 +75,16 @@
       float: left;
       width: 200px;
     }
-  }  
+  } 
+  
+#panels{
+    background-color: #336666;
+}
+
+.c{
+  padding: 3px 10px;
+  border: #006666 solid;
+  border-radius: 20px;
+
+  width: 78em;
+}

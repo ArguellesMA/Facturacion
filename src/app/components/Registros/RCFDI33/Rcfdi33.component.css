@@ -6,15 +6,15 @@
 	 padding: 3px 10px;
   border: #006666 solid;
   border-radius: 20px;
-  width: 28em;
     	
 }
 
 #NSER{
-	padding: 2em;
 	color: #FBFCFC; 
 	width: 90em;
+	background-color: #006666; 
 }
+
 #NSER th{
 	text-align: center;
 }
