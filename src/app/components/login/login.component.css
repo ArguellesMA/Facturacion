@@ -1,4 +1,4 @@
-/*:root {
+:root {
     --input-padding-x: 1.5rem;
     --input-padding-y: .75rem;
   }
@@ -130,17 +130,4 @@ font-size: 35px;
     height: 80%;
     float: right;
     margin: 0px;
-}*/
-
-#icon {
-  text-align: center;
-  color: rgb(232, 240, 210);
-}
-
-#pru{
-width: 7em;
-}
-
-.glyphicon{
- font-size: 20px;
 }
