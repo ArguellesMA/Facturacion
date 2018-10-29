@@ -1,0 +1,1 @@
+{"version":3,"file":"index.js","sourceRoot":"","sources":["../../src/odometer/index.ts"],"names":[],"mappings":";;;;;AAIA,0CAAqC","sourcesContent":["/**\n * Created by Jose Andres on 02.23.17\n */\n\nexport * from './odometer.component';\n\ninterface DecoratorInvocation {\n  type: Function;\n  args?: any[];\n}\n"]}
