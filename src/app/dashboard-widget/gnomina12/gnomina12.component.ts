@@ -2,10 +2,10 @@ import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'cdk-weather',
-  templateUrl: './weather.component.html',
-  styleUrls: ['./weather.component.scss']
+  templateUrl: './gnomina12.component.html',
+  styleUrls: ['./gnomina12.component.scss']
 })
-export class WeatherComponent implements OnInit {
+export class GenerarNomina implements OnInit {
 
   constructor() { }
 

@@ -16,14 +16,14 @@ import { MatTabsModule } from '@angular/material/tabs';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { PricingPlanComponent } from './pricing-plan/pricing-plan.component';
 import { MatListModule } from '@angular/material/list';
-import { WeatherComponent } from './weather/weather.component';
+import { GenerarNomina } from './gnomina12/gnomina12.component';
 import { Ng2OdometerModule } from 'ng2-odometer';
 import { SharePriceComponent } from './share-price/share-price.component';
 import { RoundProgressbarComponent } from './round-progressbar/round-progressbar.component'; 
 import { RoundProgressModule } from 'angular-svg-round-progressbar';
 import { SalesListComponent } from './sales-list/sales-list.component';
 import { D3UsaComponent } from './d3-usa/d3-usa.component';
-import { GenerarCFDI } from './gcfdi33/world-map.component';
+import { GenerarCFDI } from './gcfdi33/gcfdi33.component';
 
 
 @NgModule({
@@ -50,7 +50,7 @@ import { GenerarCFDI } from './gcfdi33/world-map.component';
       DoughnutGraphComponent, 
       ProfileCardComponent,
       PricingPlanComponent,
-      WeatherComponent,
+      GenerarNomina,
       SharePriceComponent,
       RoundProgressbarComponent,
       SalesListComponent,
@@ -65,7 +65,7 @@ import { GenerarCFDI } from './gcfdi33/world-map.component';
       DoughnutGraphComponent, 
       ProfileCardComponent,
       PricingPlanComponent,
-      WeatherComponent,
+      GenerarNomina,
       SharePriceComponent,
       RoundProgressbarComponent,
       SalesListComponent,

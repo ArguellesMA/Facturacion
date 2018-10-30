@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { WorldMapComponent } from './world-map.component';
+import { GenerarCFDI } from './gcfdi33.component';
 
-describe('WorldMapComponent', () => {
-  let component: WorldMapComponent;
-  let fixture: ComponentFixture<WorldMapComponent>;
+describe('GenerarCFDI', () => {
+  let component: GenerarCFDI;
+  let fixture: ComponentFixture<GenerarCFDI>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ WorldMapComponent ]
+      declarations: [ GenerarCFDI ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(WorldMapComponent);
+    fixture = TestBed.createComponent(GenerarCFDI);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

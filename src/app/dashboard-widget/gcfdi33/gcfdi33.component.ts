@@ -3,8 +3,8 @@ import { Component, OnInit, Input } from '@angular/core';
 declare const AmCharts;
 @Component({
   	selector: 'cdk-world-map',
-  	templateUrl: './world-map.component.html',
-  	styleUrls: ['./world-map.component.scss']
+  	templateUrl: './gcfdi33.component.html',
+  	styleUrls: ['./gcfdi33.component.scss']
 })
 export class GenerarCFDI implements OnInit {
 	

@@ -5,6 +5,7 @@ import { DashboardCrmComponent } from '../dashboard-crm/dashboard-crm.component'
 export const appRoutes: Routes = [{
     path: '', component: AuthComponent, children: [
         { path: 'dashboard', component: DashboardCrmComponent },
+        { path: 'dashboard-widget', loadChildren: '../dashboard-widget/dashboard-widget.module#DashboardWidgetModule'},
         { path: 'material-widgets', loadChildren: '../material-widgets/material-widgets.module#MaterialWidgetsModule' },
         { path: 'tables', loadChildren: '../tables/tables.module#TablesModule' },
         { path: 'maps', loadChildren: '../maps/maps.module#MapsModule' },

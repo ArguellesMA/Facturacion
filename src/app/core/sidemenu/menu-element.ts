@@ -8,14 +8,14 @@ export const menus = [
         'sub': [
             {
                 'name': 'Generar CFDI 3.3',
-                'link': '/auth/dashboard',
+                'link': 'dasboard-widget/gcfdi33',
                 'icon': 'dashboard',
                 'chip': false,
                 'open': true,
             },
             {
                 'name': 'Generar nomina 1.2',
-                'link': '/auth/dashboard',
+                'link': 'dashboard-widget/gnomina12',
                 'icon': 'list',
                 'chip': false,
                 'open': true,
