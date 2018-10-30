@@ -1,0 +1,834 @@
+<div class="container">
+	<!-- Primer panel Emisor -->   
+			<div class="panel panel-primary">
+					<div class="panel-heading" id="panels">Emisor</div>
+					<div class="panel-body"> 
+	
+					<div>
+					<form #emisorForm="ngForm" (ngSubmit)="addEmisor
+						(emisorForm)">
+						<input type="hidden" name="idEmisor" #_idEmisor="ngModel" [(ngModel)]="emisorService.selectedEmisor.idEmisor">
+						 <div>
+									<input name="emisor" #name="ngModel" [(ngModel)]="emisorService.selectedEmisor.emisor"
+									 type="checkbox" value=""><label>Agregar emisor</label>
+						 </div>
+					<div class="d-flex justify-content-center">
+							<div class="c"><p>
+	
+							 <form class="form-inline" role="form">
+								 <div class="form-group col-lg-4">
+										<h6>CURP:</h6>
+										<input name="curp" #name="ngModel" [(ngModel)]="emisorService.selectedEmisor.curp" 
+										 type="text" class="form-control" placeholder="AAAA010203MPLBCD11"> 
+								 </div>
+	
+								 <div class="form-group col-lg-4">
+										<h6>Registro patronal:</h6>
+										<input name="rPatronal" #name="ngModel" [(ngModel)]="emisorService.selectedEmisor.rPatronal"
+										 type="text" class="form-control" placeholder="Registro patronal">
+								 </div>
+	
+								 <div class="form-group col-lg-4">
+										<h6>RFC patrón de origen:</h6>
+										<input name="rfcOrigen" #name="ngModel" [(ngModel)]="emisorService.selectedEmisor.rfcOrigen" 
+										 type="text" class="form-control" placeholder="AAAA010203AAA">
+								 </div>
+	
+								 <div class="col-lg-4 form-group">
+										<input name="sncf" #name="ngModel" [(ngModel)]="emisorService.selectedEmisor.sncf"
+										 type="checkbox" class="form-control">
+										<h6>Agregar Entidad Sistema Nacional de Coordinación Fiscal(SNFC)</h6>
+								 </div>
+							 </form>
+	
+								
+									</div>
+			
+							</div>
+					</form>
+					</div>
+					</div>
+			</div>
+				
+			
+	<!--Segundo panel Empleado-->
+	<div class="panel panel-primary">
+		<div class="panel-heading" id="panels">Empleado</div>
+			 <div class="panel-body d-flex justify-content-center">
+					<div class="c"> <p></p>
+							<form class="form-inline col-lg-12 " role="form-horizontal">
+									<div class="col-md-12 col-lg-12">
+	
+	
+										<div class="row">
+	
+											 <div class="col-lg-4 form-group">       
+													 <div class="col-lg-5">        
+													 </div>
+													 <div class="col-lg-7 form-group">
+															 <input name="activo" #name="ngModel" [(ngModel)]="empleadoService.selectedEmpleado.activo"
+																type="checkbox" class="form-control" >
+															 <font size="2"> Activo</font> 
+													 </div>                    
+											 </div>
+	
+											 <div class="col-lg-4 form-group">   
+													 <div class="col-lg-5">                 
+													 </div>
+													 <div class="col-lg-7">                  
+													 </div>    
+											 </div>
+	
+	
+											 <div class="col-lg-4 form-group">           
+													 <div class="col-lg-5">                  
+													 </div>
+													 <div class="col-lg-7">
+													 </div>   
+											 </div>
+										</div> 
+	
+	
+										<div class="row">
+	
+											 <div class="col-lg-4 form-group">       
+													 <div class="col-lg-5">
+													 </div>
+													 <div class="col-lg-7 form-group">
+															 <input name="domEmpleado" #name="ngModel" [(ngModel)]="empleadoService.selectedEmpleado.domEmpleado"
+																type="checkbox" class="form-control" >
+															 <font size="2">Llenar domicilio del empleado</font> 
+													 </div>                    
+											 </div>
+	
+											 <div class="col-lg-4 form-group">   
+													 <div class="col-lg-5">
+													 </div>
+													 <div class="col-lg-7">          
+													 </div>    
+											 </div>
+	
+											 <div class="col-lg-4 form-group">           
+													 <div class="col-lg-5">
+													 </div>
+													 <div class="col-lg-7">         
+													 </div>   
+											 </div>
+	
+										</div>
+	
+	
+										<div class="row">
+	
+											 <div class="col-lg-4 form-group">       
+													 <div class="col-lg-5">
+															 <font size="2" class="r">*RFC empleado</font>
+													 </div>
+													 <div class="col-lg-7">
+															 <input name="rfcEmpleado" #name="ngModel" [(ngModel)]="empleadoService.selectedEmpleado.rfcEmpleado"
+															 type="text" class="form-control" placeholder="AAAA010203AAA" maxlength="13">
+													 </div>                    
+											 </div>
+	
+											 <div class="col-lg-4 form-group">   
+													 <div class="col-lg-5">
+															 <font size="2" class="r">*Nombre empleado:</font>    
+													 </div>
+													 <div class="col-lg-7">
+															 <input name="nomEmpleado" #name="ngModel" [(ngModel)]="empleadoService.selectedEmpleado.nomEmpleado"
+																type="text" class="form-control" placeholder="Nombre empleado">
+													 </div>    
+											 </div>
+	
+											 <div class="col-lg-4 form-group">           
+													 <div class="col-lg-5">
+															 <font size="1">E-Mail:</font>    
+													 </div>
+													 <div class="col-lg-7">
+															 <input name="email" #name="ngModel" [(ngModel)]="empleadoService.selectedEmpleado.email"
+																type="text" class="form-control" placeholder="ejemplo@sucorreo.com">
+													 </div>   
+											 </div>
+	
+										</div>
+	
+	
+										<div class="row">
+	
+											 <div class="col-lg-4 form-group">
+													 <div class="col-lg-5">
+															 <font size="2" class="r">*No. empleado:</font>
+													 </div>
+													 <div class="col-lg-7">
+															 <input name="noEmpleado" #name="ngModel" [(ngModel)]="empleadoService.selectedEmpleado.noEmpleado"
+																type="text" class="form-control" placeholder="Número del empleado">
+													 </div>    
+											 </div>
+	
+											 <div class="col-lg-4 form-group">
+													 <div class="col-lg-5">
+															 <font size="2" class="r">*CURP</font>:   
+													 </div>
+													 <div class="col-lg-7">
+															 <input name="curpEmp" #name="ngModel" [(ngModel)]="empleadoService.selectedEmpleado.curp"
+																type="text" class="form-control" placeholder="AAAA010203MPLBCD11">
+													 </div>     
+											 </div>
+	
+											 <div class="col-lg-4 form-group">
+													 <div class="col-lg-5">
+															 <font size="2" class="r">*Tipo de nómina:</font>   
+													 </div>
+													 <div class="col-sm-7">
+															 <select class="custon-select form-control" name="tnomina"#name="ngModel" [(ngModel)]="empleadoService.selectedEmpleado.tNomina">
+																	 <option value="" disabled selected>Sin Selección</option>
+																	 <option value="ordinaria">O-Nomina ordinaria</option>
+																	 <option value="extraordinaria">E-Nomina extraordinaria</option>
+																	 </select>
+													 </div>  
+											 </div>
+	
+										</div>
+	
+	
+										<div class="row" >
+	
+											 <div class="col-lg-4 form-group">
+													 <div class="col-lg-5">
+															 <font size="2" class="r">*Periodicidad del pago:</font>
+													 </div>
+													 <div class="col-lg-4">
+															 <select name="perioPago" #name="ngModel" [(ngModel)]="empleadoService.selectedEmpleado.perioPago"
+																style="width:155%" class="custon-select form-control">
+																	 <option id="option" value="" disabled selected>Sin Selección</option>
+																	 <option value="diario">01 Diario</option> 
+																	 <option value="semanal">02 Semanal</option>
+																	 <option value="catorcenal">03 Catorcenal</option>
+																	 <option value="quincenal">04 Quincenal</option>
+																	 <option value="mensual">05 Mensual</option>
+																	 <option value="bimestral">06 Bimestral</option>
+																	 <option value="unidad">07 Unidad obra</option>
+																	 <option value="comision">08 Comision</option>
+																	 <option value="precio">09 Precio alzado</option>
+																	 <option value="docenal">10 Docenal</option>
+																	 <option value="otro periodicidad">99 Otra periodicidad</option>
+	
+															 </select>
+													 </div>
+											 </div>
+	
+											 <div class="col-lg-4 form-group">
+													 <div class="col-lg-5">
+															 <font size="2" class="r">*Entidad federativa:</font>   
+													 </div>
+													 <div class="col-lg-4">
+															 <select name="entFederativa" #name="ngModel" [(ngModel)]="empleadoService.selectedEmpleado.entFederativa" style="width:155%" class="custon-select form-control">
+																	 <option value="" disabled selected>Sin Selección</option>
+																	 <option value="aguasCalientes">Aguas Calientes</option>
+																	 <option value="bajaCalifornia">Baja California</option>
+																	 <option value="bajaCaliSur">Baja California Sur</option>
+																	 <option value="">MEX Campeche</option>
+																	 <option>Chiapas</option>
+																	 <option>Chihuahua</option>
+																	 <option>Coahila</option>
+																	 <option>Colima</option>
+																	 <option>Ciudad de Mexico</option>
+																	 <option>Durango</option>
+																	 <option>Guanajuato</option>
+																	 <option>Guerrero</option>
+																	 <option>Hidalgo</option>
+																	 <option>Jalisco</option>
+																	 <option>Estado de Mexico</option>
+																	 <option>Michoacan</option>
+																	 <option>Morelos</option>
+																	 <option>Nayarit</option>
+																	 <option>Nuevo Leon</option>
+																	 <option>Oaxaca</option>
+																	 <option>Puebla</option>
+																	 <option>Queretaro</option>
+																	 <option>Quintana Roo</option>
+																	 <option>San Luis Potosi</option>
+																	 <option>Sinaloa</option>
+																	 <option>Sonora</option>
+																	 <option>Tabasco</option>
+																	 <option>Tamaulipas</option>
+																	 <option>Tlaxcala</option>
+																	 <option>Veracruz</option>
+																	 <option>Yucatan</option>
+																	 <option>Zacatecas</option>
+																	 <option>USA Alabama</option>
+																	 <option>Alaska</option>
+																	 <option>Arizona</option>
+																	 <option>Arkansas</option>
+																	 <option>California</option>
+																	 <option>Carolina del norte</option>
+																	 <option>Carolina del Sur</option>
+																	 <option>Colorado</option>
+																	 <option>Connecticut</option>
+																	 <option>Dakota del Norte</option>
+																	 <option>Dakota del Sur</option>
+																	 <option>Delaware</option>
+																	 <option>Florida</option>
+																	 <option>Georgia</option>
+																	 <option>Hawai</option>
+																	 <option>Idaho</option>
+																	 <option>Lllinois</option>
+																	 <option>indiana</option>
+																	 <option>lowa</option>
+																	 <option>Kansas</option>
+																	 <option>Kentucky</option>
+																	 <option>Luisiana</option>
+																	 <option>Maine</option>
+																	 <option>Maryland</option>
+																	 <option>Massachusetts</option>
+																	 <option>Michigan</option>
+																	 <option>Minnesota</option>
+																	 <option>Misisipi</option>
+																	 <option>Misuri</option>
+																	 <option>Montana</option>
+																	 <option>Nebraska</option>
+																	 <option>Nevada</option>
+																	 <option>Nueva Jersey</option>
+																	 <option>Nueva York</option>
+																	 <option>Nuevo Hampshire</option>
+																	 <option>Nuevo Mexico</option>
+																	 <option>Ohio</option>
+																	 <option>Oklahoma</option>
+																	 <option>Oregon</option>
+																	 <option>Pensilvania</option>
+																	 <option>Rhode Island</option>
+																	 <option>Tennessee</option>
+																	 <option>Texas</option>
+																	 <option>Utah</option>
+																	 <option>Vermont</option>
+																	 <option>Virginia</option>
+																	 <option>Virginia Occidental</option>
+																	 <option>Whashington</option>
+																	 <option>Wisconsin</option>
+																	 <option>Wyoming</option>
+																	 <option>CAN Ontario</option>
+																	 <option>Quebec</option>
+																	 <option>Nueva Escocia</option>
+																	 <option>Nuevo Brunswick</option>
+																	 <option>Manitoba</option>
+																	 <option>Columbia Britanica</option>
+																	 <option>Isla del Principe Eduardo</option>
+																	 <option>Saskatchewan</option>
+																	 <option>Alberta</option>
+																	 <option>Terranova y Labrador</option>
+																	 <option>Territorio del Noroeste</option>
+																	 <option>Yukon</option>
+																	 <option>Nuvavut</option>
+	
+															 </select>
+													 </div>
+											 </div>
+	
+											 <div class="col-lg-4 form-group">
+													 <div class="col-lg-5">
+															 <font size="2" class="r">*Tipo de contrato:</font>   
+													 </div>
+													 <div class="col-lg-4">
+															 <select class="custon-select form-control" name="regimen">
+																	 <option value="" disabled selected>Sin Selección</option>
+																	 <option id="indeterminado">01 Contrato de trabajo por tiempo indeterminado</option>
+																	 <option id="determinada">02 Contrato de trabajo por obra determinada</option>
+																	 <option id="tiempo">03 Contrato de trabajo por tiempo determinado</option>
+																	 <option id="temporada">04 Contrato de trabajo por temporada</option>
+																	 <option id="prueba">05 Contrato de trabajo sujeto a prueba</option>
+																	 <option id="inicial">06 Contrato de trabajo con capacitacion inicial</option>
+																	 <option id="hora">07 Modalidad de contratacion por pago de hora laborada</option>
+																	 <option id="comision">08 Modalidad de trabajo por comision laboral</option>
+																	 <option id="modalidad">09 Modalidades de contratacion donde no existe relacion de trabajo</option>
+																	 <option id="Jubilacion">10 Jubilacion, pension, retiro</option>
+																	 <option id="otro contrato">99 Otro contrato</option>
+															 </select> 
+													 </div>
+											 </div>
+	
+										</div>
+	
+	
+										<div class="row">
+	 
+											 <div class="col-lg-4 form-group">
+													 <div class="col-lg-5">
+															 <font size="2" class="r">*Tipo de régimen:</font>
+													 </div>
+													 <div class="col-sm-7">
+															 <select class="custon-select form-control" name="regimen">
+																	 <option value="" disabled selected>Sin Selección</option>
+																	 <option value="">02 Sueldos</option>
+																	 <option value="">03 Jubilados</option>
+																	 <option value="">04 Pensionados</option>
+																	 <option value="">05 Asimilados Miembros Sociedades Cooperativas Produccion</option>
+																	 <option value="">06 Asimilados Integrantes Sociedades Asocioaciones Civiles</option>
+																	 <option value="">07 Asimilidados Miembros Consejos</option>
+																	 <option value="">08 Asimilados Comisionistas</option>
+																	 <option value="">09 Asimilados Honorarios</option>
+																	 <option value="">10 Asimilidados Acciones</option>
+																	 <option value="">11 Asimilados Otros</option>
+																	 <option value="">12 Jubilados o Pensionados</option>
+																	 <option value="">99 Otro regimen</option>
+	
+															 </select>
+													 </div>
+											 </div>
+	
+											 <div class="col-lg-4 form-group">
+													 <div class="col-lg-5">
+															 <font size="1">NSS:</font>   
+													 </div>
+													 <div class="col-lg-4">
+															 <input name="nss" type="text" class="form-control" placeholder="Número de seguro social">
+													 </div>
+											 </div>
+	
+											 <div class="col-lg-4 form-group">
+													 <div class="col-lg-5">
+															 <font size="1">Salario base, cuotas y aportaciones:</font>   
+													 </div>
+													 <div class="col-lg-4">
+															<input name="sbcAporta" type="text" class="form-control" placeholder="0.00">
+													 </div>                   
+											 </div> 
+	
+										</div>
+	
+	
+										<div class="row">
+	
+											 <div class="col-lg-4 form-group">
+													 <div class="col-lg-5">
+															 <font size="1">Riesgo del puesto:</font>
+													 </div>
+													 <div class="col-lg-4">
+															 <select name="rPuesto" style="width:155%" class="custon-select form-control">
+																	 <option value="" disabled selected>Sin Selección</option>
+																	 <option value="">1 Clase I</option>
+																	 <option value="">2 Clase II</option>
+																	 <option value="">3 Clase III</option>
+																	 <option value="">4 Clase IV</option>
+																	 <option value="">5 Clase V</option>
+																	 <option value="">No aplica</option>
+															 </select>
+													 </div>
+											 </div>
+	
+											 <div class="col-lg-4 form-group">
+													 <div class="col-lg-5">
+															 <font size="1">*Salario diario integrado:</font>  
+													 </div>
+													 <div class="col-lg-4">
+															 <input name="sdIntegrado" type="text" class="form-control" placeholder="0.00">
+													 </div>
+											 </div>
+	
+											 <div class="col-lg-4 form-group">
+													 <div class="col-lg-5">
+															 <font size="1">Tipo de jornada:</font>   
+													 </div>
+													 <div class="col-lg-4">
+															 <select name="tJornada" style="width:155%" class="custon-select form-control">
+																	 <option value="" disabled selected>Sin Selección</option>
+																	 <option value="">01.- Diurna</option>
+																	 <option value="">02.- Nocturna</option>
+																	 <option value="">03.- Mixta</option>
+																	 <option value="">04.- Por hora</option>
+																	 <option value="">05.- Reducida</option>
+																	 <option value="">06.- Continuada</option>
+																	 <option value="">07.- Partida</option>
+																	 <option value="">08.- Por turnos</option>
+																	 <option value="">99.- Otra jornada</option>
+															 </select>
+													 </div>                   
+											 </div> 
+	
+										</div>
+	
+										<div class="row">
+	
+											 <div class="col-lg-4 form-group">
+													 <div class="col-lg-5">
+															 <font size="1">Departamento:</font>
+													 </div>
+													 <div class="col-lg-4">
+															 <input name="departamento" type="text" class="form-control" placeholder="Departamento empleado">
+													 </div>
+											 </div>
+	
+											 <div class="col-lg-4 form-group">
+													 <div class="col-lg-5">
+															 <font size="1">Puesto:</font>   
+													 </div>
+													 <div class="col-lg-4">
+															 <input name="puesto" type="text" class="form-control" placeholder="Puesto empleado">
+													 </div>
+											 </div>
+	
+											 <div class="col-lg-4 form-group">
+													 <div class="col-lg-5">
+															 <font size="1">Sindicalizado:</font>   
+													 </div>
+													 <div class="col-lg-4">
+															 <select name="sindicalizado" style="width:155%" class="custon-select form-control">
+																	 <option value="" disabled selected>Sin Seleccionar</option>
+																	 <option value="">SI</option>
+																	 <option value="">NO</option>
+															 </select>
+													 </div>                   
+											 </div>  
+	
+										</div>
+	
+	
+										<div class="row">
+	
+											 <div class="col-lg-4 form-group">
+													 <div class="col-lg-5">
+															 <font size="1">Cuenta bancaria:</font>
+													 </div>
+	
+													 <div class="col-lg-4">
+															 <input name="cBancaria" type="text" class="form-control" placeholder="123456789012345678">
+													 </div>
+											 </div>
+	
+											 <div class="col-lg-4 form-group">
+													 <div class="col-lg-5">
+															 <font size="1">Banco:</font>   
+													 </div>
+													 <div class="col-lg-4">
+															 <select name="banco" style="width:155%" class="custon-select form-control">
+																	 <option value="" disabled selected>Sin Selección</option>
+																	 <option>002 BANAMEX</option>
+																	 <option>006 BANCOMEXT</option>
+																	 <option>009 BANCOBRAS</option>
+																	 <option>012 BBVA BANCOMER</option>
+																	 <option>014 SANTANDER</option>
+																	 <option>019 BANJERCITO</option>
+																	 <option>021 HSBC</option>
+																	 <option>030 BAJIO</option>
+																	 <option>032 IXE</option>
+																	 <option>036 INBURSA</option>
+																	 <option>037 INTERACCIONES</option>
+																	 <option>042 MIFEL</option>
+																	 <option>044 SCOTIABANK</option>
+																	 <option>058 BANREGIO</option>
+																	 <option>059 INVEX</option>
+																	 <option>060 BANSI</option>
+																	 <option>062 AFIRME</option>
+																	 <option>072 BANORTE</option>
+																	 <option>102 THE ROYAL BANK</option>
+																	 <option>103 AMERICAN EXPRESS</option>
+																	 <option>106 BAMSA</option>
+																	 <option>108 TOKIO</option>
+																	 <option>110 JP MORGAN</option>
+																	 <option>112 BMONEX</option>
+																	 <option>113 VE POR MAS</option>
+																	 <option>116 ING</option>
+																	 <option>124 DEUTSCHE</option>
+																	 <option>126 CREDIT SUISSE</option>
+																	 <option>127 AZTECA</option>
+																	 <option>128 AUTOFIN</option>
+																	 <option>129 BARCLAYS</option>
+																	 <option>130 COMPARTAMOS</option>
+																	 <option>131 BANCO FAMSA</option>
+																	 <option>132 BMULTIVA</option>
+																	 <option>133 ACTINVER</option>
+																	 <option>134 WAL-MART</option>
+																	 <option>135 NAFIN</option>
+																	 <option>136 INTERBANCO</option>
+																	 <option>137 BANCOPPEL</option>
+																	 <option>138 ABC CAPITAL</option>
+																	 <option>139 UBS BANK</option>
+																	 <option>140 CONSUBANCO</option>
+																	 <option>141 VOLKSWAGEN</option>
+																	 <option>143 CIBANCO</option>
+																	 <option>145 BBASE</option>
+																	 <option>147 BANKAOOL</option>
+																	 <option>148 PAGATODO</option>
+																	 <option>149 FORJADORES</option>
+																	 <option>150 INMOBILIARIO</option>
+																	 <option>151 DONDE</option>
+																	 <option>152 BANCREA</option>
+																	 <option>153 PROGRESO</option>
+																	 <option>154 BANCO FINTERRA</option>
+																	 <option>155 ICBC</option>
+																	 <option>156 SABADELL</option>
+																	 <option>157 SHINHAN</option>
+																	 <option>158 MIZUHO BANK</option>
+																	 <option>159 BANK OF CHINA</option>
+																	 <option>160 BANCO S3</option>
+																	 <option>166 BANSEFI</option>
+																	 <option>168 HIPOTECARIA FEDERAL</option>
+																	 <option>600 MONEXCB</option>
+																	 <option>601 GBM</option>
+																	 <option>602 MASARI</option>
+																	 <option>605 VAKUE</option>
+																	 <option>606 ESTRUCTURADORES</option>
+																	 <option>607 TIBER</option>
+																	 <option>608 VECTOR</option>
+																	 <option>610 B&B</option>
+																	 <option>614 ACCIVAL</option>
+																	 <option>615 MERRILL LYNCH</option>
+																	 <option>616 FINAMEX</option>
+																	 <option>617 VALMEX</option>
+																	 <option>618 UNICA</option>
+																	 <option>619 MAPFRE</option>
+																	 <option>620 PROFUTURO</option>
+																	 <option>621 CB ACTINVER</option>
+																	 <option>622 OACTIN</option>
+																	 <option>623 SKANDIA</option>
+																	 <option>626 CBDEUTSCHE</option>
+																	 <option>627 ZURICH</option>
+																	 <option>628 ZURICHVI</option>
+																	 <option>629 SU CASITA</option>
+																	 <option>630 CB INTERCAM</option>
+																	 <option>631 CI BOLSA</option>
+																	 <option>632 BULLTICK CB</option>
+																	 <option>633 STERLING</option>
+																	 <option>634 FINCOMUN</option>
+																	 <option>636 HDI SEGUROS</option>
+																	 <option>637 ORDER</option>
+																	 <option>638 AKALA</option>
+																	 <option>640 CB JPMORGAN</option>
+																	 <option>642 REFOMRA</option>
+																	 <option>646 STP</option>
+																	 <option>647 TELECOMM</option>
+																	 <option>648 EVERCORE</option>
+																	 <option>649 SKANDIA</option>
+																	 <option>651 SEGMTY</option>
+																	 <option>652 ASEA</option>
+																	 <option>653 KUSPIT</option>
+																	 <option>655 SOFIEXPRESS</option>
+																	 <option>656 UNAGRA</option>
+																	 <option>659 OPCIONES EMPRESARIALES DEL NOROESTE</option>
+																	 <option>670 LIBERTAD</option>
+																	 <option>901 CLS</option>
+																	 <option>902 INDEVAL</option>
+	
+	
+															 </select> 
+													 </div>
+											 </div>
+	
+											 <div class="col-lg-4 form-group">
+													 <div class="col-lg-5">
+															 <font size="1">Fecha inicio relación laboral:</font>   
+													 </div>
+													 <div class="col-sm-4">
+																	<input type="text" id="fecha" name="fecha" class="form-control" />
+													 </div>                   
+											 </div> 
+	
+										</div>
+	
+									</div>
+							 </form> <br>
+					</div> 
+					
+			 </div>
+	
+			 <form class="form-inline" role="form">
+					<div class="form-group col-lg-3">
+						<input name="aSubcontra" type="checkbox" class="form-control"><h6>Agregar subcontratación</h6><br><br>
+					</div>
+					<div class="form-group col-lg-3">
+					 
+					</div>
+					<div class="form-group col-lg-3">
+							 
+					</div><br>
+					<div class="form-group col-lg-3">
+							
+					</div> 
+				</form>
+	
+	
+				 <form class="form-inline" role="form">
+					<div class="form-group col-lg-3">
+						
+						<input name="aPercepciones" type="checkbox" class="form-control"><h6> Agregar percepciones</h6>
+					</div>
+					<div class="form-group col-lg-3">
+						<input name="aDeducciones" type="checkbox" class="form-control"><h6> Agregar deducciones:</h6>
+					</div>
+					<div class="form-group col-lg-3">
+							<input name="aPagos" type="checkbox" class="form-control"><h6> Agregar otros pagos</h6> 
+					</div><br>
+					<div class="form-group col-lg-3">
+							<input name="aIncapacidades" type="checkbox" class="form-control"><h6> Agregar incapacidades</h6>
+					</div> 
+				</form>
+	
+	
+	</div>
+			
+	 <!-- Tercer panel Totales-->   
+						<div class="panel panel-primary">
+									<div class="panel-heading" id="panels">Totales</div>
+	
+									<div class="panel-body"> 
+									<div class="form-horizontal">
+	
+										<div class="col-sm-4">
+	
+												<div class="form-group">
+														<label for="MainContent_text_reg_web" class="col-lg-3 control-label">Total de percepciones:</label>
+														<div class="col-sm-8">
+																<input name="tPercepciones" id="tPercepciones" class="form-control" type="text" placeholder="0.00">
+														</div>
+												</div>
+	
+												<div class="form-group">
+															<label for="MainContent_text_reg_web" class="col-sm-3 control-label">Subtotal:</label>
+															<div class="col-sm-1">
+																	<label for="MainContent_text_reg_web" class="col-sm-4 control-label">0.00</label><p></p>
+															</div>
+													</div>
+	
+										</div>
+										
+										<div class="col-sm-4">
+												<div class="form-group">
+														<h6 for="MainContent_text_reg_cp" class="col-lg-3 control-label">Total de deducciones</h6>
+														<div class="col-sm-8">
+																<input name="tDeducciones" id="tDeducciones" class="form-control" type="text" placeholder="0.00">
+														</div>
+												</div>
+												
+												<div class="form-group">
+															<label for="MainContent_text_reg_web" class="col-sm-3 control-label">Descuento:</label>
+															<div class="col-sm-4">
+																	<label for="MainContent_text_reg_web" class="col-sm-4 control-label">0.00</label><p></p>
+															</div>
+												</div>
+										</div>
+										
+										<div class="col-sm-4">
+											<div class="form-group">
+													<h6 for="MainContent_text_reg_cp" class="col-sm-3 control-label">Total de otros de pagos</h6>
+													<div class="col-sm-8">
+															<input name="toPagos" id="toPagos" class="form-control" type="text" placeholder="0.00">
+													</div>    
+											</div>
+	
+											<div class="form-group">
+															<label for="MainContent_text_reg_web" class="col-sm-3 control-label">Total:</label>
+															<div class="col-lg-4">
+																	<label for="MainContent_text_reg_web" class="col-sm-4 control-label">0.00</label><p></p>
+															</div>
+											</div>
+										</div>
+									</div>
+								 </div>
+								</div>
+			
+	<!-- Cuarto panel-->    
+							 <div class="panel panel-primary">
+											<div class="panel-heading" id="panels"></div>
+											 <div id="panel" class="panel-body">
+									 
+												 <button id="btn1" type="button" class="btn btn-secondary" style="margin-left: 4px;">Regresar</button>
+												 &nbsp;
+												 <button id="btn2" type="button" class="btn btn-secondary">Limpiar</button>
+												 &nbsp;
+												 <button id="btn3" type="button" class="btn btn-success">Agregar</button>
+											 </div>
+								 </div>
+							
+	<!--Quinto panel Filtrado Empleado-->
+								 <div class="panel panel-primary">
+											<div class="panel-heading" id="panels">Filtrado de empleados 1.2</div>
+											<div class="panel-body"> 
+													<div class="form-horizontal">
+															<div class="col-sm-4">
+																	<div class="form-group">
+																			<label for="MainContent_text_reg_web" class="col-sm-4 control-label">RFC:</label>
+																			<div class="col-sm-8">
+																					<input name="rfc2" id="rfc2" type="text" placeholder="AAAA010203AAA">
+																			</div>
+																	</div>
+															</div>
+															<div class="col-sm-4">
+																	<div class="form-group">
+																			<h6 for="MainContent_text_reg_cp" class="col-sm-4 control-label">Nombre:</h6>
+																					<div class="col-sm-8">
+																							<input name="nombreEmp" id="nombreEmp" type="text" placeholder="Nombre del empleado">
+																					</div>
+																	</div>
+															</div>
+															<div class="col-sm-4">
+																	<div class="form-group">
+																			<h6 for="MainContent_text_reg_cp" class="col-sm-4 control-label">No. empleado:</h6>
+																					<div class="col-sm-8">
+																							<input name="noEmpleado" id="noEmpleado" type="text" placeholder="Número del empleado">
+																					</div>
+																				</div>
+															</div>
+													</div>  
+										 </div>
+								 </div>
+	
+	
+	<!--Sexto panel Catalogo empleado-->
+								 <div class="panel panel-primary">
+									 <div class="panel-heading" id="panels">Catálogo de empleados 1.2</div>
+											<div class="panel-body"> 
+													<button type="button" class="btn btn-success">Agregar empleado</button> <p>
+																	<div class="table">
+																					<table id="tabla2" border="1" class="table table-resposive">
+																							
+																									<tr>
+																											<th>Activo</th>
+																											<th>RFC</th>
+																											<th>Nombre</th>
+																											<th>No. de empleado</th>
+																											<th>Edit/Delete</th>
+																									</tr>
+																				
+																									<tr>
+																											<td data-th="Activo">1</td>
+																											<td data-th="RFC">CANA860507RI8</td>
+																											<td data-th="Nombre">NA GISELA CASTILLO NAVA</td>
+																											<td data-th="No. De empleado">5</td>
+																											<td data-th="Edit/Delete"><i class="fas fa-pencil-alt" style="font-size: 15px;"></i> &nbsp; <i class="fas fa-trash-alt" style="font-size: 15px;"></i></td>
+																									</tr>
+											
+																									<tr>
+																											<td data-th="Activo">1</td>
+																											<td data-th="RFC">CANA860507RI8</td>
+																											<td data-th="Nombre">NA GISELA CASTILLO NAVA</td>
+																											<td data-th="No. De empleado">5</td>
+																											<td data-th="Edit/Delete"><i class="fas fa-pencil-alt" style="font-size: 15px;"></i> &nbsp; <i class="fas fa-trash-alt" style="font-size: 15px;"></i></td>
+																											
+																									</tr>
+																					</table>
+																			</div>
+	
+	
+													<div class="form-horizontal">
+															<div class="col-sm-8">
+																	<div class="form-group">
+																			<label>Pagina 1 de 1, 6 registros</label>
+																	</div>
+															</div>
+															<div class="col-sm-4 right">
+																<div class="form-group">
+																			<button class="btn btn-default btn-circle" id="btn1"><i class="glyphicon glyphicon-backward"></i></button>
+																			<button class="btn btn-default btn-circle" id="btn2"><i class="glyphicon glyphicon-triangle-left"></i></button>
+																			<button class="btn btn-default btn-circle" id="btn3"><i class="glyphicon glyphicon-triangle-right"></i></button>
+																			<button class="btn btn-default btn-circle" id="btn4"><i class="glyphicon glyphicon-forward"></i></button> <p></p>
+																			<br>
+																			<br>     
+																			<button type="button" class="btn btn-success" id="btn5">Exportar empleados</button> <p>
+																</div>
+															</div>
+													</div>
+												 
+													
+											</div>
+								 </div>
+	</div>
+	

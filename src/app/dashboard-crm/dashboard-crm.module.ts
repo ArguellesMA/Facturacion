@@ -4,7 +4,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { DashboardCrmComponent } from './dashboard-crm.component';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { MatCardModule } from '@angular/material/card';
-import { DashboardWidgetModule } from '../dashboard-widget/dashboard-widget.module';
+import { DocumentosModule } from '../Documentos/Documentos.module';
 
 export const appRoutes: Routes = [
     { path: '', component: DashboardCrmComponent },
@@ -16,7 +16,7 @@ export const appRoutes: Routes = [
     RouterModule.forChild(appRoutes),
     FlexLayoutModule,
     MatCardModule,
-    DashboardWidgetModule
+    DocumentosModule
   ],
   declarations: [DashboardCrmComponent],
   exports: [ ]
