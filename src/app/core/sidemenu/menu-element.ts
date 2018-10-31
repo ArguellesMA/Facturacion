@@ -251,13 +251,13 @@ export const menus = [
             {
                 'name': 'CFDI 3.3',
                 'icon': 'dashboard',
-                'link': '',
+                'link': 'Registro/cfdi33',
                 'open': false,
             },
             {
                 'name': 'Retenciones',
                 'icon': 'list',
-                'link':  '',
+                'link':  'Registro/retenciones',
                 'open':  false,
             }
         ]
@@ -304,66 +304,66 @@ export const menus = [
                 'name': 'Informacion fiscal',
                 'icon': 'work',
                 'open': false,
-                'link': '../login',
+                'link': 'ConfiguracionC/ifiscal',
             }, 
             {
                 'name': 'Sucursales/Cuentas',
                 'icon': 'local_laundry_service',
                 'open': false,
-                'link': 'pages/services',
+                'link': 'ConfiguracionC/sucuentas',
             },
             {
                 'name': 'Certificado',
                 'icon': 'directions',
                 'open': false,
-                'link': 'pages/contact'
+                'link': 'ConfiguracionC/certificado'
             },
             {
                 'name': 'Activacion de creditos de CFDI',
                 'icon': 'list',
-                'link': '',
+                'link': 'ConfiguracionC/creditoscfdi',
                 'open': false,
             },
             {
                 'name': 'Activacion de creditos de recepcion',
                 'icon': 'dashboard',
-                'link': '',
+                'link': 'ConfiguracionC/creditosrecepcion',
                 'open': false,
             },
             {
                 'name': 'Logos',
                 'icon': 'work',
-                'link': '',
+                'link': 'ConfiguracionC/logos',
                 'open': false,  
             },
             {
                 'name': 'Activar complementos',
                 'icon': 'list',
-                'link': '',
+                'link': 'ConfiguracionC/complementos',
                 'open': false,
             },
             {
                 'name': 'Mis pagos',
                 'icon': 'list',
-                'link': '',
+                'link': 'ConfiguracionC/pagos',
                 'open': false,
             },
             {
                 'name': 'Correo',
                 'icon': 'work',
-                'link': '',
+                'link': 'ConfiguracionC/correo',
                 'open': false,
             },
             {
                 'name': 'Carta manifiesto',
                 'icon': 'dashboard',
-                'link': '',
+                'link': 'ConfiguracionC/cartaman',
                 'open': false,
             },
             {
                 'name': 'Configuracion general',
                 'icon': 'list',
-                'link': '',
+                'link': 'ConfiguracionC/configuraciongral',
                 'open': false,
             }
         ]

@@ -7,7 +7,7 @@ import { AuthModule } from '../auth/auth.module';
 const routes: Routes = [   
     {path: 'auth', loadChildren: '../auth/auth.module#AuthModule'},
     {path: 'register', loadChildren: '../register/register.module#RegisterModule'},
-    {path: 'login', loadChildren: '../pages/login/login.module#LoginModule'},
+    //{path: 'login', loadChildren: '../pages/login/login.module#LoginModule'},
     // {path: 'editor', loadChildren: '../editor/editor.module#EditorModule'},
 
     {path: '**', redirectTo: 'auth/dashboard'},
