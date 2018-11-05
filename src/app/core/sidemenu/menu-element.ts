@@ -9,35 +9,35 @@ export const menus = [
             {
                 'name': 'Generar CFDI 3.3',
                 'link': 'Documentos/gcfdi33',
-                'icon': 'dashboard',
+                'icon': 'line_weight',
                 'chip': false,
                 'open': true,
             },
             {
                 'name': 'Generar nomina 1.2',
                 'link': 'Documentos/gnomina12',
-                'icon': 'list',
+                'icon': 'my_library_books',
                 'chip': false,
                 'open': true,
             },
             {
                 'name': 'Generar complemento pagos',
                 'link': 'Documentos/gpagos',
-                'icon': 'dashboard',
+                'icon': 'attach_money',
                 'chip': false,
                 'open': true,
             },
             {
                 'name': 'Generar retenciones',
                 'link': 'Documentos/gretenciones',
-                'icon': 'dashboard',
+                'icon': 'book',
                 'chip': false,
                 'opne': true,
             },
             {
                 'name': 'Generar comercio exterior 1.1',
                 'link': 'Documentos/gcomercio',
-                'icon': 'dashboard',
+                'icon': 'chrome_reader_mode',
                 'chip': false,
                 'open': true,
             }
@@ -52,14 +52,14 @@ export const menus = [
             {
                 'name': 'Clientes',
                 'link': 'Catalogos/clientes',
-                'icon': 'indeterminate_check_box',
+                'icon': 'perm_identity',
                 'chip': false,
                 'open': false,
             },
             {
                 'name': 'Empleados',
                 'link': 'Catalogos/empleados',
-                'icon': 'list',
+                'icon': 'account_circle',
                 'chip': false,
                 'open': false,
             },
@@ -67,7 +67,7 @@ export const menus = [
 
                 'name': 'Etiquetas personalizadas',
                 'link': 'Catalogos/etiquetas',
-                'icon': 'view_week',
+                'icon': 'card_membership',
                 'chip': false,
                 'open': false,
 
@@ -75,28 +75,28 @@ export const menus = [
             {
                 'name': 'Impuestos',
                 'link': 'Catalogos/impuestos',
-                'icon': 'web_aaset',
+                'icon': 'account_balance_wallet',
                 'chip': false,
                 'open': false,
             },
             {
                 'name': 'Impuestos locales',
                 'link': 'Catalogos/ilocales',
-                'icon': 'cached',
+                'icon': 'account_balance',
                 'chip': false,
                 'open': false,
             },
             {
                 'name': 'Mis plantillas PDF',
                 'link': 'Catalogos/mplantillas',
-                'icon': 'crop_16_9',
+                'icon': 'insert_drive_file',
                 'chip': false,
                 'open': false,
             },
             {
                 'name': 'Productos',
                 'link': 'Catalogos/productos',
-                'icon': 'gif',
+                'icon': 'local_play',
                 'chip': false,
                 'open': false,
             },
@@ -199,43 +199,43 @@ export const menus = [
         'sub': [
             {
                 'name': 'Bridge TXT 3.3',
-                'icon': 'filter_list',
+                'icon': 'bookmark',
                 'link': 'Herramientas/bridge33',
                 'open': false,
             },
             {
                 'name': 'Bridge TXT 3.2',
-                'icon': 'done_all',
+                'icon': 'bookmark_outline',
                 'link': 'Herramientas/bridge32',
                 'open': false,
             },
             {
                 'name': 'Buzon',
-                'icon': 'filter_center_focus',
+                'icon': 'local_post_office',
                 'link': 'Herramientas/buzon',
                 'open': false,
             },
             {
                 'name': 'Prefacturas',
-                'icon': 'list',
+                'icon': 'storage',
                 'link': 'Herramientas/prefacturas',
                 'open': false,
             },
             {
                 'name': 'Pre-nomina 3.3',
-                'icon': 'list',
+                'icon': 'my_library_books',
                 'link': 'Herramientas/prenomina',
                 'open': false,
             },
             {
                 'name': 'Pre-nomina3.2',
-                'icon': 'list',
+                'icon': 'featured_play_list',
                 'link': 'Herramientas/prenomina32',
                 'open': false,
             },
             {
                 'name': 'Tickets',
-                'icon': 'list',
+                'icon': 'receipt',
                 'link': 'Herramientas/tickets',
                 'open': false,
             }
@@ -250,13 +250,13 @@ export const menus = [
         'sub': [
             {
                 'name': 'CFDI 3.3',
-                'icon': 'dashboard',
+                'icon': 'view_day',
                 'link': 'Registro/cfdi33',
                 'open': false,
             },
             {
                 'name': 'Retenciones',
-                'icon': 'list',
+                'icon': 'view_compact',
                 'link':  'Registro/retenciones',
                 'open':  false,
             }
@@ -302,67 +302,67 @@ export const menus = [
         'sub': [
             {
                 'name': 'Informacion fiscal',
-                'icon': 'work',
+                'icon': 'account_box',
                 'open': false,
                 'link': 'ConfiguracionC/ifiscal',
             }, 
             {
                 'name': 'Sucursales/Cuentas',
-                'icon': 'local_laundry_service',
+                'icon': 'domain',
                 'open': false,
                 'link': 'ConfiguracionC/sucuentas',
             },
             {
                 'name': 'Certificado',
-                'icon': 'directions',
+                'icon': 'recent_actors',
                 'open': false,
                 'link': 'ConfiguracionC/certificado'
             },
             {
                 'name': 'Activacion de creditos de CFDI',
-                'icon': 'list',
+                'icon': 'assignment_turned_in',
                 'link': 'ConfiguracionC/creditoscfdi',
                 'open': false,
             },
             {
                 'name': 'Activacion de creditos de recepcion',
-                'icon': 'dashboard',
+                'icon': 'description',
                 'link': 'ConfiguracionC/creditosrecepcion',
                 'open': false,
             },
             {
                 'name': 'Logos',
-                'icon': 'work',
+                'icon': 'whatshot',
                 'link': 'ConfiguracionC/logos',
                 'open': false,  
             },
             {
                 'name': 'Activar complementos',
-                'icon': 'list',
+                'icon': 'beenhere',
                 'link': 'ConfiguracionC/complementos',
                 'open': false,
             },
             {
                 'name': 'Mis pagos',
-                'icon': 'list',
+                'icon': 'attach_money',
                 'link': 'ConfiguracionC/pagos',
                 'open': false,
             },
             {
                 'name': 'Correo',
-                'icon': 'work',
+                'icon': 'contact_mail',
                 'link': 'ConfiguracionC/correo',
                 'open': false,
             },
             {
                 'name': 'Carta manifiesto',
-                'icon': 'dashboard',
+                'icon': 'email',
                 'link': 'ConfiguracionC/cartaman',
                 'open': false,
             },
             {
                 'name': 'Configuracion general',
-                'icon': 'list',
+                'icon': 'settings',
                 'link': 'ConfiguracionC/configuraciongral',
                 'open': false,
             }
@@ -394,24 +394,36 @@ export const menus = [
     //        }
     //    ]
     //}, 
-    //{
-    //    'name': '..........',
-    //    'icon': 'map',
-    //    'open': false,
-    //    'link': false,
-    //    'sub': [
-    //        {
-    //            'name': 'google-map',
-    //            'icon': 'directions',
-    //            'link': 'maps/googlemap',
-    //            'open': false,
-    //        },
-    //       {
-    //            'name': 'leaflet-map',
-    //            'icon': 'directions',
-    //            'link': 'maps/leafletmap',
-    //            'open': false,
-    //        }
-    //    ]
-    //}
+    {
+        'name': 'Paginas',
+        'icon': 'map',
+        'open': false,
+        'link': false,
+        'sub': [
+            {
+                'name': 'login',
+                'icon': 'directions',
+                'link': 'pages/login',
+                'open': false,
+            },
+           {
+                'name': 'about',
+                'icon': 'show_chart',
+                'link': 'pages/about',
+                'open': false,
+            },
+            {
+                'name': 'contact',
+                'icon': 'list',
+                'link': 'pages/contact',
+                'open': false,
+            },
+            {
+                'name': 'services',
+                'icon': 'pie_chart',
+                'link': 'pages/services',
+                'open': false,
+            }
+        ]
+    }
 ];
