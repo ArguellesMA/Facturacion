@@ -2,36 +2,56 @@
 	<!-- Primer panel Emisor -->   
 			<div class="panel panel-primary">
 					<div class="panel-heading" id="panels">Emisor</div>
-					<div class="panel-body"> 
+					<div class="panel-body d-flex justify-content-center"> 
 	
-					<div>
-					<form #emisorForm="ngForm" (ngSubmit)="addEmisor
+					
+					<form class="form-inline col-lg-12" role="form-horizontal" #emisorForm="ngForm" (ngSubmit)="addEmisor
 						(emisorForm)">
 						<input type="hidden" name="idEmisor" #_idEmisor="ngModel" [(ngModel)]="emisorService.selectedEmisor.idEmisor">
 						 <div>
 									<input name="emisor" #name="ngModel" [(ngModel)]="emisorService.selectedEmisor.emisor"
 									 type="checkbox" value=""><label>Agregar emisor</label>
 						 </div>
-					<div class="d-flex justify-content-center">
+					
 							<div class="c"><p>
 	
-							 <form class="form-inline" role="form">
+							 <form class="form-inline col-lg-12" role="form-horizontal">
+								 
+								<div class="row">
 								 <div class="form-group col-lg-4">
-										<h6>CURP:</h6>
+										 <div class="col-lg-3">
+										<font>
+											CURP:
+										</font>
+										</div>
+										<div class="col-sm-7">
 										<input name="curp" #name="ngModel" [(ngModel)]="emisorService.selectedEmisor.curp" 
 										 type="text" class="form-control" placeholder="AAAA010203MPLBCD11"> 
+								        </div> 
 								 </div>
-	
+
 								 <div class="form-group col-lg-4">
-										<h6>Registro patronal:</h6>
+									 <div class="col-lg-3">
+										<font>
+											Registro patronal:
+										</font>
+										</div>
+										<div class="col-sm-7">
 										<input name="rPatronal" #name="ngModel" [(ngModel)]="emisorService.selectedEmisor.rPatronal"
 										 type="text" class="form-control" placeholder="Registro patronal">
+										</div>	
 								 </div>
-	
+
 								 <div class="form-group col-lg-4">
-										<h6>RFC patrón de origen:</h6>
+									 <div class="col-lg-4">
+										<font>
+											RFC patrón de origen:
+										</font>
+										</div>
+										<div class="col-sm-7">
 										<input name="rfcOrigen" #name="ngModel" [(ngModel)]="emisorService.selectedEmisor.rfcOrigen" 
 										 type="text" class="form-control" placeholder="AAAA010203AAA">
+										 </div>
 								 </div>
 	
 								 <div class="col-lg-4 form-group">
@@ -39,14 +59,10 @@
 										 type="checkbox" class="form-control">
 										<h6>Agregar Entidad Sistema Nacional de Coordinación Fiscal(SNFC)</h6>
 								 </div>
-							 </form>
-	
-								
+								</div>
+							 </form>	
 									</div>
-			
-							</div>
 					</form>
-					</div>
 					</div>
 			</div>
 				
@@ -56,12 +72,11 @@
 		<div class="panel-heading" id="panels">Empleado</div>
 			 <div class="panel-body d-flex justify-content-center">
 					<div class="c"> <p></p>
+
 							<form class="form-inline col-lg-12 " role="form-horizontal">
 									<div class="col-md-12 col-lg-12">
 	
-	
 										<div class="row">
-	
 											 <div class="col-lg-4 form-group">       
 													 <div class="col-lg-5">        
 													 </div>
@@ -122,9 +137,11 @@
 	
 											 <div class="col-lg-4 form-group">       
 													 <div class="col-lg-5">
-															 <font size="2" class="r">*RFC empleado</font>
+															 <font size="2" class="r"
+															 >*RFC empleado
+															</font>
 													 </div>
-													 <div class="col-lg-7">
+													 <div class="col-sm-7">
 															 <input name="rfcEmpleado" #name="ngModel" [(ngModel)]="empleadoService.selectedEmpleado.rfcEmpleado"
 															 type="text" class="form-control" placeholder="AAAA010203AAA" maxlength="13">
 													 </div>                    
@@ -132,9 +149,11 @@
 	
 											 <div class="col-lg-4 form-group">   
 													 <div class="col-lg-5">
-															 <font size="2" class="r">*Nombre empleado:</font>    
+															 <font size="2" class="r">
+																 *Nombre empleado:
+															 </font>    
 													 </div>
-													 <div class="col-lg-7">
+													 <div class="col-sm-7">
 															 <input name="nomEmpleado" #name="ngModel" [(ngModel)]="empleadoService.selectedEmpleado.nomEmpleado"
 																type="text" class="form-control" placeholder="Nombre empleado">
 													 </div>    
@@ -142,9 +161,11 @@
 	
 											 <div class="col-lg-4 form-group">           
 													 <div class="col-lg-5">
-															 <font size="1">E-Mail:</font>    
+															 <font size="1">
+																 E-Mail:
+															</font>    
 													 </div>
-													 <div class="col-lg-7">
+													 <div class="col-sm-7">
 															 <input name="email" #name="ngModel" [(ngModel)]="empleadoService.selectedEmpleado.email"
 																type="text" class="form-control" placeholder="ejemplo@sucorreo.com">
 													 </div>   
@@ -157,9 +178,11 @@
 	
 											 <div class="col-lg-4 form-group">
 													 <div class="col-lg-5">
-															 <font size="2" class="r">*No. empleado:</font>
+															 <font size="2" class="r">
+																 *No. empleado:
+															</font>
 													 </div>
-													 <div class="col-lg-7">
+													 <div class="col-sm-7">
 															 <input name="noEmpleado" #name="ngModel" [(ngModel)]="empleadoService.selectedEmpleado.noEmpleado"
 																type="text" class="form-control" placeholder="Número del empleado">
 													 </div>    
@@ -167,9 +190,11 @@
 	
 											 <div class="col-lg-4 form-group">
 													 <div class="col-lg-5">
-															 <font size="2" class="r">*CURP</font>:   
+															 <font size="2" class="r">
+																 *CURP
+															</font>:   
 													 </div>
-													 <div class="col-lg-7">
+													 <div class="col-sm-7">
 															 <input name="curpEmp" #name="ngModel" [(ngModel)]="empleadoService.selectedEmpleado.curp"
 																type="text" class="form-control" placeholder="AAAA010203MPLBCD11">
 													 </div>     
@@ -177,7 +202,9 @@
 	
 											 <div class="col-lg-4 form-group">
 													 <div class="col-lg-5">
-															 <font size="2" class="r">*Tipo de nómina:</font>   
+															 <font size="2" class="r">
+																 *Tipo de nómina:
+															</font>   
 													 </div>
 													 <div class="col-sm-7">
 															 <select class="custon-select form-control" name="tnomina"#name="ngModel" [(ngModel)]="empleadoService.selectedEmpleado.tNomina">
@@ -195,9 +222,11 @@
 	
 											 <div class="col-lg-4 form-group">
 													 <div class="col-lg-5">
-															 <font size="2" class="r">*Periodicidad del pago:</font>
+															 <font size="2" class="r">
+																 *Periodicidad del pago:
+															</font>
 													 </div>
-													 <div class="col-lg-4">
+													 <div class="col-sm-7">
 															 <select name="perioPago" #name="ngModel" [(ngModel)]="empleadoService.selectedEmpleado.perioPago"
 																style="width:155%" class="custon-select form-control">
 																	 <option id="option" value="" disabled selected>Sin Selección</option>
@@ -219,9 +248,11 @@
 	
 											 <div class="col-lg-4 form-group">
 													 <div class="col-lg-5">
-															 <font size="2" class="r">*Entidad federativa:</font>   
+															 <font size="2" class="r">
+																 *Entidad federativa:
+															</font>   
 													 </div>
-													 <div class="col-lg-4">
+													 <div class="col-sm-7">
 															 <select name="entFederativa" #name="ngModel" [(ngModel)]="empleadoService.selectedEmpleado.entFederativa" style="width:155%" class="custon-select form-control">
 																	 <option value="" disabled selected>Sin Selección</option>
 																	 <option value="aguasCalientes">Aguas Calientes</option>
@@ -326,10 +357,12 @@
 	
 											 <div class="col-lg-4 form-group">
 													 <div class="col-lg-5">
-															 <font size="2" class="r">*Tipo de contrato:</font>   
+															 <font size="2" class="r">
+																 *Tipo de contrato:
+															</font>   
 													 </div>
 													 <div class="col-lg-4">
-															 <select class="custon-select form-control" name="regimen">
+															 <select class="custon-select form-control" name="contarto">
 																	 <option value="" disabled selected>Sin Selección</option>
 																	 <option id="indeterminado">01 Contrato de trabajo por tiempo indeterminado</option>
 																	 <option id="determinada">02 Contrato de trabajo por obra determinada</option>
@@ -353,9 +386,11 @@
 	 
 											 <div class="col-lg-4 form-group">
 													 <div class="col-lg-5">
-															 <font size="2" class="r">*Tipo de régimen:</font>
+															 <font size="2" class="r">
+																 *Tipo de régimen:
+															</font>
 													 </div>
-													 <div class="col-sm-7">
+													 <div class="col-lg-4">
 															 <select class="custon-select form-control" name="regimen">
 																	 <option value="" disabled selected>Sin Selección</option>
 																	 <option value="">02 Sueldos</option>
@@ -377,18 +412,22 @@
 	
 											 <div class="col-lg-4 form-group">
 													 <div class="col-lg-5">
-															 <font size="1">NSS:</font>   
+															 <font size="1">
+																 NSS:
+															</font>   
 													 </div>
-													 <div class="col-lg-4">
+													 <div class="col-sm-7">
 															 <input name="nss" type="text" class="form-control" placeholder="Número de seguro social">
 													 </div>
 											 </div>
 	
 											 <div class="col-lg-4 form-group">
 													 <div class="col-lg-5">
-															 <font size="1">Salario base, cuotas y aportaciones:</font>   
+															 <font size="1">
+																 Salario base, cuotas y aportaciones:
+															</font>   
 													 </div>
-													 <div class="col-lg-4">
+													 <div class="col-sm-7">
 															<input name="sbcAporta" type="text" class="form-control" placeholder="0.00">
 													 </div>                   
 											 </div> 
@@ -400,9 +439,11 @@
 	
 											 <div class="col-lg-4 form-group">
 													 <div class="col-lg-5">
-															 <font size="1">Riesgo del puesto:</font>
+															 <font size="1">
+																 Riesgo del puesto:
+															</font>
 													 </div>
-													 <div class="col-lg-4">
+													 <div class="col-sm-7">
 															 <select name="rPuesto" style="width:155%" class="custon-select form-control">
 																	 <option value="" disabled selected>Sin Selección</option>
 																	 <option value="">1 Clase I</option>
@@ -417,18 +458,22 @@
 	
 											 <div class="col-lg-4 form-group">
 													 <div class="col-lg-5">
-															 <font size="1">*Salario diario integrado:</font>  
+															 <font size="1">
+																 *Salario diario integrado:
+															</font>  
 													 </div>
-													 <div class="col-lg-4">
+													 <div class="col-sm-7">
 															 <input name="sdIntegrado" type="text" class="form-control" placeholder="0.00">
 													 </div>
 											 </div>
 	
 											 <div class="col-lg-4 form-group">
 													 <div class="col-lg-5">
-															 <font size="1">Tipo de jornada:</font>   
+															 <font size="1">
+																 Tipo de jornada:
+															</font>   
 													 </div>
-													 <div class="col-lg-4">
+													 <div class="col-sm-7">
 															 <select name="tJornada" style="width:155%" class="custon-select form-control">
 																	 <option value="" disabled selected>Sin Selección</option>
 																	 <option value="">01.- Diurna</option>
@@ -450,27 +495,33 @@
 	
 											 <div class="col-lg-4 form-group">
 													 <div class="col-lg-5">
-															 <font size="1">Departamento:</font>
+															 <font size="1">
+																 Departamento:
+															</font>
 													 </div>
-													 <div class="col-lg-4">
+													 <div class="col-sm-7">
 															 <input name="departamento" type="text" class="form-control" placeholder="Departamento empleado">
 													 </div>
 											 </div>
 	
 											 <div class="col-lg-4 form-group">
 													 <div class="col-lg-5">
-															 <font size="1">Puesto:</font>   
+															 <font size="1">
+																 Puesto:
+															</font>   
 													 </div>
-													 <div class="col-lg-4">
+													 <div class="col-sm-7">
 															 <input name="puesto" type="text" class="form-control" placeholder="Puesto empleado">
 													 </div>
 											 </div>
 	
 											 <div class="col-lg-4 form-group">
 													 <div class="col-lg-5">
-															 <font size="1">Sindicalizado:</font>   
+															 <font size="1">
+																 Sindicalizado:
+															</font>   
 													 </div>
-													 <div class="col-lg-4">
+													 <div class="col-sm-7">
 															 <select name="sindicalizado" style="width:155%" class="custon-select form-control">
 																	 <option value="" disabled selected>Sin Seleccionar</option>
 																	 <option value="">SI</option>
@@ -486,19 +537,23 @@
 	
 											 <div class="col-lg-4 form-group">
 													 <div class="col-lg-5">
-															 <font size="1">Cuenta bancaria:</font>
+															 <font size="1">
+																 Cuenta bancaria:
+															</font>
 													 </div>
 	
-													 <div class="col-lg-4">
+													 <div class="col-sm-7">
 															 <input name="cBancaria" type="text" class="form-control" placeholder="123456789012345678">
 													 </div>
 											 </div>
 	
 											 <div class="col-lg-4 form-group">
 													 <div class="col-lg-5">
-															 <font size="1">Banco:</font>   
+															 <font size="1">
+																 Banco:
+															</font>   
 													 </div>
-													 <div class="col-lg-4">
+													 <div class="col-sm-7">
 															 <select name="banco" style="width:155%" class="custon-select form-control">
 																	 <option value="" disabled selected>Sin Selección</option>
 																	 <option>002 BANAMEX</option>
@@ -615,9 +670,11 @@
 	
 											 <div class="col-lg-4 form-group">
 													 <div class="col-lg-5">
-															 <font size="1">Fecha inicio relación laboral:</font>   
+															 <font size="1">
+																 Fecha inicio relación laboral:
+															</font>   
 													 </div>
-													 <div class="col-sm-4">
+													 <div class="col-sm-7">
 																	<input type="text" id="fecha" name="fecha" class="form-control" />
 													 </div>                   
 											 </div> 

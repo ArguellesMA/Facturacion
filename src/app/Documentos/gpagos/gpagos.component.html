@@ -647,72 +647,88 @@
     
     <!--................................................septimo panel..............................................-->
     <div class="panel panel-primary">
-        <div class="panel-heading" id="panels">Total</div>
-        <div class="panel-body">
-            
-        <form>
-            
-        <div class="row">
-            <div class="form-group col-lg-4">
-                <div class="col-lg-5">
-                    <font>
-                        Importe con letra
-                    </font>
+            <div class="panel-heading" id="panels">Total</div>
+                <div class="panel-body">
+                    <form class="form-inline" role="form-horizontal">
+                        <div class="col-md-12 col-lg-12"> <p></p>
+                            <div class="row">
+                                <div class="col-lg-7">
+          
+                                    <div class="form-group">     
+                                        <div class="col-lg-6">    
+                                            <font size="1">Importe con letra:</font>     
+                                        </div>
+                                        <div class="col-lg-6 form-group">
+                                            <input name="rfc3" 
+                                            type="text" class="form-control" placeholder="Importe del total con letra">
+                                        </div>                   
+                                    </div>
+                  
+                                </div>
+                  
+                                <div class="col-lg-5"> 
+          
+                                    <div class="form-group">
+                                            
+                                        <label><input type="radio" name="optradio">PDF Español</label> 
+                                        <label><input type="radio" name="optradio">PDF Inglés</label> 
+                                                      
+                                    </div>
+                      
+                                    <div class="form-group">     
+                                        <div class="col-lg-4">    
+                                            <font size="1">*Subtotal:</font>     
+                                        </div>
+                                        <div class="col-lg-8 form-group">
+                                            <input name=""
+                                            type="text" class="form-control" placeholder="0.00">
+                                        </div>               
+                                    </div>
+          
+                                    <div class="form-group">     
+                                        <div class="col-lg-4">    
+                                            <font size="1">Descuento total:</font>     
+                                        </div>
+                                        <div class="col-lg-8 form-group">
+                                            <input name="" 
+                                            type="text" class="form-control" placeholder="0.00">
+                                        </div>                     
+                                    </div>
+          
+                                    <div class="form-group">     
+                                        <div class="col-lg-4">    
+                                            <font size="1">Subtotal generado:</font>     
+                                        </div>
+                                        <div class="col-lg-8 form-group">
+                                            <input name=""
+                                            type="text" class="form-control" placeholder="0.00">
+                                        </div>                    
+                                    </div>
+          
+                                    <div class="form-group">     
+                                        <div class="col-lg-4">    
+                                            <font size="1">*Total:</font>     
+                                        </div>
+                                        <div class="col-lg-8 form-group">
+                                            <input name=""
+                                            type="text" class="form-control" placeholder="0.00">
+                                        </div>                   
+                                    </div>
+          
+                                    <div class="form-group">     
+                                        <div class="col-lg-4">        
+                                        </div>
+                                        <div class="col-lg-8 form-group">
+                                            <button type="button" class="btn btn-success" style="margin: 2px;">Vista previa</button>
+                                            <button type="button" class="btn btn-success" style="margin: 2px;">Guardar prefactura</button>
+                                            <button type="button" class="btn btn-success">Emitir CFDI</button>
+                                        </div>                         
+                                    </div>
+                      
+                                  </div>
+                            </div>
+                        </div>
+                    </form>
                 </div>
-                <div class="col-sm-7">
-                    <input type="text" id="importe" class="form-control" placeholder="CERO 00/100 xxx">
-                </div>
-            </div>
-        </div>
-    
-    
-        <div class="col-lg-5">
-    
-            <div class="form-group">
-            <div>
-                <input type="checkbox" id="pdfes" value=""><label>PDF Español</label>
-            </div>
-            <div>
-                <input type="checkbox" id="pdfin" value=""><label>PDF Ingles</label>
-            </div>
-            </div>
-        
-        <div class="form-group">
-            <div class="col-lg-4">
-                <font>
-                    *Subtotal
-                </font>
-            </div>
-            <div class="col-lg-8 form-group">
-                <input type="text" id="subtutal" class="form-control" placeholder="0">
-            </div>
-        </div>
-    
-        <div class="form-group">
-            <div class="col-lg-4">
-                <font>
-                    *Total
-                </font>
-            </div>
-            <div class="col-lg-8 form-group">
-                <input type="text" id="total" class="form-control" placeholder="0">
-            </div>
-        </div>
-    
-        <div>
-            <button class="btn btn-success" type="button" value="" style="float: right;">Emitir CFDI</button>
-        </div>
-        <div>
-            <button class="btn btn-success" type="button" value="" style="float: right;">Guardar prefactura</button>
-        </div>
-    
-        <div>
-            <button class="btn btn-success" type="button" value="" style="float: right;">vista previa</button>
-        </div>
-    
-        </div>
-        </form>
-    
-        </div>
-    </div>	
+        </div>	
     </div>
