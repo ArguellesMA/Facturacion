@@ -26,22 +26,6 @@
 	 padding-bottom: 12px;
 	 }
 	
-	/* New Product*/
-	h5{
-	  text-align: center;
-	  font-size: 30px;
-	background-color: #336666;
-	color:#ffffff;
-	position: fixed;
-	top: 0%;
-	left: 0%;
-	height: 40px;
-	width: 799px;
-	margin: 0px;
-	padding: 0em;
-	border: 0px;
-	}
-	
 	/* Table */
 	.rwd-table {
 	  border: 1px solid #ccc;
@@ -141,7 +125,13 @@
 	
 	
 	 #panels{
-	  background-color: #5C6BC0;
+	  background-color: #333366;
 	 }
 	
-	 
+	 #newProductLabel{
+		text-align: left;
+		background-color: #333366;
+		margin: 0em;
+		font-size: 15px;
+		color: #FFF;
+	 }

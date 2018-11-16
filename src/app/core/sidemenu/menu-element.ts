@@ -1,7 +1,7 @@
 export const menus = [
     {
         'name': 'Documentos',
-        'icon': 'dashboard',
+        'icon': 'insert_drive_file',
         'link': false,
         'open': false,
         'chip': { 'value': 1, 'color': 'accent' },
@@ -45,7 +45,7 @@ export const menus = [
     },
     {
         'name': 'Catalogos',
-        'icon': 'widgets',
+        'icon': 'pages',
         'link': false,
         'open': false,
         'sub': [
@@ -192,7 +192,7 @@ export const menus = [
     // },
     {
         'name': 'Herramientas',
-        'icon': 'list',
+        'icon': 'build',
         'link': false,
         'open': false,
         'chip': { 'value': 2, 'color': 'accent' },
@@ -296,7 +296,7 @@ export const menus = [
     //},
      {
         'name': 'Configuracion de cuenta',
-        'icon': 'content_copy',
+        'icon': 'settings',
         'open': false,
         'link': false,
         'sub': [
@@ -404,25 +404,25 @@ export const menus = [
                 'name': 'login',
                 'icon': 'directions',
                 'link': 'pages/login',
-                'open': false,
+                'open': true,
             },
            {
                 'name': 'about',
                 'icon': 'show_chart',
                 'link': 'pages/about',
-                'open': false,
+                'open': true,
             },
             {
                 'name': 'contact',
                 'icon': 'list',
                 'link': 'pages/contact',
-                'open': false,
+                'open': true,
             },
             {
                 'name': 'services',
                 'icon': 'pie_chart',
                 'link': 'pages/services',
-                'open': false,
+                'open': true,
             }
         ]
     }

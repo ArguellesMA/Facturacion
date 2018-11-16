@@ -1,7 +1,7 @@
 <div class="container"> 
-	<!--Primer panel Buscar productos-->
+	<!--Pr-----------------------imer panel Buscar productos------------------------------>
 	  <div class="panel panel-primary">
-	   <div class="panel-heading" id="panels">Buscar productos</div>
+	   <div class="panel-heading" id="panels"><font style="font-size: 15px">Buscar productos</font></div>
 		<div class="panel-body">
 		  No. identificacion: <input type="text" name="identificacion" placeholder="No. identificacion">
 		  Descripcion: <input type="text" name="descripcion" placeholder="Descripcion">
@@ -11,18 +11,21 @@
 		  <button type="button" class="btn btn-success">Buscar Producto</button>
 		</div>
 	  </div>
-	<!--Segundo panel Productos-->
+	<!---------------------------------Segundo panel Productos----------------------------->
 	 <div class="panel panel-primary">
-	  <div class="panel-heading" id="panels">Productos</div>
+	  <div class="panel-heading" id="panels"><font style="font-size: 15px">Productos</font></div>
 	  <div class="panel-body">
-		<button type="button" class="btn btn-success" data-toggle="modal" data-target=".newProduct">Nuevo producto</button> <p>
-		  <div class="modal fade newProduct" tabindex="-1" role="dialog" aria-labelledby="newProductLabel" aria-hidden="true">
+		<button type="button" class="btn btn-success" data-toggle="collapse" data-target="#newProduct">Nuevo producto</button> <p>
+
+	
+		  <div class="modal fade" id="newProduct" tabindex="-1" role="dialog" aria-labelledby="newProductLabel" aria-hidden="true">
 			<div class="modal-dialog modal-lg">
 			  <div class="modal-content">
-				  <div class="modal-header">
 	
-					  <h5 class="modal-title" id="newProductLabel">Nuevo producto</h5>
-				  </div>
+						<div class="panel-heading" id="newProductLabel">Nuevo producto</div>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+								<span aria-hidden="true">&times;</span>
+							</button>
 				
 				<div class="modal-body">
 					<form #productoForm="ngForm" (ngSubmit)="addProducto
