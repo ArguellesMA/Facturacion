@@ -5,7 +5,7 @@
 					<div class="panel-body d-flex justify-content-center"> 
 	
 					
-					<form class="form-inline col-lg-12" role="form-horizontal" #emisorForm="ngForm" (ngSubmit)="addEmisor
+					<form #emisorForm="ngForm" (ngSubmit)="addEmisor
 						(emisorForm)">
 						<input type="hidden" name="idEmisor" #_idEmisor="ngModel" [(ngModel)]="emisorService.selectedEmisor.idEmisor">
 						 <div>
@@ -15,40 +15,40 @@
 					
 							<div class="c"><p>
 	
-							 <form class="form-inline col-lg-12" role="form-horizontal">
+							 <form>
 								 
 								<div class="row">
 								 <div class="form-group col-lg-4">
-										 <div class="col-lg-3">
+										 <div class="col-xs-5 col-sm-5 col-md-5 col-lg-5">
 										<font>
 											CURP:
 										</font>
 										</div>
-										<div class="col-sm-7">
+										<div class="col-xs-7 col-sm-7 col-md-7 col-lg-7">
 										<input name="curp" #name="ngModel" [(ngModel)]="emisorService.selectedEmisor.curp" 
 										 type="text" class="form-control" placeholder="AAAA010203MPLBCD11"> 
 								        </div> 
 								 </div>
 
 								 <div class="form-group col-lg-4">
-									 <div class="col-lg-3">
+									 <div class="col-xs-5 col-sm-5 col-md-5 col-lg-5">
 										<font>
 											Registro patronal:
 										</font>
 										</div>
-										<div class="col-sm-7">
+										<div class="col-xs-7 col-sm-7 col-md-7 col-lg-7">
 										<input name="rPatronal" #name="ngModel" [(ngModel)]="emisorService.selectedEmisor.rPatronal"
 										 type="text" class="form-control" placeholder="Registro patronal">
 										</div>	
 								 </div>
 
 								 <div class="form-group col-lg-4">
-									 <div class="col-lg-4">
+									 <div class="col-xs-5 col-sm-5 col-md-5 col-lg-5">
 										<font>
 											RFC patrón de origen:
 										</font>
 										</div>
-										<div class="col-sm-7">
+										<div class="col-xs-7 col-sm-7 col-md-7 col-lg-7">
 										<input name="rfcOrigen" #name="ngModel" [(ngModel)]="emisorService.selectedEmisor.rfcOrigen" 
 										 type="text" class="form-control" placeholder="AAAA010203AAA">
 										 </div>
@@ -73,8 +73,7 @@
 			 <div class="panel-body d-flex justify-content-center">
 					<div class="c"> <p></p>
 
-							<form class="form-inline col-lg-12 " role="form-horizontal">
-									<div class="col-md-12 col-lg-12">
+							<form>
 	
 										<div class="row">
 											 <div class="col-lg-4 form-group">       
@@ -136,36 +135,36 @@
 										<div class="row">
 	
 											 <div class="col-lg-4 form-group">       
-													 <div class="col-lg-5">
+													 <div class="col-xs-5 col-sm-5 col-md-5 col-lg-5">
 															 <font size="2" class="r"
 															 >*RFC empleado
 															</font>
 													 </div>
-													 <div class="col-sm-7">
+													 <div class="col-xs-7 col-sm-7 col-md-7 col-lg-7">
 															 <input name="rfcEmpleado" #name="ngModel" [(ngModel)]="empleadoService.selectedEmpleado.rfcEmpleado"
 															 type="text" class="form-control" placeholder="AAAA010203AAA" maxlength="13">
 													 </div>                    
 											 </div>
 	
 											 <div class="col-lg-4 form-group">   
-													 <div class="col-lg-5">
+													 <div class="col-xs-5 col-sm-5 col-md-5 col-lg-5">
 															 <font size="2" class="r">
 																 *Nombre empleado:
 															 </font>    
 													 </div>
-													 <div class="col-sm-7">
+													 <div class="col-xs-7 col-sm-7 col-md-7 col-lg-7">
 															 <input name="nomEmpleado" #name="ngModel" [(ngModel)]="empleadoService.selectedEmpleado.nomEmpleado"
 																type="text" class="form-control" placeholder="Nombre empleado">
 													 </div>    
 											 </div>
 	
 											 <div class="col-lg-4 form-group">           
-													 <div class="col-lg-5">
+													 <div class="col-xs-5 col-sm-5 col-md-5 col-lg-5">
 															 <font size="1">
 																 E-Mail:
 															</font>    
 													 </div>
-													 <div class="col-sm-7">
+													 <div class="col-xs-7 col-sm-7 col-md-7 col-lg-7">
 															 <input name="email" #name="ngModel" [(ngModel)]="empleadoService.selectedEmpleado.email"
 																type="text" class="form-control" placeholder="ejemplo@sucorreo.com">
 													 </div>   
@@ -177,36 +176,36 @@
 										<div class="row">
 	
 											 <div class="col-lg-4 form-group">
-													 <div class="col-lg-5">
+													 <div class="col-xs-5 col-sm-5 col-md-5 col-lg-5">
 															 <font size="2" class="r">
 																 *No. empleado:
 															</font>
 													 </div>
-													 <div class="col-sm-7">
+													 <div class="col-xs-7 col-sm-7 col-md-7 col-lg-7">
 															 <input name="noEmpleado" #name="ngModel" [(ngModel)]="empleadoService.selectedEmpleado.noEmpleado"
 																type="text" class="form-control" placeholder="Número del empleado">
 													 </div>    
 											 </div>
 	
 											 <div class="col-lg-4 form-group">
-													 <div class="col-lg-5">
+													 <div class="col-xs-5 col-sm-5 col-md-5 col-lg-5">
 															 <font size="2" class="r">
 																 *CURP
 															</font>:   
 													 </div>
-													 <div class="col-sm-7">
+													 <div class="col-xs-7 col-sm-7 col-md-7 col-lg-7">
 															 <input name="curpEmp" #name="ngModel" [(ngModel)]="empleadoService.selectedEmpleado.curp"
 																type="text" class="form-control" placeholder="AAAA010203MPLBCD11">
 													 </div>     
 											 </div>
 	
 											 <div class="col-lg-4 form-group">
-													 <div class="col-lg-5">
+													 <div class="col-xs-5 col-sm-5 col-md-5 col-lg-5">
 															 <font size="2" class="r">
 																 *Tipo de nómina:
 															</font>   
 													 </div>
-													 <div class="col-sm-7">
+													 <div class="col-xs-7 col-sm-7 col-md-7 col-lg-7">
 															 <select class="custon-select form-control" name="tnomina"#name="ngModel" [(ngModel)]="empleadoService.selectedEmpleado.tNomina">
 																	 <option value="" disabled selected>Sin Selección</option>
 																	 <option value="ordinaria">O-Nomina ordinaria</option>
@@ -221,12 +220,12 @@
 										<div class="row" >
 	
 											 <div class="col-lg-4 form-group">
-													 <div class="col-lg-5">
+													 <div class="col-xs-5 col-sm-5 col-md-5 col-lg-5">
 															 <font size="2" class="r">
 																 *Periodicidad del pago:
 															</font>
 													 </div>
-													 <div class="col-sm-7">
+													 <div class="col-xs-7 col-sm-7 col-md-7 col-lg-7">
 															 <select name="perioPago" #name="ngModel" [(ngModel)]="empleadoService.selectedEmpleado.perioPago"
 																style="width:155%" class="custon-select form-control">
 																	 <option id="option" value="" disabled selected>Sin Selección</option>
@@ -247,12 +246,12 @@
 											 </div>
 	
 											 <div class="col-lg-4 form-group">
-													 <div class="col-lg-5">
+													 <div class="col-xs-5 col-sm-5 col-md-5 col-lg-5">
 															 <font size="2" class="r">
 																 *Entidad federativa:
 															</font>   
 													 </div>
-													 <div class="col-sm-7">
+													 <div class="col-xs-7 col-sm-7 col-md-7 col-lg-7">
 															 <select name="entFederativa" #name="ngModel" [(ngModel)]="empleadoService.selectedEmpleado.entFederativa" style="width:155%" class="custon-select form-control">
 																	 <option value="" disabled selected>Sin Selección</option>
 																	 <option value="aguasCalientes">Aguas Calientes</option>
@@ -356,12 +355,12 @@
 											 </div>
 	
 											 <div class="col-lg-4 form-group">
-													 <div class="col-lg-5">
+													 <div class="col-xs-5 col-sm-5 col-md-5 col-lg-5">
 															 <font size="2" class="r">
 																 *Tipo de contrato:
 															</font>   
 													 </div>
-													 <div class="col-lg-4">
+													 <div class="col-xs-7 col-sm-7 col-md-7 col-lg-7">
 															 <select class="custon-select form-control" name="contarto">
 																	 <option value="" disabled selected>Sin Selección</option>
 																	 <option id="indeterminado">01 Contrato de trabajo por tiempo indeterminado</option>
@@ -385,12 +384,12 @@
 										<div class="row">
 	 
 											 <div class="col-lg-4 form-group">
-													 <div class="col-lg-5">
+													 <div class="col-xs-5 col-sm-5 col-md-5 col-lg-5">
 															 <font size="2" class="r">
 																 *Tipo de régimen:
 															</font>
 													 </div>
-													 <div class="col-lg-4">
+													 <div class="col-xs-7 col-sm-7 col-md-7 col-lg-7">
 															 <select class="custon-select form-control" name="regimen">
 																	 <option value="" disabled selected>Sin Selección</option>
 																	 <option value="">02 Sueldos</option>
@@ -411,23 +410,23 @@
 											 </div>
 	
 											 <div class="col-lg-4 form-group">
-													 <div class="col-lg-5">
+													 <div class="col-xs-5 col-sm-5 col-md-5 col-lg-5">
 															 <font size="1">
 																 NSS:
 															</font>   
 													 </div>
-													 <div class="col-sm-7">
+													 <div class="col-xs-7 col-sm-7 col-md-7 col-lg-7">
 															 <input name="nss" type="text" class="form-control" placeholder="Número de seguro social">
 													 </div>
 											 </div>
 	
 											 <div class="col-lg-4 form-group">
-													 <div class="col-lg-5">
+													 <div class="col-xs-5 col-sm-5 col-md-5 col-lg-5">
 															 <font size="1">
 																 Salario base, cuotas y aportaciones:
 															</font>   
 													 </div>
-													 <div class="col-sm-7">
+													 <div class="col-xs-7 col-sm-7 col-md-7 col-lg-7">
 															<input name="sbcAporta" type="text" class="form-control" placeholder="0.00">
 													 </div>                   
 											 </div> 
@@ -438,12 +437,12 @@
 										<div class="row">
 	
 											 <div class="col-lg-4 form-group">
-													 <div class="col-lg-5">
+													 <div class="col-xs-5 col-sm-5 col-md-5 col-lg-5">
 															 <font size="1">
 																 Riesgo del puesto:
 															</font>
 													 </div>
-													 <div class="col-sm-7">
+													 <div class="col-xs-7 col-sm-7 col-md-7 col-lg-7">
 															 <select name="rPuesto" style="width:155%" class="custon-select form-control">
 																	 <option value="" disabled selected>Sin Selección</option>
 																	 <option value="">1 Clase I</option>
@@ -457,23 +456,23 @@
 											 </div>
 	
 											 <div class="col-lg-4 form-group">
-													 <div class="col-lg-5">
+													 <div class="col-xs-5 col-sm-5 col-md-5 col-lg-5">
 															 <font size="1">
 																 *Salario diario integrado:
 															</font>  
 													 </div>
-													 <div class="col-sm-7">
+													 <div class="col-xs-7 col-sm-7 col-md-7 col-lg-7">
 															 <input name="sdIntegrado" type="text" class="form-control" placeholder="0.00">
 													 </div>
 											 </div>
 	
 											 <div class="col-lg-4 form-group">
-													 <div class="col-lg-5">
+													 <div class="col-xs-5 col-sm-5 col-md-5 col-lg-5">
 															 <font size="1">
 																 Tipo de jornada:
 															</font>   
 													 </div>
-													 <div class="col-sm-7">
+													 <div class="col-xs-7 col-sm-7 col-md-7 col-lg-7">
 															 <select name="tJornada" style="width:155%" class="custon-select form-control">
 																	 <option value="" disabled selected>Sin Selección</option>
 																	 <option value="">01.- Diurna</option>
@@ -494,34 +493,34 @@
 										<div class="row">
 	
 											 <div class="col-lg-4 form-group">
-													 <div class="col-lg-5">
+													 <div class="col-xs-5 col-sm-5 col-md-5 col-lg-5">
 															 <font size="1">
 																 Departamento:
 															</font>
 													 </div>
-													 <div class="col-sm-7">
+													 <div class="col-xs-7 col-sm-7 col-md-7 col-lg-7">
 															 <input name="departamento" type="text" class="form-control" placeholder="Departamento empleado">
 													 </div>
 											 </div>
 	
 											 <div class="col-lg-4 form-group">
-													 <div class="col-lg-5">
+													 <div class="col-xs-5 col-sm-5 col-md-5 col-lg-5">
 															 <font size="1">
 																 Puesto:
 															</font>   
 													 </div>
-													 <div class="col-sm-7">
+													 <div class="col-xs-7 col-sm-7 col-md-7 col-lg-7">
 															 <input name="puesto" type="text" class="form-control" placeholder="Puesto empleado">
 													 </div>
 											 </div>
 	
 											 <div class="col-lg-4 form-group">
-													 <div class="col-lg-5">
+													 <div class="col-xs-5 col-sm-5 col-md-5 col-lg-5">
 															 <font size="1">
 																 Sindicalizado:
 															</font>   
 													 </div>
-													 <div class="col-sm-7">
+													 <div class="col-xs-7 col-sm-7 col-md-7 col-lg-7">
 															 <select name="sindicalizado" style="width:155%" class="custon-select form-control">
 																	 <option value="" disabled selected>Sin Seleccionar</option>
 																	 <option value="">SI</option>
@@ -536,24 +535,24 @@
 										<div class="row">
 	
 											 <div class="col-lg-4 form-group">
-													 <div class="col-lg-5">
+													 <div class="col-xs-5 col-sm-5 col-md-5 col-lg-5">
 															 <font size="1">
 																 Cuenta bancaria:
 															</font>
 													 </div>
 	
-													 <div class="col-sm-7">
+													 <div class="col-xs-7 col-sm-7 col-md-7 col-lg-7">
 															 <input name="cBancaria" type="text" class="form-control" placeholder="123456789012345678">
 													 </div>
 											 </div>
 	
 											 <div class="col-lg-4 form-group">
-													 <div class="col-lg-5">
+													 <div class="col-xs-5 col-sm-5 col-md-5 col-lg-5">
 															 <font size="1">
 																 Banco:
 															</font>   
 													 </div>
-													 <div class="col-sm-7">
+													 <div class="col-xs-7 col-sm-7 col-md-7 col-lg-7">
 															 <select name="banco" style="width:155%" class="custon-select form-control">
 																	 <option value="" disabled selected>Sin Selección</option>
 																	 <option>002 BANAMEX</option>
@@ -669,19 +668,17 @@
 											 </div>
 	
 											 <div class="col-lg-4 form-group">
-													 <div class="col-lg-5">
+													 <div class="col-xs-5 col-sm-5 col-md-5 col-lg-5">
 															 <font size="1">
 																 Fecha inicio relación laboral:
 															</font>   
 													 </div>
-													 <div class="col-sm-7">
+													 <div class="col-xs-7 col-sm-7 col-md-7 col-lg-7">
 																	<input type="text" id="fecha" name="fecha" class="form-control" />
 													 </div>                   
 											 </div> 
 	
 										</div>
-	
-									</div>
 							 </form> <br>
 					</div> 
 					
@@ -732,8 +729,8 @@
 										<div class="col-sm-4">
 	
 												<div class="form-group">
-														<label for="MainContent_text_reg_web" class="col-lg-3 control-label">Total de percepciones:</label>
-														<div class="col-sm-8">
+														<label for="MainContent_text_reg_web" class="col-xs-5 col-sm-5 col-md-5 col-lg-5 control-label">Total de percepciones:</label>
+														<div class="col-xs-7 col-sm-7 col-md-7 col-lg-7">
 																<input name="tPercepciones" id="tPercepciones" class="form-control" type="text" placeholder="0.00">
 														</div>
 												</div>
@@ -749,8 +746,8 @@
 										
 										<div class="col-sm-4">
 												<div class="form-group">
-														<h6 for="MainContent_text_reg_cp" class="col-lg-3 control-label">Total de deducciones</h6>
-														<div class="col-sm-8">
+														<h6 for="MainContent_text_reg_cp" class="col-xs-5 col-sm-5 col-md-5 col-lg-5 control-label">Total de deducciones</h6>
+														<div class="col-xs-7 col-sm-7 col-md-7 col-lg-7">
 																<input name="tDeducciones" id="tDeducciones" class="form-control" type="text" placeholder="0.00">
 														</div>
 												</div>
@@ -765,8 +762,8 @@
 										
 										<div class="col-sm-4">
 											<div class="form-group">
-													<h6 for="MainContent_text_reg_cp" class="col-sm-3 control-label">Total de otros de pagos</h6>
-													<div class="col-sm-8">
+													<h6 for="MainContent_text_reg_cp" class="col-xs-5 col-sm-5 col-md-5 col-lg-5 control-label">Total de otros de pagos</h6>
+													<div class="col-xs-7 col-sm-7 col-md-7 col-lg-7">
 															<input name="toPagos" id="toPagos" class="form-control" type="text" placeholder="0.00">
 													</div>    
 											</div>
@@ -799,32 +796,32 @@
 								 <div class="panel panel-primary">
 											<div class="panel-heading" id="panels"><font style="font-size: 15px">Filtrado de empleados 1.2</font></div>
 											<div class="panel-body"> 
-													<div class="form-horizontal">
+													<form>
 															<div class="col-sm-4">
 																	<div class="form-group">
-																			<label for="MainContent_text_reg_web" class="col-sm-4 control-label">RFC:</label>
-																			<div class="col-sm-8">
-																					<input name="rfc2" id="rfc2" type="text" placeholder="AAAA010203AAA">
+																			<label for="MainContent_text_reg_web" class="col-xs-5 col-sm-5 col-md-5 col-lg-5 control-label">RFC:</label>
+																			<div class="col-xs-7 col-sm-7 col-md-7 col-lg-7">
+																					<input class="form-control" name="rfc2" id="rfc2" type="text" placeholder="AAAA010203AAA">
 																			</div>
 																	</div>
 															</div>
 															<div class="col-sm-4">
 																	<div class="form-group">
-																			<h6 for="MainContent_text_reg_cp" class="col-sm-4 control-label">Nombre:</h6>
-																					<div class="col-sm-8">
-																							<input name="nombreEmp" id="nombreEmp" type="text" placeholder="Nombre del empleado">
+																			<h6 for="MainContent_text_reg_cp" class="col-xs-5 col-sm-5 col-md-5 col-lg-5 control-label">Nombre:</h6>
+																					<div class="col-xs-7 col-sm-7 col-md-7 col-lg-7">
+																							<input class="form-control" name="nombreEmp" id="nombreEmp" type="text" placeholder="Nombre del empleado">
 																					</div>
 																	</div>
 															</div>
 															<div class="col-sm-4">
 																	<div class="form-group">
-																			<h6 for="MainContent_text_reg_cp" class="col-sm-4 control-label">No. empleado:</h6>
-																					<div class="col-sm-8">
-																							<input name="noEmpleado" id="noEmpleado" type="text" placeholder="Número del empleado">
+																			<h6 for="MainContent_text_reg_cp" class="col-xs-5 col-sm-5 col-md-5 col-lg-5 control-label">No. empleado:</h6>
+																					<div class="col-xs-7 col-sm-7 col-md-7 col-lg-7">
+																							<input class="form-control" name="noEmpleado" id="noEmpleado" type="text" placeholder="Número del empleado">
 																					</div>
 																				</div>
 															</div>
-													</div>  
+														</form>  
 										 </div>
 								 </div>
 	
