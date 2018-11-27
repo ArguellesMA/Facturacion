@@ -9,11 +9,10 @@ import {  MatRippleModule } from '@angular/material';
 
 
 
+
 @NgModule({
   declarations: [
     AppComponent,
-    
-    
   ],
   imports: [
     MatRippleModule,
@@ -23,7 +22,8 @@ import {  MatRippleModule } from '@angular/material';
     BrowserAnimationsModule,
     MatDatepickerModule
   ],
-  providers: [],
+  providers: [
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
